@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="{PE.Label id="网站信息配置中的关键字" /}" name="Keywords" />
+<meta content="{PE.Label id="网站信息配置中网站描述" /}" name="Description"/>
+<title>专题内容页-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/special.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/Common.js">
+    </script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/slider.js">
+    </script>
+<script language="javascript" type="text/javascript">
+    function redirecturl(url)
+    {
+        location=url;
+    }
+    </script>
+</head>
+<body>
+{PE.Label id="网站顶部" /}
+<div id="center_all">
+  <div id="main_bg">
+    <div id="main_right">
+      <div id="main_right_box">
+        <!-- 网站位置导航信息开始 -->
+        <div class="r_navigation">
+          <div class="r_n_pic"></div>
+          您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a>{PE.Label id="专题位置导航" specialid="@RequestInt_id" /} </div>
+        <!-- 网站位置导航信息结束 -->
+        {PE.Label id="右侧广告" /}
+        <div class="c_spacing"> </div>
+        <!-- 右侧二列开始 -->
+        <div id="r_main">
+          <div class="r_content">
+            <dl>
+              <dt>本栏推荐</dt>
+              <dd>
+                <ul>
+                  {PE.Label id="多模型通用内容信息列表_普通式"  parentid="0" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="14" ishot="false" iselite="false" inputername="" datenum="0" ordertype="3" showtype="1" titlelen="20" contentlen="0" shownodename="false" showpropertytype="2" showincludepic="false" showauthor="false" showdatetype="mm-dd" showhits="false" showhotsign="false" shownewsign="false" showtips="false" showcommentlink="false" usepage="false" opentype="_blank" cols="0" hits="0" elitelevel="20" span="" class="" /}
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="c_spacing"> </div>
+          <div class="r_content">
+            <dl>
+              <dt>点击排行</dt>
+              <dd>
+                <ul>
+                  {PE.Label id="多模型通用内容信息列表_普通式"  parentid="0" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="14" ishot="false" iselite="false" inputername="" datenum="0" ordertype="3" showtype="1" titlelen="20" contentlen="0" shownodename="false" showpropertytype="2" showincludepic="false" showauthor="false" showdatetype="mm-dd" showhits="false" showhotsign="false" shownewsign="false" showtips="false" showcommentlink="false" usepage="false" opentype="_blank" cols="0" hits="10" elitelevel="0" span="" class="" /}
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div class="c_main">
+          <!-- 专题栏目信息一列式信息列表开始 -->
+          <div class="c_main_box">
+            <div class="class_title"> <span class="childclass_pic"></span>{PE.field id="infolist" fieldname="SpecialName" /}</div>
+            <div class="class_content"> {PE.DataSource  id="infolist" datasource="专题下信息列表" specialid="@RequestInt_id" page="true" pagesize="10" urlpage="true" xslt="true" /}
+              <ul>
+                {PE.Repeat id="infolist" loop="0"}
+                <li><a href="{PE.field fieldname="InfoPath" /}" >{PE.field fieldname="Title"  /}</a> ({PE.field fieldname="UpdateTime" /})</li>
+                {/PE.Repeat}
+              </ul>
+            </div>
+            <div class="class_bot"> </div>
+          </div>
+          <!-- 专题栏目信息一列式信息列表结束 -->
+          <div class="class_page">{PE.Page id="url_动易后台风格" datasource="infolist" unitname="条信息" /}</div>
+          <div class="clearbox"> </div>
+        </div>
+        {PE.Label id="文章搜索" /}
+        <div class="c_spacing"> </div>
+        <!-- 最新图片文章开始 -->
+        <div class="c_main_one">
+          <dl>
+            <dt class="c_title">
+              <div class="more"> </div>
+              <a href="#">最新图文</a></dt>
+            <dd class="c_content">
+              <!-- 显示8张最新图片文章 -->
+              <div class="special_photo_list"> {PE.Label id="普通图片列表标签" tablename="PE_U_Article" parentid="1" /}
+                <div class="clearbox"></div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+        <!-- 最新图片文章结束 -->
+      </div>
+    </div>
+    {PE.Label id="网站首页左侧" /} </div>
+</div>
+{PE.Label id="网站底部" /}
+</body>
+</html>

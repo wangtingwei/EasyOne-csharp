@@ -1,0 +1,249 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{PE.Label id="取得节点名称" nid="4" /}首页-{PE.SiteConfig.SiteTitle/}</title>
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/product.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/user.css" rel="stylesheet"type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath /}js/common.js"></script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath /}js/slider.js"></script>
+<script language="javascript" type="text/javascript">
+/* AJAX分页 */
+function changepage(pagenum,sourcename,spanname)
+{
+	var x = new AjaxRequest('XML','pe100_' + sourcename);
+        x.labelname = sourcename;
+        x.pagename = "Default.aspx";
+        x.currentpage = pagenum; 
+	    x.para = ['showclass=true', 'titlelen=40', 'contentlen=40', 'propertytype=none', 'showauthor=true', 'showdatetype=mm-dd', 'showhits=true', 'showhotsign=true', 'shownewsign=true', 'showtips=true', 'opentype=_blank', 'shownum=10', 'page=true', 'pagesize=2'];
+	    x.post('updatelabel', 'ajax.aspx', function(s) {
+            var xml = x.createXmlDom(s);
+            $("pe100_" + sourcename).innerHTML = xml.getElementsByTagName("body")[0].firstChild.data;
+
+            updatepage(spanname, sourcename, xml);
+	 });
+}
+
+function updatepage(spanname, sourcename, xml)
+{
+	var x = new AjaxRequest('XML','pe100_page_' + sourcename);
+         x.labelname = spanname;
+        x.sourcename = sourcename;
+        x.total = xml.getElementsByTagName("total")[0].firstChild.data;
+        x.currentpage = xml.getElementsByTagName("currentpage")[0].firstChild.data;
+        x.pagesize = xml.getElementsByTagName("pagesize")[0].firstChild.data;
+	    x.post('updatepage', 'ajax.aspx', function(s) {
+            var xml = x.createXmlDom(s);
+            $("pe100_page_" + sourcename).innerHTML = xml.getElementsByTagName("body")[0].firstChild.data;
+	 });
+}
+
+function redirecturl(url)
+{
+    location=url;
+}
+
+function jumpurl()
+{
+    var obj=$("page");
+    if(obj != null)
+    {
+        location="Default.aspx?page=" + obj.value;
+    }
+}
+    </script>
+<script id="ShowTab" type="text/javascript">
+          function ShowTabs(ID){
+               for (i=0;i<4;i++){
+                    if(i == ID){
+                        document.getElementById("TabTitle" + i).className="titlemouseover";
+                        document.getElementById("Tab" + i).style.display="";
+                    }
+                    else{
+                        document.getElementById("TabTitle" + i).className="tabtitle";
+                        document.getElementById("Tab" + i).style.display="none";
+                    }
+               }
+          } 
+    </script>
+</head>
+<body>
+{PE.label id="雅灰网站顶部" /}
+<!-- 中部网站导航 -->
+<table class="center_all" cellspacing="0">
+  <tr>
+    <td>
+      <table id="r_navigation" cellspacing="0">
+        <tr>
+          <td class="r_n_pic"></td>
+          <td class="logo_nav">您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a>{PE.Label id="栏目位置导航" nodeid="4" /} </td>
+          <td id="top_link">
+            <ul>
+              <li>
+                <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="1" scrolldelay="4" align="left">
+                {PE.Label id="雅灰网站公告横向" /}
+                </marquee>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="center_all" cellspacing="0">
+  <tr>
+    <td>
+      <table class="main" cellspacing="0">
+        <tr>
+          <td class="main_left">
+            <table class="width_100" cellspacing="0">
+              <tr>
+                <td class="width_l">
+                  <table class="c_shop" cellspacing="0">
+                    <tr>
+                      <td>
+                        <table class="cshop_tit">
+                          <tr>
+                            <td><a>商品信息</a></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="c_content">
+                        <ul>
+                          {PE.Label id="商品信息列表_普通式" parentid="4" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="12" ishot="false" iselite="false" inputername="" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="4" /}" showtype="1" titlelen="26" contentlen="0" shownodename="false" showpropertytype="1" showincludepic="false" showauthor="false" showdatetype="" showhits="false" showhotsign="false" shownewsign="false" showtips="true" showcommentlink="false" usepage="false" opentype="{PE.Label id="取得栏目下的内容打开方式" nodeid="4" /}" cols="0" hits="0" elitelevel="0" /}
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                  <!--
+                  <table class="c_shop" cellspacing="0">
+                    <tr>
+                      <td>
+                        <table class="cshop_tit">
+                          <tr>
+                            <td><a>商品信息</a></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="c_content">
+                        <ul>
+                          {PE.Label id="商品信息列表_普通式" parentid="4" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="12" ishot="false" iselite="false" inputername="" datenum="0" ordertype="3" showtype="1" titlelen="26" contentlen="0" shownodename="false" showpropertytype="1" showincludepic="false" showauthor="false" showdatetype="" showhits="false" showhotsign="false" shownewsign="false" showtips="true" showcommentlink="false" usepage="false" opentype="_blank" cols="0" hits="0" elitelevel="0" /}
+                        </ul>
+                      </td>
+                    </tr>
+                  </table>
+                  -->
+                </td>
+                <td class="width_5"></td>
+                <td>
+                  <table class="r_list" cellspacing="0">
+                    <tr>
+                      <td>
+                        <table class="rlist_tit" cellspacing="0">
+                          <tr>
+                            <td><span class="more"><a href="{PE.SiteConfig.ApplicationPath/}Category_4/index_1.aspx">更多...</a></span><a href="{PE.SiteConfig.ApplicationPath/}Category_4/index_1.aspx">最新商品</a></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="c_content">
+                        <!-- 显示6张推荐图片商品 -->
+                        <div class="p_shop_1"> {PE.Label id="最新商品普通图片列表" shownum="3" parentid="4" /}
+                          <div class="clearbox"></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="r_list" cellspacing="0">
+                    <tr>
+                      <td>
+                        <table class="rlist_tit" cellspacing="0">
+                          <tr>
+                            <td><span class="more"><a href="{PE.SiteConfig.ApplicationPath/}Category_4/index_1.aspx">更多...</a></span><a href="{PE.SiteConfig.ApplicationPath/}Category_4/index_1.aspx">推荐商品</a></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="c_content">
+                        <!-- 显示6张推荐图片商品 -->
+                        <div class="p_shop_1">
+                          <!--{PE.Label id="普通图片列表标签" shownum="6" border="0" titlelen="10" parentid="4" tablename="PE_U_Product" /}-->
+                          {PE.Label id="推荐商品普通图片列表" shownum="3" parentid="4" /}
+                          <div class="clearbox"></div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <table class="r_list" cellspacing="0">
+                    <tr>
+                      <td>
+                        <table class="rlist_tit" cellspacing="0">
+                          <tr>
+                            <td><span class="more"><a href="{PE.SiteConfig.ApplicationPath/}Category_4/index_1.aspx">更多...</a></span><a href="{PE.SiteConfig.ApplicationPath/}Category_4/index_1.aspx">打折特卖</a></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="c_content">
+                        <div class="p_shop_2">
+                          <div class="p_thumb_l"> {PE.Label id="特价商品普通图片列表" shownum="1" border="0" titlelen="10" parentid="4" /} </div>
+                          <div class="p_list_r">
+                            <ul>
+                              <div style=" width:96%"> {PE.Label id="显示商品信息列表_表格式" producttype="3" /} </div>
+                            </ul>
+                          </div>
+                          <div class="clearbox"> {PE.Label id="显示商品信息列表_表格式" producttype="3" /}</div>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            {PE.Label id="雅灰商店搜索" /}
+            <table class="r_list margin_top_5 edge_bot" cellspacing="0">
+              <tr>
+                <td>
+                  <table class="rlist_tit" cellspacing="0">
+                    <tr>
+                      <td><span class="more"><a href="{PE.SiteConfig.ApplicationPath/}Category_4/index_1.aspx">更多...</a></span><a href="{PE.SiteConfig.ApplicationPath/}Category_4/index_1.aspx">畅销商品</a></td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td class="c_content">
+                  <div class="p_photo_list"> {PE.Label id="热卖商品普通图片列表" shownum="4" parentid="4" /}
+                    <div class="clearbox"></div>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <div class="childclass_main">
+              <!-- 子栏目二列式循环开始 -->
+              {PE.Label id="商品二列式栏目左右循环" parentid="4" shownum="4" titlelen="20" span="" class="" /}
+              <!-- 子栏目二列式循环结束 -->
+              <div class="clearbox"></div>
+            </div>
+            {PE.Label id="雅灰商城配送范围" /} </td>
+          <td width="5"></td>
+          <td class="main_right" valign="top">{PE.Label id="雅灰商店右侧" /}</td>
+        </tr>
+      </table>
+      <!-- main 结束 -->
+    </td>
+  </tr>
+</table>
+<!-- center_all 结束 -->
+{PE.Label id="雅灰网站底部" /}
+</body>
+</html>

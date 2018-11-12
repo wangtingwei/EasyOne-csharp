@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Links>
+  <Module id="ContentManage" title="内容管理" operateCode="ContentManage" description="内容管理">
+    <Link id="ContentManage" title="信息管理" operateCode="InfoManage" leftUrl="Contents/NodeTree.aspx" rightUrl="Contents/ContentManage.aspx" description="">
+      <Link id="CategoryInfoManage" title="信息按栏目管理" operateCode="CategoryInfoManage" leftUrl="Contents/NodeTree.aspx" rightUrl="Contents/ContentManage.aspx" IsDefalutShow="true" description="" />
+      <Link id="SpecialInfoManage" title="信息按专题管理" operateCode="SpecialInfoManage" leftUrl="Contents/SpecialTree.aspx" rightUrl="Contents/SpecialInfosManage.aspx" description="" />
+      <Link id="CommentManage" title="评论管理" operateCode="CommentManage" leftUrl="Contents/CommentGuide.aspx" rightUrl="Contents/CommentManage.aspx" description="" />
+    </Link>
+    <Link id="CreateHtmlManage" title="生成管理" operateCode="CreateHtmlManage" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/CreateHtmlContent.aspx" description="">
+      <Link id="CreateHtmlContent" title="生成内容页" operateCode="CreateHtmlManage" IsDefalutShow="true" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/CreateHtmlContent.aspx" description="" />
+      <Link id="CreateHtmlSingle" title="生成单页节点" operateCode="CreateHtmlManage" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/CreateHtmlSingle.aspx" description="" />
+      <Link id="CreateHtmlNodes" title="生成栏目列表页" operateCode="CreateHtmlManage" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/CreateHtmlNodes.aspx" description="" />
+      <Link id="CreateHtmlSpecialCategory" title="生成专题类型页" operateCode="CreateHtmlManage" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/CreateHtmlSpecialCategory.aspx" description="" />
+      <Link id="CreateHtmlSpecial" title="生成专题列表页" operateCode="CreateHtmlManage" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/CreateHtmlSpecial.aspx" description="" />
+      <Link id="CreateHtmlProgress" title="查看生成进度" operateCode="CreateHtmlManage" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/CreateHtmlProgress.aspx" description="" />
+    </Link>
+    <Link id="CollectionManageGuide" title="采集管理" operateCode="CollectionManage" leftUrl="" rightUrl="" description="">
+      <Link id="CollectionManageAdd" title="添加采集项目" operateCode="CollectionManage" leftUrl="Collection/Guide.aspx" rightUrl="Collection/ConfigStep1.aspx" description="" />
+      <Link id="CollectionItemManage" title="采集项目管理" operateCode="CollectionManage" leftUrl="Collection/Guide.aspx" rightUrl="Collection/ItemManage.aspx" description="" />
+      <Link id="CollectionHistoryManage" title="采集历史记录" operateCode="CollectionManage" leftUrl="Collection/Guide.aspx" rightUrl="Collection/HistoryManage.aspx" description="" />
+      <Link id="CollectionExe" title="项目采集" operateCode="None" leftUrl="Collection/Guide.aspx" rightUrl="Collection/CollectionMain.aspx" description="" />
+    </Link>
+    <Link id="SiteCount" title="网站统计" operateCode="SiteCount" leftUrl="" rightUrl="" description="">
+      <Link id="CountByCategoryMonth" title="按栏目/月份统计" operateCode="None" leftUrl="Statistics/SiteCountGuid.aspx" rightUrl="Statistics/SiteCount.aspx?Action=CategoryMonth" description="" />
+      <Link id="CountByCategoryInputer" title="按栏目/录入者统计" operateCode="None" leftUrl="Statistics/SiteCountGuid.aspx" rightUrl="Statistics/SiteCount.aspx?Action=CategoryInputer" description="" />
+      <Link id="CountByCategoryEditor" title="按栏目/审核者统计" operateCode="None" leftUrl="Statistics/SiteCountGuid.aspx" rightUrl="Statistics/SiteCount.aspx?Action=CategoryManager" description="" />
+      <Link id="CountByInputerMonth" title="按录入者/月份统计" operateCode="None" leftUrl="Statistics/SiteCountGuid.aspx" rightUrl="Statistics/SiteCount.aspx?Action=InputerMonth" description="" />
+      <Link id="CountByEditorMonth" title="按审核者/月份统计" operateCode="None" leftUrl="Statistics/SiteCountGuid.aspx" rightUrl="Statistics/SiteCount.aspx?Action=ManagerMonth" description="" />
+    </Link>
+    <Link id="AccessoriesManage" title="其他管理" operateCode="AccessoriesManage" leftUrl="Accessories/InsideLinkGuide.aspx" rightUrl="Accessories/InsideLinkManage.aspx" description="">
+      <Link id="InsideLinkManage" title="站内链接管理" operateCode="InsideLinkManage" leftUrl="Accessories/InsideLinkGuide.aspx" rightUrl="Accessories/InsideLinkManage.aspx" description="" />
+      <Link id="WordFilterManage" title="字符过滤管理" operateCode="WordFilterManage" leftUrl="Accessories/WordFilterGuide.aspx" rightUrl="Accessories/WordFilterManage.aspx" description="" />
+      <Link id="KeyWordManage" title="关键字管理" operateCode="KeyWordManage" leftUrl="Accessories/KeyWordGuide.aspx" rightUrl="Accessories/KeyWordManage.aspx" description="" />
+      <Link id="AuthorManage" title="作者管理" operateCode="AuthorManage" leftUrl="Accessories/AuthorGuide.aspx" rightUrl="Accessories/AuthorManage.aspx" description="" />
+      <Link id="SourceManage" title="来源管理" operateCode="SourceManage" leftUrl="Accessories/SourceGuide.aspx" rightUrl="Accessories/SourceManage.aspx" description="" />
+      <Link id="DownServerManage" title="下载服务器管理" operateCode="DownServerManage" leftUrl="Accessories/DownServerGuide.aspx" rightUrl="Accessories/DownServerManage.aspx" description="" />
+      <Link id="DownloadErrorManage" title="下载报错管理" operateCode="DownloadErrorManage" leftUrl="Accessories/DownloadErrorGuide.aspx" rightUrl="Accessories/DownloadErrorManage.aspx" description="" />
+    </Link>
+  </Module>
+  <Module id="User" title="用户管理" operateCode="User" description="用户管理">
+    <Link id="AdministratorSuperManage" title="管理员管理" operateCode="AdministratorSuperManage" leftUrl="User/AdministratorGuide.aspx" rightUrl="User/AdministratorManage.aspx" description="">
+      <Link id="AdministratorAdd" title="管理员管理" IsDefalutShow="true" operateCode="AdministratorManage" leftUrl="User/AdministratorGuide.aspx" rightUrl="User/AdministratorManage.aspx" description="" />
+      <Link id="AdministratorManage" title="添加管理员" operateCode="AdministratorManage" leftUrl="User/AdministratorGuide.aspx" rightUrl="User/Administrator.aspx" description="" />
+      <Link id="UserRoleManage" title="角色管理" operateCode="UserRoleManage" leftUrl="User/RoleGuide.aspx" rightUrl="User/RoleManage.aspx" description="" />
+      <Link id="UserRoleAdd" title="添加角色" operateCode="UserRoleManage" leftUrl="User/RoleGuide.aspx" rightUrl="User/Role.aspx" description="" />
+    </Link>
+    <Link id="UserSuperManage" title="会员管理" operateCode="UserSuperManage" leftUrl="User/UserGuide.aspx" rightUrl="User/UserManage.aspx" description="">
+      <Link title="会员管理" id="UserManage" IsDefalutShow="true" operateCode="UserManage" leftUrl="User/UserGuide.aspx" rightUrl="User/UserManage.aspx" description="" />
+      <Link title="添加会员" id="AddUser" operateCode="UserAdd" leftUrl="User/UserGuide.aspx" rightUrl="User/User.aspx" description="" />
+      <Link id="UserGroupManage" title="会员组管理" operateCode="UserGroupManage" leftUrl="User/UserGroupGuide.aspx" rightUrl="User/UserGroupManage.aspx" description="" />
+      <Link id="UserGroupAdd" title="添加会员组" operateCode="UserGroupManage" leftUrl="User/UserGroupGuide.aspx" rightUrl="User/UserGroup.aspx" description="" />
+    </Link>
+    <Link id="UserOtherManage" title="其它管理" operateCode="None" leftUrl="User/UserGuide.aspx" rightUrl="User/UserManage.aspx" description="">
+      <Link id="CardsManage" title="充值卡管理" operateCode="CardManage" leftUrl="User/CardGuide.aspx" rightUrl="User/CardsManage.aspx" description="" />
+      <Link id="PointLog" title="会员点券明细" operateCode="PointLog" leftUrl="User/PointLogGuide.aspx" rightUrl="User/PointLog.aspx?SearchType=-1" description="" />
+      <Link id="ValidLog" title="会员有效期明细" operateCode="ValidLog" leftUrl="User/ValidLogGuide.aspx" rightUrl="User/ValidLog.aspx?SearchType=-1" description="" />
+    </Link>
+  </Module>
+  <Module id="Plus" title="附件管理" operateCode="Plus" description="附件管理">
+    <Link id="ADManageGuide" title="广告管理" operateCode="AdManage" leftUrl="ADZone/ADGuide.aspx" rightUrl="ADZone/ADManage.aspx" description="">
+      <Link id="ADZoneManage" title="广告版位管理" operateCode="AdManage" leftUrl="ADZone/ADZoneGuide.aspx" rightUrl="ADZone/ADZoneManage.aspx" description="" />
+      <Link id="ADManage" title="广告管理" operateCode="AdManage" leftUrl="ADZone/ADGuide.aspx" rightUrl="ADZone/ADManage.aspx" description="" />
+    </Link>
+    <Link id="SurveyManageGuide" title="问卷调查管理" operateCode="SurveyManage" leftUrl="Survey/SurveyGuide.aspx" rightUrl="Survey/SurveyManage.aspx" description="">
+      <Link id="SurveyAdd" title="创建问卷" operateCode="None" leftUrl="Survey/SurveyGuide.aspx" rightUrl="Survey/Survey.aspx?Action=Add" description="" />
+      <Link id="SurveyManage" title="问卷管理" operateCode="None" leftUrl="Survey/SurveyGuide.aspx" rightUrl="Survey/SurveyManage.aspx" description="" />
+      <Link id="SurveyCode" title="问卷调用代码" operateCode="None" leftUrl="Survey/SurveyCodeGuide.aspx" rightUrl="Survey/SurveyCode.aspx" description="" />
+      <Link id="SurveyResult" title="问卷调查结果" operateCode="None" leftUrl="Survey/SurveyResultGuide.aspx" rightUrl="Survey/SurveyResult.aspx" description="" />
+    </Link>
+    <Link id="StatInfoListGuide" title="访问统计" operateCode="StatInfoList" leftUrl="Analytics/CounterGuide.aspx" rightUrl="Analytics/StatInfoListReport.aspx" description="">
+      <Link id="StatInfoList" title="访问统计分析" operateCode="None" leftUrl="Analytics/CounterGuide.aspx" rightUrl="Analytics/StatInfoListReport.aspx" description="" />
+      <Link id="IPAdd" title="统计IP库添加" operateCode="None" leftUrl="Analytics/CounterGuide.aspx" rightUrl="Analytics/IPAdd.aspx" description="" />
+      <Link id="IPManage" title="统计IP库管理" operateCode="None" leftUrl="Analytics/CounterGuide.aspx" rightUrl="Analytics/IPManage.aspx" description="" />
+      <Link id="StatInit" title="统计数据初始化" operateCode="None" leftUrl="Analytics/CounterGuide.aspx" rightUrl="Analytics/StatInit.aspx" description="" />
+      <Link id="CodeReference" title="统计代码调用" operateCode="None" leftUrl="Analytics/CounterGuide.aspx" rightUrl="Analytics/CodeReference.aspx" description="" />
+      <Link id="StatConfig" title="访问统计参数配置" operateCode="None" leftUrl="Analytics/CounterGuide.aspx" rightUrl="Analytics/StatConfig.aspx" description="" />
+    </Link>
+    <Link id="OtherManage" title="其他功能" operateCode="OtherManage" leftUrl="" rightUrl="" description="">
+      <Link id="CacheManage" title="缓存管理" operateCode="CacheManage" leftUrl="Accessories/CacheManageGuide.aspx" rightUrl="Accessories/CacheManage.aspx" description="" />
+      <Link id="FileManage" title="上传文件管理" operateCode="UploadFiledManage" leftUrl="Accessories/FilesGuide.aspx" rightUrl="Accessories/FileManage.aspx" description="" />
+      <Link id="LogManager" title="网站日志管理" operateCode="LogManager" leftUrl="Accessories/LogManagerGuide.aspx" rightUrl="Accessories/LogManager.aspx" description="" />
+      <Link id="CompareFilesOnline" title="在线比较网站文件" operateCode="CompareFilesOnline" leftUrl="Accessories/CompareFilesOnlineGuide.aspx" rightUrl="Accessories/CompareFilesOnline.aspx" description="" />
+      <Link id="MessageManage" title="短消息管理" operateCode="MessageManage" leftUrl="Accessories/MessageGuide.aspx" rightUrl="Accessories/MessageManage.aspx" description="" />
+      <Link id="MailListSend" title="邮件列表" operateCode="MailListSend" leftUrl="Accessories/MailListGuide.aspx" rightUrl="Accessories/MailListSend.aspx" description="" />
+    </Link>
+  </Module>
+  <Module id="CommonModule" title="系统设置" operateCode="CommonModel" description="系统设置">
+    <Link id="SiteConfig" title="网站配置" operateCode="SiteConfig" leftUrl="" rightUrl="" description="">
+      <Link id="SiteInfo" title="网站信息配置" IsDefalutShow="true" operateCode="SiteConfig" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/SiteInfo.aspx" description="" />
+      <Link id="SiteOption" title="网站参数配置" operateCode="SiteConfig" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/SiteOption.aspx" description="" />
+      <Link id="UserConfig" title="用户参数配置" operateCode="SiteConfig" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/UserConfig.aspx" description="" />
+      <Link id="MailConfig" title="邮件参数配置" operateCode="SiteConfig" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/MailConfig.aspx" description="" />
+      <Link id="ThumbConfig" title="缩略图参数配置" operateCode="SiteConfig" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/ThumbConfig.aspx" description="" />
+      <Link id="IPLockConfig" title="IP访问限定配置" operateCode="SiteConfig" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/IPLockConfig.aspx" description="" />
+      <Link id="SmsConfig" title="手机短信配置" operateCode="SiteConfig" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/SmsConfig.aspx" description="" />
+      <Link id="RssConfig" title="RSS/WAP配置" operateCode="None" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/RssConfig.aspx" Description="" />
+      <Link id="FrontPageTemplateConfig" title="动态页模板配置" operateCode="SiteConfig" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/FrontPageTemplateConfig.aspx" description="" />
+    </Link>
+    <Link id="ContentModelManage" title="内容模型管理" operateCode="ContentModelManage" leftUrl="Contents/ManageGuide.aspx" rightUrl="Contents/ModelManage.aspx" description="">
+      <Link id="ContentModel" title="内容模型管理" IsDefalutShow="true" operateCode="ContentModel" leftUrl="Contents/ManageGuide.aspx" rightUrl="Contents/ModelManage.aspx" description="" />
+      <Link id="WorkFlowManage" title="流程管理" operateCode="WorkFlowManage" leftUrl="Contents/WorkFlowsGuide.aspx" rightUrl="Contents/WorkFlowsManage.aspx" description="" />
+      <Link id="StatusManage" title="稿件状态码管理" operateCode="StatusManage" leftUrl="Contents/StatusGuide.aspx" rightUrl="Contents/StatusManage.aspx" description="" />
+    </Link>
+    <Link id="NodesManage" title="节点管理" operateCode="NodesManage" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/CategoryManage.aspx" description="">
+      <Link id="Category" title="添加栏目节点" operateCode="NodesManage" IsDefalutShow="true" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/Category.aspx" description="" />
+      <Link id="Single" title="添加单页节点" operateCode="NodesManage" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/Single.aspx" description="" />
+      <Link id="OutLink" title="添加外部链接" operateCode="NodesManage" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/OutLink.aspx" description="" />
+      <Link id="CategoryOrder" title="栏目排序" operateCode="NodesManage" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/CategoryOrder.aspx" description="" />
+      <Link id="CategoryUnite" title="合并栏目" operateCode="NodesManage" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/CategoryUnite.aspx" description="" />
+      <Link id="CategoryMove" title="移动栏目" operateCode="NodesManage" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/CategoryMove.aspx" description="" />
+      <Link id="CategoryBatchSet" title="节点批量设置" operateCode="NodesManage" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/CategoryBatchSet.aspx" description="" />
+      <Link id="CategoryReset" title="复位所有栏目" operateCode="NodesManage" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/CategoryReset.aspx" description="" />
+      <Link id="CategoryPatch" title="修复栏目结构" operateCode="NodesManage" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/CategoryPatch.aspx" description="" />
+    </Link>
+    <Link id="SpecialManage" title="专题管理" operateCode="SpecialManage" leftUrl="Contents/SpecialGuide.aspx" rightUrl="Contents/SpecialManage.aspx" description="">
+      <Link id="SpecialCategoryManage" title="专题类别管理" operateCode="SpecialManage" leftUrl="Contents/SpecialGuide.aspx" rightUrl="Contents/SpecialCategoryManage.aspx" description="" />
+      <Link id="SpecialCategoryOrder" title="专题类别排序" operateCode="SpecialManage" leftUrl="Contents/SpecialGuide.aspx" rightUrl="Contents/SpecialCategoryOrder.aspx" description="" />
+      <Link id="SpecialCategory" title="添加专题类别" operateCode="SpecialManage" leftUrl="Contents/SpecialGuide.aspx" rightUrl="Contents/SpecialCategory.aspx" description="" />
+      <Link id="SpecialUnite" title="合并专题" operateCode="SpecialManage" leftUrl="Contents/SpecialGuide.aspx" rightUrl="Contents/SpecialUnite.aspx" description="" />
+      <Link id="SpecialBatchSet" title="批量设置" operateCode="SpecialManage" leftUrl="Contents/SpecialGuide.aspx" rightUrl="Contents/SpecialBatchSet.aspx" description="" />
+    </Link>
+    <Link id="TemplateLabelManage" title="模板和标签管理" operateCode="TemplateLabelManage" leftUrl="Template/TemplateManageGuide.aspx" rightUrl="Template/TemplateManage.aspx" description="">
+      <Link id="TemplateManage" title="模板管理" IsDefalutShow="true" operateCode="TemplateManage" leftUrl="Template/TemplateManageGuide.aspx" rightUrl="Template/TemplateManage.aspx" description="" />
+      <Link id="LabelManage" title="标签管理" IsDefalutShow="true" operateCode="LabelManage" leftUrl="Template/LabelGuide.aspx" rightUrl="Template/LabelManage.aspx" description="" />
+      <Link id="StyleManage" title="风格管理" operateCode="StyleManage" leftUrl="Template/StyleGuide.aspx" rightUrl="Template/StyleManage.aspx" description="" />
+      <Link id="IncludeFileManage" title="内嵌代码管理" operateCode="IncludeFileManage" leftUrl="Template/IncludeFileGuide.aspx" rightUrl="Template/IncludeFileManage.aspx" description="" />
+    </Link>
+    <Link id="CommonModuleOther" title="其他管理" operateCode="CommonModel" leftUrl="" rightUrl="" description="">
+      <Link id="Choiceset" title="数据字典管理" operateCode="ChoicesetManage" leftUrl="Configuration/ChoicesetGuide.aspx" rightUrl="Configuration/Choiceset.aspx" description="" />
+      <Link id="RegionManage" title="行政区划管理" operateCode="RegionManage" leftUrl="Accessories/RegionGuide.aspx" rightUrl="Accessories/RegionManage.aspx" description="" />
+      <Link id="BankAccountManage" title="银行账户管理" operateCode="BankAccountManage" leftUrl="Accessories/BankGuide.aspx" rightUrl="Accessories/BankManage.aspx" description="" />
+    </Link>
+  </Module>
+</Links>

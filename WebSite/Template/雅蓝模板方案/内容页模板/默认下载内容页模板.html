@@ -1,0 +1,396 @@
+﻿{PE.DataSource id="cone" datasource="软件_内容页" itemid="@RequestInt_id" xslt="true"/}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="{PE.Field id="cone" fieldname="SoftIntroEncode" /}" name="Description" />
+<meta content="{PE.Field id="cone" fieldname="KeyWord" /}" name="Keywords" />
+<title>{PE.Field id="cone" fieldname="Title" /}-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/soft.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/commentary.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/Common.js"></script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/jsPopup.js"></script>
+</head>
+<body onload="commentinit()">
+{PE.Label id="网站顶部" /}
+<div id="center_all">
+  <div id="main_bg">
+    <div id="main_right">
+      <div id="main_right_box">
+        <!-- 网站位置导航信息开始 -->
+        <div class="r_navigation">
+          <div class="r_n_pic"></div>
+          您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a>{PE.Label id="内容位置导航" itemid="@RequestInt_id" /} </div>
+        {PE.Label id="右侧广告" /}
+        <div class="c_spacing"> </div>
+        <!-- 右侧二列开始 -->
+        <div id="s_info_box">
+          <!-- 右侧相关软件开始 -->
+          <div id="s_info_right">
+            <div class="c_spacing"> </div>
+            <!-- 相关软件 -->
+            <div class="s_info_correlative">
+              <dl>
+                <dt>相关软件</dt>
+                <dd> {PE.Label id="相关内容" shownum="10" titlelen="20" showupdatetime="false" showpic="false" shownodename="false" target="_blank" node_target="_blank" span_classname="new" keyword="{PE.Label id="取得关键字" itemid="@RequestInt_id" tablename="PE_U_Soft" /}" tablename="PE_U_Soft" generalid="@RequestInt_id" /} </dd>
+              </dl>
+            </div>
+            <div class="c_spacing"> </div>
+            <!-- 作者相关软件 -->
+            <div class="s_info_correlative">
+              <dl>
+                <dt>作者相关软件</dt>
+                <dd> {PE.Label id="作者相关内容" shownum="10" showupdatetime="false" target="_blank" titlelen="40" author="{PE.Label id="取得作者名" itemid="@RequestInt_id" tablename="PE_U_Soft" /}" tablename="PE_U_Soft" generalid="@RequestInt_id" showpic="false" shownodename="false" span_classname="new" /} </dd>
+              </dl>
+            </div>
+          </div>
+          <!-- 右侧相关软件结束 -->
+          <!-- 左侧软件信息开始 -->
+          <div id="s_info">
+            <!-- 软件标题 -->
+            <div class="s_info_title"> {PE.Field id="cone" fieldname="Title" /} </div>
+            <div class="s_info_content">
+              <!-- 软件大小 -->
+              <div class="s_info_content_l">
+                <ul>
+                  <li>软件大小：<span class="s_font_weight"> {PE.Field id="cone" fieldname="SoftSize" /} {PE.Field id="cone" fieldname="SoftSizeUnit" /}</span> </li>
+                 <li>浏览次数：<span class="s_font_weight"> {PE.Field id="cone" fieldname="BrowseTimes" /} </span> </li>
+                  <li>软件版本：<span class="s_font_weight"> {PE.Field id="cone" fieldname="SoftVersion" /} </span> </li>
+                  <li>软件语言：<span class="s_font_weight"> {PE.Field id="cone" fieldname="SoftLanguage" /} </span> </li>
+                  <li>软件评级：<span class="s_font_green"> {PE.Field id="cone" fieldname="Stars" /} </span> </li>
+                  <li>开 发 商：<span class="s_font_blue"> {PE.Field id="cone" fieldname="Author" /} </span> </li>
+                  <li>软件来源：<span class="s_font_weight"> {PE.Field id="cone" fieldname="CopyFrom" /} </span> </li>
+				   <li>本日下载数：<span class="s_font_red"> {PE.Field id="cone" fieldname="DayDownLoadTimes" /} </span> </li>
+                  <li>本月下载数：<span class="s_font_weight"> {PE.Field id="cone" fieldname="MonthDownLoadTimes" /} </span> </li>
+                </ul>
+              </div>
+              <!-- 软件类别 -->
+              <div class="s_info_content_c">
+                <ul>
+                  <li>软件类别：<span class="s_font_weight"> {PE.Field id="cone" fieldname="SoftType" /} </span> </li>
+                  <li>软件授权：<span class="s_font_red"> {PE.Field id="cone" fieldname="CopyrightType" /} </span> </li>
+                  <li>解压密码：<span class="s_font_weight"> {PE.Field id="cone" fieldname="DecompressPassword" /} </span> </li>
+                  <li>运行平台：<span class="s_font_weight"> {PE.Field id="cone" fieldname="OperatingSystem" /} </span> </li>
+                  <li>更新时间：<span class="s_font_weight"> {PE.Field id="cone" fieldname="UpdateTime" /} </span> </li>
+                  <li>注册地址：<span class="s_font_weight"> <a href="{PE.Field id="cone" fieldname="RegUrl" /}" target="_blank">{PE.Field id="cone" fieldname="RegUrl" /}</a> </span> </li>
+                  <li>演示地址：<span class="s_font_weight"> <a href="{PE.Field id="cone" fieldname="DemoUrl" /}" target="_blank">{PE.Field id="cone" fieldname="DemoUrl" /}</a> </span> </li>
+                   <li>本周下载数：<span class="s_font_weight"> {PE.Field id="cone" fieldname="WeekDownLoadTimes" /} </span> </li>
+                </ul>
+              </div>
+              <!-- 收藏、推荐 -->
+              <div class="s_info_content_r">
+                <div class="s_font_PicUrl"><a href="{PE.Field id="cone" fieldname="DefaultPicUrl" /}" target="_blank"><img src="{PE.Field id="cone" fieldname="DefaultPicUrl" /}" alt="{PE.Field id="cone" fieldname="Title" /}" border="0" /></a>  </div>
+                <div class="s_font_collection"> <a href="{PE.SiteConfig.ApplicationPath/}User/Contents/Favorite.aspx?Action=add&Id={PE.Field id="cone" fieldname="GeneralID" /}">收藏</a>　　<a href="{PE.SiteConfig.applicationpath/}Common/ShowDownloadError.aspx?id={PE.Field id="cone" fieldname="GeneralID" /}&type=1">报错</a>　 </div>
+              </div>
+            </div>
+            <div class="clearbox"> </div>
+          </div>
+          <!-- 左侧软件信息结束 -->
+        </div>
+        <!-- 右侧二列结束 -->
+        <!-- 软件简介开始 -->
+        <div class="S_Intro">
+          <dl>
+            <dt>软件简介</dt>
+            <dd>
+              <div class="c_content_overflow">{PE.Field id="cone" fieldname="SoftIntro"  /} </div>
+            </dd>
+          </dl>
+        </div>
+        <!-- 软件简介结束 -->
+	
+        <!-- 下载地址开始 -->
+        <div class="S_DownloadUrl">
+          <dl>
+            <dt>下载地址</dt>
+            <dd>
+              <!-- 右侧广告 -->
+              <div class="S_DownloadUrl_ad">
+                </div>
+              <!-- 左侧下载地址 -->
+        
+			  {PE.DataSource id="downcone" datasource="显示下载地址" generalid="@RequestInt_id" xslt="true" /}
+              <div class="S_DownloadUrl_l">
+                <dl>
+                  <dt>本站下载</dt>
+                  <dd> {PE.Field id="downcone" fieldname="LocalServer" /} </dd>
+                </dl>
+				 <dl>
+                  <dt>镜像服务器下载</dt>
+                  <dd> {PE.Field id="downcone" fieldname="MirrorServer" /} </dd>
+                </dl>
+              </div>
+              <div class="clearbox"> </div>
+            </dd>
+          </dl>
+        </div>
+        <!-- 下载地址结束 -->
+        
+        <!-- 下载说明开始 -->
+        <div class="s_page">
+          <ul>
+            <li>为了达到最快的下载速度，推荐使用 <a href="http://www.flashget.com/" target="_blank">FlashGet</a> 和 <a href="http://www.xunlei.com/" target="_blank">迅雷</a> 下载本站软件。</li>
+            <li>如果这个软件总是不能下载，请点击 <a href="{PE.SiteConfig.applicationpath/}Common/ShowDownloadError.aspx?id={PE.Field id="cone" fieldname="GeneralID" /}&type=1"> 报告错误</a> ，欢迎广大作者给我们 <a href="{PE.SiteConfig.applicationpath/}User/Contents/AnonymousContent.aspx" target="_blank">提供软件</a>，在此感谢您的支持与合作！</li>
+            <li><span class="s_font_red">未经本站明确许可，任何网站不得非法盗链软件下载连接及抄袭本站原创内容资源!</span></li>
+          </ul>
+          <div class="clearbox"></div>
+        </div>
+        <!-- 下载说明结束 -->
+        <div class="c_main_box" style ="text-align:right;">
+            <span >【<a href="{PE.SiteConfig.applicationpath/}ShowComment.aspx?id={PE.Field id="cone" fieldname="GeneralID" /}">查看评论</a>】</span>
+        </div> 
+        <!-- 评论开始 -->
+   <span id="commentform"></span>
+        <!-- 评论结束 -->
+      </div>
+    </div>
+    {PE.Label id="软件节点左侧" /} </div>
+</div>
+{PE.Label id="网站底部" /}
+<!-- 评论变量区 -->
+<input id="username" type="hidden" value="游客" />
+<input id="position" type="hidden" value="1" />
+<input id="private" type="hidden" value="0" />
+<input id="score" type="hidden" value="3" />
+<input id="face" type="hidden" value="Images\Comment\01.gif" />
+<input id="gid" type="hidden" value="@RequestInt_id" />
+<input id="nid" type="hidden" value="{PE.Field id="cone" fieldname="NodeID" /}" />
+<input id="tid" type="hidden" value="1" />
+<!-- 评论变量区 -->
+<script language="javascript" type="text/javascript">
+function redirecturl(url, tarid)
+{
+    location=url.replace(/{\$pageid\/}/g,tarid);
+}
+
+//评论相关代码
+function commentinit()
+{
+    var x = new AjaxRequest('XML','commentform');
+    x.labelname = "内容评论PK标签";
+    x.para = ['generalid=@RequestInt_id'];
+    x.currentpage = 1;
+    x.post('updatelabel', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+        var xml = x.createXmlDom(s);
+        $("commentform").innerHTML = xml.getElementsByTagName("body")[0].firstChild.data;
+        changepage(1,'评论列表','JS_基本风格');
+        getcurrentuserinfo()
+    });
+}
+
+function SetPosition(st)
+{
+     for (i=-1;i<2;i++){
+          if(i == st){
+              $("Positon" + i).className="PK_mouseover";
+          }
+          else{
+              $("Positon" + i).className="PK_title";
+          }
+     }
+     $("position").value = st;
+}
+
+function addcomment()
+{
+    if(!$("guest").checked)
+    {
+        var strEmail = $("email").value;
+	    var regEmail = /^([a-zA-Z0-9]+[_|\-|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\-|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+    	var matchArray = strEmail.match(regEmail);
+    	if(matchArray == null)
+	    {
+            alert("请输入正确的Email格式！");
+            $("email").focus();
+            return false; 
+	    }
+	    
+        if($("iusername").value == '')
+        {
+            alert("请输入用户名");
+            $("iusername").focus();
+            return false;           
+        }
+        else
+        {
+            $("username").value = $("iusername").value;
+        }
+    }
+//    if($("commenttitle").value == '')
+//    {
+//        alert("请输入标题");
+//        $("commenttitle").focus();
+//        return false; 
+//    }
+    if($("content").value == '')
+    {
+        alert("请输入评论内容");
+        $("content").focus();
+        return false;                
+    }
+    var x = new AjaxRequest('XML','status');
+    x.para = ['username', 'commenttitle', 'content', 'email', 'face', 'gid', 'nid', 'tid', 'private', 'position', 'score'];
+    x.post('addcomment', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+        var xml = x.createXmlDom(s);
+        var  status = xml.getElementsByTagName("status")[0].firstChild.data;
+        document.getElementById("status").style.display = "none";
+        switch (status)
+        {
+            case "ok":
+                changepage(1,'评论列表','JS_基本风格');
+                break;
+            case "check":
+                alert("发表评论成功，请等待管理员审核。");  
+                break;
+            case "err":
+                alert("发表评论失败！");  
+                break;
+            case "nopurview":
+                alert("此栏目已禁止发表评论！");  
+                break;
+            case "noTourists":
+                alert("此栏目已禁止游客发表评论！");  
+                break;                    
+            default:
+                alert("发表评论失败！"); 
+                break;
+        }
+        $("content").value = '';
+    });
+}
+
+function addpkzone(commentid,position,content)
+{
+    var x = new AjaxRequest('XML','status');
+    x.para = ['commentid='+ commentid, 'position=' + position, 'content=' + content];
+    x.post('addpkzone', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+        var xml = x.createXmlDom(s);
+        var  status = xml.getElementsByTagName("status")[0].firstChild.data;
+        document.getElementById("status").style.display = "none";
+        switch (status)
+        {
+            case "ok":
+                changepage(1,'评论列表','JS_基本风格');
+                break;                  
+            default:
+                alert("辩论失败！"); 
+                break;
+        }
+    });
+}
+
+function changepage(pagenum,sourcename,spanname)
+{
+    var x = new AjaxRequest('XML','pe100_' + sourcename);
+    x.labelname = sourcename;
+    x.currentpage = pagenum; 
+	x.para = ['gid=@RequestInt_id', 'listnum=10', 'page=true', 'pagesize=10'];
+	x.post('updatelabel', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+        var xml = x.createXmlDom(s);
+        var plstr = "";
+        for (var i=0; i<xml.getElementsByTagName("body")[0].childNodes.length; i++)     
+        {
+            plstr += xml.getElementsByTagName("body")[0].childNodes[i].nodeValue;
+        }
+        $("pe100_" + sourcename).innerHTML = plstr;
+        updatepage(spanname, sourcename, xml);
+    });
+}
+
+function updatepage(spanname, sourcename, xml)
+{
+    if(parseInt(xml.getElementsByTagName("total")[0].firstChild.data) > 0)
+    {
+        var x = new AjaxRequest('XML','pe100_page_' + sourcename);
+        x.labelname = spanname;
+        x.sourcename = sourcename;
+        x.total = xml.getElementsByTagName("total")[0].firstChild.data;
+        x.currentpage = xml.getElementsByTagName("currentpage")[0].firstChild.data;
+        x.pagesize = xml.getElementsByTagName("pagesize")[0].firstChild.data;
+	    x.post('updatepage', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+            var xml = x.createXmlDom(s);
+            if($("pe100_page_" + sourcename) != null)
+            {
+                var plstr = "";
+                for (var i=0; i<xml.getElementsByTagName("body")[0].childNodes.length; i++)     
+                {
+                    plstr += xml.getElementsByTagName("body")[0].childNodes[i].nodeValue;
+                }
+                $("pe100_page_" + sourcename).innerHTML = plstr;
+            }
+	});
+    }
+}
+
+function setprivate()
+{
+    if($("open").checked)
+    {
+        $("private").value = 0;
+    }
+    else
+    {
+        $("private").value = 1;
+    }
+}
+ 
+function getcurrentuserinfo()
+{ 
+    try{
+        var x = new AjaxRequest('XML','');
+	x.post('logincheck','{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+            var xml = x.createXmlDom(s);
+            if(xml.getElementsByTagName("status")[0].firstChild.data == "ok")
+            {
+                if($("iusername")!=null)
+                {
+                    $("iusername").value = xml.getElementsByTagName("username")[0].firstChild.data;
+                    $("email").value = xml.getElementsByTagName("email")[0].firstChild.data;
+                }
+            }
+        });
+      }
+      catch(e){
+      };
+}
+
+function setguest()
+{
+    if($("guest").checked)
+    {
+        $("spanusername").style.display = 'none';
+        $("spanemail").style.display = 'none';
+    }
+    else
+    {
+        $("spanusername").style.display = '';
+        $("spanemail").style.display = '';
+    }
+}
+
+function ChangeStar(index, isfixed){
+     var colStars = document.getElementById("divStars").getElementsByTagName("input");
+     var i = 0;
+     var k = isfixed? parseInt(document.getElementById("score").value) : index;
+
+     for(i=0; i<colStars.length; i++){
+             colStars[i].src = (i<k? "{PE.SiteConfig.applicationpath/}Images/fstar.gif" : "{PE.SiteConfig.applicationpath/}Images/estar.gif");
+     }
+}
+
+function StarClick(index)
+{
+    document.getElementById("score").value=index;
+}
+
+function StarMouseOver(index){
+    ChangeStar(index,false);
+}
+
+function StarMouseOut(){
+    ChangeStar(0,true);
+}
+</script>
+</body>
+</html>

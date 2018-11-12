@@ -1,0 +1,5 @@
+F:\EasyOne\WebSite\bin\EasyOne.IDal.dll
+F:\EasyOne\WebSite\bin\EasyOne.IDal.pdb
+F:\EasyOne\IDal\obj\Debug\ResolveAssemblyReference.cache
+F:\EasyOne\IDal\obj\Debug\EasyOne.IDal.dll
+F:\EasyOne\IDal\obj\Debug\EasyOne.IDal.pdb

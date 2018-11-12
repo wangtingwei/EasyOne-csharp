@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>通用栏目列表二列式</title>
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/article.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/Common.js">
+    </script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/slider.js">
+    </script>
+<script language="javascript" type="text/javascript">
+    function redirecturl(url)
+    {
+        location=url;
+    }
+    </script>
+</head>
+<body>
+{PE.Label id="网站顶部" /}
+<div id="center_all">
+  <div id="main_bg">
+    <div id="main_right">
+      <div id="main_right_box"> <!-- 面包屑 -->
+		<div class="r_navigation">
+			<div class="r_n_pic"></div>
+			您现在的位置：{PE.SiteConfig.sitename/}{PE.Label id="栏目位置导航" nodeid="@Request_id" /}
+		</div>
+        {PE.Label id="右侧广告" /}
+		<div class="childclass_main">
+		  <!-- 栏目循环列表开始 -->
+			{PE.Label id="显示内容信息列表_普通式_{$$$ModelName$$$}" tableName="{$$$TableName$$$}" parentid="@Request_id" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="11" ishot="false" iselite="false" inputername="" datenum="0" ordertype="6" showtype="1" titlelen="16" contentlen="0" shownodename="false" showpropertytype="6" showincludepic="false" showauthor="false" showdatetype="mm-dd" showhits="false" showhotsign="false" shownewsign="false" showtips="true" showcommentlink="false" usepage="false" opentype="_blank" cols="0" hits="0" elitelevel="0" /}
+          <!-- 栏目循环列表结束 -->
+
+		<div class="clearbox"></div>
+		</div>
+        
+        <div class="c_spacing"> </div>
+       </div>
+    </div>
+    {PE.Label id="网站首页左侧" /} </div>
+</div>
+{PE.Label id="网站底部" /}
+</body>
+</html>
+

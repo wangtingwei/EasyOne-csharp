@@ -1,0 +1,5 @@
+F:\EasyOne\WebSite\bin\EasyOne.DalFactory.dll
+F:\EasyOne\WebSite\bin\EasyOne.DalFactory.pdb
+F:\EasyOne\DalFactory\obj\Debug\ResolveAssemblyReference.cache
+F:\EasyOne\DalFactory\obj\Debug\EasyOne.DalFactory.dll
+F:\EasyOne\DalFactory\obj\Debug\EasyOne.DalFactory.pdb

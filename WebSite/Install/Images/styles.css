@@ -1,0 +1,160 @@
+body
+{
+    background: url(bg.gif) top repeat-x;
+    margin: 0;
+    padding: 0;
+    font: normal normal normal 12px/150% Arial, Verdana, Helvetica, sans-serif, "宋体";
+}
+form
+{
+    margin: 0;
+    padding: 0;
+}
+dl
+{
+    padding: 0;
+    margin: 0;
+}
+input
+{
+   height:18px; line-height:18px; border:1px solid #ccc;
+}
+textarea
+{
+    height: 100%;
+    font: normal normal normal 13px/20px Arial, Verdana, Helvetica, sans-serif, "宋体";
+    color: #000;
+    border: 1px solid #c0c0c0;
+    padding: 1px;
+    background: #fff;
+}
+.top, .bottom
+{
+    width: 960px;
+}
+.top
+{
+    background: url(top.gif) 0 0 no-repeat;
+    height: 88px;
+    overflow: hidden;
+}
+.top dt.linking
+{
+    text-align: right;
+    padding: 20px 10px 0 0;
+    letter-spacing: 1px;
+    color: #0e6bc9;
+    line-height: 20px;
+}
+.top dt.search
+{
+    margin: 10px;
+    text-align: right;
+}
+.top dt.linking a
+{
+    color: #0e6bc9;
+    text-decoration: none;
+}
+.con
+{
+    background: url(Con_bg.gif) 0 0 no-repeat;
+    width: 100%;
+}
+.title, .check
+{
+    background: url(Gap_line.gif) left bottom no-repeat;
+}
+.title, .message, .check
+{
+    color: #003565;
+}
+.title
+{
+    padding: 20px 0px 10px 0px;
+    font: normal normal bold 22px/40px Arial, Verdana, Helvetica, sans-serif, "宋体";
+}
+.message
+{
+    padding: 0px 0px 0px 0px;
+    font: normal normal normal 13px/18px Arial, Verdana, Helvetica, sans-serif, "宋体";
+    height: auto !important;
+    min-height: 180px;
+}
+.check
+{
+    padding: 20px 0px 10px 0px;
+    font: normal normal bold 14px/20px Arial, Verdana, Helvetica, sans-serif, "宋体";
+}
+.check img{ float:left;  line-height:20px;} 
+.con dd
+{
+    margin: 5px 0px 5px 0px;
+    line-height: 20px;
+}
+.left140
+{
+    padding: 0px 0px 0px 140px;
+}
+.left140_cen
+{
+    padding: 20px 0px 0px 200px;
+}
+.clearbox
+{
+    border-top: 1px solid transparent !important;
+    margin-top: -1px !important;
+    border-top: 0px;
+    margin-top: 0px;
+    height: 0px;
+    clear: both;
+    background: none;
+    font-size: 0px;
+    visibility: hidden;
+}
+.button_link, .button_over
+{
+    background: url(buttom.gif) 0 0 no-repeat;
+    width: 92px;
+    height: 24px;
+    text-align: center;
+    border: none;
+}
+.button_over
+{
+    background: url(buttom_on.gif) 0 0 no-repeat;
+}
+.table_date, .over
+{
+    width: 80%;
+    border: 0;
+    background: #666;
+    font: normal normal normal 12px/150% Arial, Verdana, Helvetica, sans-serif, "宋体";
+}
+.table_date td
+{
+    text-align: left;
+    padding: 2px 5px;
+    background: #fff;
+}
+.over
+{
+    padding: 2px 5px;
+    background: #fff;
+    border: 1px solid #666;
+}
+.center, .over
+{
+    text-align: center;
+}
+.bottom
+{
+    position: static;
+    left: 0px;
+    bottom: 10px;
+    height: 60px;
+    text-align: center;
+    background: none;
+    font: normal normal normal 12px/20px Arial, Verdana, Helvetica, sans-serif, "宋体";
+}
+

@@ -1,0 +1,125 @@
+﻿
+.button_link, .button_over {
+	background:url(buttom.gif) 0 0 no-repeat;
+	width:92px;
+	height:24px;
+	text-align:center;
+	border:none;
+}
+.button_over {
+	background:url(buttom_on.gif) 0 0 no-repeat;
+}
+Body, A
+{
+   font-family: Verdana, Arial, Helvetica, Sans Serif;
+   font-size: 8pt;
+   font-weight: normal;
+   color: #333;
+}
+
+Body
+{
+    background-color: white;
+    background-image: url(upgrade_bg.gif);
+    background-repeat: repeat-x;
+    margin:25px 25px 0px 25px;
+	margin:0;
+	padding:0 10px 0 30px;
+}
+
+H1
+{
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #75808A;
+	text-decoration: underline;
+}
+
+H2  {
+	font-size: 1.4em;
+    font-weight: bold;
+    color: #75808A;
+}
+
+H3  {
+    font-size:  1.2em;
+    font-weight:  bold;
+    color: #75808A;
+}
+
+H4  {
+    font-size:  1.2em;
+    font-weight: bold;
+    color: #75808A;
+}
+
+H5  {
+    font-size:  1.1em;
+    font-weight:    bold;
+    color: #75808A;
+}
+
+H6  {
+    font-size:  1.0em;
+    font-weight:    bold;
+    color: #75808A;
+}
+
+A:link  {
+    font-size:  1.0em;
+    font-weight:    bold;
+    text-decoration:    none;
+    color:  #75808A;
+}
+
+A:visited   {
+    font-size:  1.0em;
+    font-weight:    bold;
+    text-decoration:    none;
+    color:  #75808A;
+}
+
+A:active    {
+    font-size:  1.0em;
+    font-weight:    bold;
+    text-decoration:    none;
+    color:  #75808A;
+}
+
+A:hover {
+    font-size:  1.0em;
+    font-weight:    bold;
+    text-decoration: underline;
+    color:  #cc0000;
+}
+
+.top {
+	background:url(upgrade_Ch_bg.jpg) 0 0 no-repeat;
+	height:88px;
+	overflow:hidden;
+}
+.top dl {
+	background:url(upgrade_logo.gif) 0 14px no-repeat;
+	height:85px;
+}
+.top dt.linking {
+	text-align: right;
+	padding:16px 10px 0 0;
+	letter-spacing:1px;
+	color:#0e6bc9;
+	line-height:20px;
+	
+}
+.top dt.search {
+	margin:10px;
+	text-align:right;
+}
+.top dt.linking a {
+	color:#0e6bc9;
+	text-decoration:none;
+	font:normal 12px/22px Tahoma;
+}
+.copy{
+	background:url(upgrade_line.gif) 0 0 no-repeat;
+	line-height:30px;
+}

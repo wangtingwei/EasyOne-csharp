@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="{PE.Label id="取得栏目META关键词" nodeid="4" /}" name="Keywords" />
+<meta content="{PE.Label id="取得栏目META网页描述" nodeid="4" /}" name="Description"/>
+<title>{PE.Label id="取得节点名称" nid="4" /}首页-{PE.SiteConfig.SiteTitle/}</title>
+<link href="{PE.SiteConfig.applicationpath/}Skin/Default/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.applicationpath/}Skin/Default/product.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.applicationpath/}js/common.js"></script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.applicationpath/}js/slider.js"></script>
+<script language="javascript" type="text/javascript">
+    function redirecturl(url)
+    {
+        location=url;
+    }
+    </script>
+</head>
+<body>
+{PE.Label id="网站顶部" /}
+<div id="center_all">
+  <div id="main_bg">
+    <div id="main_right">
+      <div id="main_right_box">
+        <!-- 网站位置导航信息开始 -->
+        <div class="r_navigation">
+          <div class="r_n_pic"></div>
+          您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a>{PE.Label id="栏目位置导航" nodeid="4" /} </div>
+        <!-- 网站位置导航信息结束 -->
+        {PE.Label id="右侧广告" /}
+        <div class="c_spacing"> </div>
+        <!-- 右侧二列式1开始 -->
+        <div id="r_main">
+          <div class="r_content">
+            <dl>
+              <dt>商品信息</dt>
+              <dd>
+                <ul>
+                  {PE.Label id="商品信息列表_普通式" parentid="4" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="12" ishot="false" iselite="false" inputername="" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="4" /}" showtype="1" titlelen="26" contentlen="0" shownodename="false" showpropertytype="1" showincludepic="false" showauthor="false" showdatetype="" showhits="false" showhotsign="false" shownewsign="false" showtips="true" showcommentlink="false" usepage="false" opentype="{PE.Label id="取得栏目下的内容打开方式" nodeid="4" /}" cols="0" hits="0" elitelevel="0" /}
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="c_spacing"> </div>
+          <div class="r_content">
+            <dl>
+              <dt>商品信息</dt>
+              <dd>
+                <ul>
+                  {PE.Label id="商品信息列表_普通式" parentid="4" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="12" ishot="false" iselite="false" inputername="" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="4" /}" showtype="1" titlelen="26" contentlen="0" shownodename="false" showpropertytype="1" showincludepic="false" showauthor="false" showdatetype="" showhits="false" showhotsign="false" shownewsign="false" showtips="true" showcommentlink="false" usepage="false" opentype="{PE.Label id="取得栏目下的内容打开方式" nodeid="4" /}" cols="0" hits="0" elitelevel="0" /}
+                </ul>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div id="main_box">
+          <!-- 商品 -->
+          <div class="c_main">
+            <dl>
+              <dt class="c_title">
+                <div class="more"> <a href="{PE.Label id="显示栏目路径" nodeid="4" /}">[更多]</a></div>
+                <a href="#">最新商品</a></dt>
+              <dd class="c_content">
+                <!-- 显示6张推荐图片商品 -->
+                <div class="p_shop_1"> {PE.Label id="最新商品普通图片列表" shownum="3" parentid="4" /}
+                  <div class="clearbox"></div>
+                </div>
+              </dd>
+            </dl>
+          </div>
+          <div class="c_spacing"> </div>
+          <div class="c_main">
+            <dl>
+              <dt class="c_title">
+                <div class="more"> </div>
+                <a href="#">推荐商品</a></dt>
+              <dd class="c_content">
+                <!-- 显示6张推荐图片商品 -->
+                <div class="p_shop_1">
+                  <!--{PE.Label id="普通图片列表标签" shownum="6" border="0" titlelen="10" parentid="4" tablename="PE_U_Product" /}-->
+                  {PE.Label id="推荐商品普通图片列表" shownum="3" parentid="4" /}
+                  <div class="clearbox"></div>
+                </div>
+              </dd>
+            </dl>
+          </div>
+          <div class="c_spacing"> </div>
+          <div class="c_main">
+            <dl>
+              <dt class="c_title">
+                <div class="more"> </div>
+                <a href="#">打折特卖</a></dt>
+              <dd class="c_content">
+                <div class="p_shop_2">
+                  <div class="p_thumb_l"> {PE.Label id="特价商品普通图片列表" shownum="1" border="0" titlelen="10" parentid="4" /} </div>
+                  <div class="p_list_r">
+                    <ul>
+                      <div style=" width:96%"> {PE.Label id="显示商品信息列表_表格式" producttype="3" /}
+                        <!-- {PE.Label id="商品信息列表_表格式" parentid="4" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="8" ishot="false" iselite="false" inputername="" datenum="0" ordertype="3" showtype="2" titlelen="40" contentlen="0" shownodename="true" showpropertytype="1" showincludepic="true" showauthor="true" showdatetype="mm-dd" showhits="false" showhotsign="false" shownewsign="false" showtips="true" showcommentlink="false" usepage="false" opentype="_blank" cols="0" hits="0" elitelevel="0" /}-->
+                      </div>
+                    </ul>
+                  </div>
+                  <div class="clearbox"> </div>
+                </div>
+              </dd>
+            </dl>
+          </div>
+          <div class="clearbox"> </div>
+        </div>
+        <!-- 右侧二列式1结束 -->
+        <script type="text/javascript" src="{PE.SiteConfig.ApplicationPath /}{PE.SiteConfig.includefilepath /}/ProductSearch.js"></script>
+        <div class="c_spacing"> </div>
+        <!-- 推荐图片商品开始 -->
+        <div class="c_main_one">
+          <dl>
+            <dt class="c_title">
+              <div class="more"> </div>
+              <a href="#">畅销商品</a></dt>
+            <dd class="c_content">
+              <!-- 显示4张畅销图片商品 -->
+              <div class="p_photo_list">
+                <!--{PE.Label id="普通图片列表标签" shownum="4" border="0" titlelen="10" parentid="4" tablename="PE_U_Product" /}-->
+                {PE.Label id="热卖商品普通图片列表" shownum="4" parentid="4" /}
+                <div class="clearbox"></div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+        <!-- 推荐图片文章结束 -->
+        <div class="childclass_main">
+          <!-- 子栏目二列式循环开始 -->
+          {PE.Label id="商品二列式栏目左右循环" parentid="4" shownum="4" titlelen="20" span="" class="" /}
+          <!-- 子栏目二列式循环结束 -->
+        </div>
+        <div class="clearbox"></div>
+        <div class="c_spacing"> </div>
+        <!-- 配送范围开始 -->
+        <div class="p_scope">
+          <dl>
+            <dt>配送范围</dt>
+            <dd>
+              <ul>
+                <li><a href="#">北京 上海 广州</a></li>
+                <li><a href="#">华北区 华东区 华南区</a></li>
+                <li><a href="#">其他地区邮寄服务</a></li>
+                <li><a href="#">海外UPS服务</a></li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>售后服务</dt>
+            <dd>
+              <ul>
+                <li><a href="#">退换货原则</a></li>
+                <li><a href="#">退换货处理</a></li>
+                <li><a href="#">具体说明</a></li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>我的订单</dt>
+            <dd>
+              <ul>
+                <li><a href="#">如何查询订单情况</a></li>
+                <li><a href="#">怎样下订单</a></li>
+                <li><a href="#">订单有效期限</a></li>
+                <li><a href="#">配送费收取标准</a></li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>如何交款</dt>
+            <dd>
+              <ul>
+                <li><a href="#">付款方式</a></li>
+                <li><a href="#">汇款单招领</a></li>
+                <li><a href="#">如何使用虚拟账户</a></li>
+                <li><a href="#">预售商品订购方法</a></li>
+              </ul>
+            </dd>
+          </dl>
+          <dl>
+            <dt>需要帮助</dt>
+            <dd>
+              <ul>
+                <li><a href="#">忘记了密码</a></li>
+                <li><a href="#">常见问题</a></li>
+                <li><a href="#">联系客服</a></li>
+              </ul>
+            </dd>
+          </dl>
+          <div class="clearbox"> </div>
+        </div>
+        <!-- 配送范围结束 -->
+        <div class="clearbox"> </div>
+      </div>
+    </div>
+    {PE.Label id="商店节点左侧" /} </div>
+</div>
+{PE.Label id="网站底部" /}
+</body>
+</html>

@@ -1,0 +1,5 @@
+F:\EasyOne\WebSite\bin\EasyOne.StaticHtml.dll
+F:\EasyOne\WebSite\bin\EasyOne.StaticHtml.pdb
+F:\EasyOne\StaticHtml\obj\Debug\ResolveAssemblyReference.cache
+F:\EasyOne\StaticHtml\obj\Debug\EasyOne.StaticHtml.dll
+F:\EasyOne\StaticHtml\obj\Debug\EasyOne.StaticHtml.pdb

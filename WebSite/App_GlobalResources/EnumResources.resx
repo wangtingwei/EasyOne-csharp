@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ADZoneType_Banner" xml:space="preserve">
+    <value>矩形横幅</value>
+  </data>
+  <data name="ADZoneType_Code" xml:space="preserve">
+    <value>文字代码</value>
+  </data>
+  <data name="ADZoneType_Couplet" xml:space="preserve">
+    <value>对联广告</value>
+  </data>
+  <data name="ADZoneType_Fixed" xml:space="preserve">
+    <value>固定位置</value>
+  </data>
+  <data name="ADZoneType_Float" xml:space="preserve">
+    <value>漂浮移动</value>
+  </data>
+  <data name="ADZoneType_Move" xml:space="preserve">
+    <value>随屏移动</value>
+  </data>
+  <data name="ADZoneType_Pop" xml:space="preserve">
+    <value>弹出窗口</value>
+  </data>
+  <data name="ContacterType_EnterpriceMainContacter" xml:space="preserve">
+    <value>企业主要联系人</value>
+  </data>
+  <data name="ContacterType_EnterpriceSecondContacter" xml:space="preserve">
+    <value>企业次要联系人</value>
+  </data>
+  <data name="ContacterType_Persional" xml:space="preserve">
+    <value>个人会员</value>
+  </data>
+  <data name="DeliverStatus_Consignment" xml:space="preserve">
+    <value>&lt;font color="blue"&gt;已发货&lt;/font&gt;</value>
+  </data>
+  <data name="DeliverStatus_Preparative" xml:space="preserve">
+    <value>&lt;font color="red"&gt;配送中&lt;/font&gt;</value>
+  </data>
+  <data name="DeliverStatus_SignIn" xml:space="preserve">
+    <value>&lt;font color="green"&gt;已签收&lt;/font&gt;</value>
+  </data>
+  <data name="GroupType_Agent" xml:space="preserve">
+    <value>代理商组</value>
+  </data>
+  <data name="GroupType_Register" xml:space="preserve">
+    <value>会员组</value>
+  </data>
+  <data name="LogCategory_ExceedAuthority" xml:space="preserve">
+    <value>越权</value>
+  </data>
+  <data name="LogCategory_Exception" xml:space="preserve">
+    <value>异常</value>
+  </data>
+  <data name="LogCategory_LoginFailure" xml:space="preserve">
+    <value>登录失败</value>
+  </data>
+  <data name="LogCategory_LoginOk" xml:space="preserve">
+    <value>登录成功</value>
+  </data>
+  <data name="LogCategory_LogOut" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="LogCategory_None" xml:space="preserve">
+    <value>没分类</value>
+  </data>
+  <data name="LogPriority_High" xml:space="preserve">
+    <value>高</value>
+  </data>
+  <data name="LogPriority_Highest" xml:space="preserve">
+    <value>最高</value>
+  </data>
+  <data name="LogPriority_Low" xml:space="preserve">
+    <value>低</value>
+  </data>
+  <data name="LogPriority_Lowest" xml:space="preserve">
+    <value>最低</value>
+  </data>
+  <data name="LogPriority_Normal" xml:space="preserve">
+    <value>常规</value>
+  </data>
+  <data name="MessageTitle_Deliver" xml:space="preserve">
+    <value>发货通知</value>
+  </data>
+  <data name="MessageTitle_OrderConfirm" xml:space="preserve">
+    <value>订单确认通知</value>
+  </data>
+  <data name="MessageTitle_OrderInvoiceAdd" xml:space="preserve">
+    <value>开具发票通知</value>
+  </data>
+  <data name="MessageTitle_OrderRefund" xml:space="preserve">
+    <value>退款通知</value>
+  </data>
+  <data name="MessageTitle_OrderSendCard" xml:space="preserve">
+    <value>充值卡交付通知</value>
+  </data>
+  <data name="MessageTitle_ReceiptMoney" xml:space="preserve">
+    <value>银行支付通知</value>
+  </data>
+  <data name="OrderStatus_Confirmed" xml:space="preserve">
+    <value>&lt;font color="blue"&gt;已经确认&lt;/font&gt;</value>
+  </data>
+  <data name="OrderStatus_End" xml:space="preserve">
+    <value>&lt;font color="gray"&gt;已结清&lt;/font&gt;</value>
+  </data>
+  <data name="OrderStatus_Pause" xml:space="preserve">
+    <value>暂停处理</value>
+  </data>
+  <data name="OrderStatus_Rubbish" xml:space="preserve">
+    <value>已经作废</value>
+  </data>
+  <data name="OrderStatus_WaitForConfirm" xml:space="preserve">
+    <value>&lt;font color="red"&gt;等待确认&lt;/font&gt;</value>
+  </data>
+  <data name="OutOfStockProject_CancelOrder" xml:space="preserve">
+    <value>缺货时，取消此订单</value>
+  </data>
+  <data name="OutOfStockProject_SendPartGoods" xml:space="preserve">
+    <value>缺货时，将有货的商品发出，取消无货商品的订购</value>
+  </data>
+  <data name="PayStatus_Payoff" xml:space="preserve">
+    <value>&lt;font color="Blue"&gt;已经付清&lt;/font&gt;</value>
+  </data>
+  <data name="PayStatus_ReceivedEarnest" xml:space="preserve">
+    <value>&lt;font color="Green"&gt;已收定金&lt;/font&gt;</value>
+  </data>
+  <data name="PayStatus_WaitForPay" xml:space="preserve">
+    <value>&lt;font color="red"&gt;等待汇款&lt;/font&gt;</value>
+  </data>
+  <data name="ProductCharacter_Card" xml:space="preserve">
+    <value>点卡</value>
+  </data>
+  <data name="ProductCharacter_Download" xml:space="preserve">
+    <value>下载</value>
+  </data>
+  <data name="ProductCharacter_Practicality" xml:space="preserve">
+    <value>实物</value>
+  </data>
+  <data name="ProductCharacter_Service" xml:space="preserve">
+    <value>服务</value>
+  </data>
+  <data name="ProductKind_Component" xml:space="preserve">
+    <value>组合型商品</value>
+  </data>
+  <data name="ProductKind_Multiattribute" xml:space="preserve">
+    <value>多属性商品</value>
+  </data>
+  <data name="ProductKind_Single" xml:space="preserve">
+    <value>单一型商品</value>
+  </data>
+  <data name="ProductType_Drop" xml:space="preserve">
+    <value>降价商品</value>
+  </data>
+  <data name="ProductType_Normal" xml:space="preserve">
+    <value>正常销售商品</value>
+  </data>
+  <data name="ProductType_Promotion" xml:space="preserve">
+    <value>促销礼品</value>
+  </data>
+  <data name="ProductType_Rise" xml:space="preserve">
+    <value>涨价商品</value>
+  </data>
+  <data name="ProductType_Special" xml:space="preserve">
+    <value>特价商品</value>
+  </data>
+  <data name="ServiceTermUnit_Day" xml:space="preserve">
+    <value>日</value>
+  </data>
+  <data name="ServiceTermUnit_Month" xml:space="preserve">
+    <value>月</value>
+  </data>
+  <data name="ServiceTermUnit_Year" xml:space="preserve">
+    <value>年</value>
+  </data>
+  <data name="SigninStatus_NotSignin" xml:space="preserve">
+    <value>签收中</value>
+  </data>
+  <data name="SigninStatus_Signined" xml:space="preserve">
+    <value>已签收</value>
+  </data>
+  <data name="SigninType_DisableSignin" xml:space="preserve">
+    <value>未启用签收文档</value>
+  </data>
+  <data name="SigninType_EnableSigninPrivate" xml:space="preserve">
+    <value>专属文档</value>
+  </data>
+  <data name="SigninType_EnableSigninPublic" xml:space="preserve">
+    <value>公众文档</value>
+  </data>
+  <data name="TaxRateType_BarringTaxNeedInvoiceAddTax" xml:space="preserve">
+    <value>不含税，开发票时需要加收税费</value>
+  </data>
+  <data name="TaxRateType_BarringTaxNeedInvoiceNoTax" xml:space="preserve">
+    <value>不含税，开发票时不需要加收税费</value>
+  </data>
+  <data name="TaxRateType_IncludeTaxNoInvoiceFavourable" xml:space="preserve">
+    <value>含税，不开发票时有税率优惠</value>
+  </data>
+  <data name="TaxRateType_IncludeTaxNoInvoiceNoFavourable" xml:space="preserve">
+    <value>含税，不开发票时没有税率优惠</value>
+  </data>
+  <data name="UserLoginState_Approve" xml:space="preserve">
+    <value>正常</value>
+  </data>
+  <data name="UserLoginState_BadValidateByEmail" xml:space="preserve">
+    <value>未通过邮件验证</value>
+  </data>
+  <data name="UserLoginState_Locked" xml:space="preserve">
+    <value>锁定</value>
+  </data>
+  <data name="UserLoginState_Unapprove" xml:space="preserve">
+    <value>未通过管理员认证</value>
+  </data>
+  <data name="UserLoginState_UnvalidateByMobile" xml:space="preserve">
+    <value>未通过手机验证</value>
+  </data>
+  <data name="UserMarriageType_Married" xml:space="preserve">
+    <value>已婚</value>
+  </data>
+  <data name="UserMarriageType_Secrecy" xml:space="preserve">
+    <value>保密</value>
+  </data>
+  <data name="UserMarriageType_Separate" xml:space="preserve">
+    <value>离异</value>
+  </data>
+  <data name="UserMarriageType_Single" xml:space="preserve">
+    <value>未婚</value>
+  </data>
+  <data name="UserSexType_Female" xml:space="preserve">
+    <value>女性</value>
+  </data>
+  <data name="UserSexType_Male" xml:space="preserve">
+    <value>男性</value>
+  </data>
+  <data name="UserSexType_Secrecy" xml:space="preserve">
+    <value>保密</value>
+  </data>
+  <data name="UserStatus_Locked" xml:space="preserve">
+    <value>&lt;span style="color:Red"&gt;锁定&lt;/span&gt;</value>
+  </data>
+  <data name="UserStatus_None" xml:space="preserve">
+    <value>&lt;span style="color:Green"&gt;正常&lt;/span&gt;</value>
+  </data>
+  <data name="UserStatus_WaitValidateByAdmin" xml:space="preserve">
+    <value>未通过管理员认证</value>
+  </data>
+  <data name="UserStatus_WaitValidateByEmail" xml:space="preserve">
+    <value>未通过邮件验证</value>
+  </data>
+  <data name="UserStatus_WaitValidateByMobile" xml:space="preserve">
+    <value>未通过手机验证</value>
+  </data>
+  <data name="UserType_administrators" xml:space="preserve">
+    <value>企业会员（管理员）</value>
+  </data>
+  <data name="UserType_AuditingLeaguer" xml:space="preserve">
+    <value>企业会员（待审核成员）</value>
+  </data>
+  <data name="UserType_CommonLeaguer" xml:space="preserve">
+    <value>企业会员（普通成员）</value>
+  </data>
+  <data name="UserType_Creator" xml:space="preserve">
+    <value>企业会员（创建者）</value>
+  </data>
+  <data name="UserType_Persional" xml:space="preserve">
+    <value>个人会员</value>
+  </data>
+</root>

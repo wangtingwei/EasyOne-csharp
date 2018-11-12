@@ -1,0 +1,366 @@
+﻿/* ==软件节点定义== */
+
+/* 书签面板软件 */
+.soft_new
+{
+}
+.soft_new ul
+{
+	padding: 0px 0px 0px 10px;
+	margin: 0px;
+}
+.soft_new li
+{
+	padding: 0px;
+	margin: 0px;
+	width: 49.5%;
+	float: left;
+	line-height: 22px;
+	border-bottom: 1px dotted #ccc;
+}
+
+/* ==软件大类栏目页列表形式(软件s_childclass_main_box比文章大类栏目列表二列式childclass_main_box少了border边框，所以宽度少2个像素)==  */
+.s_childclass_main_box /* 二列式循环 */
+{
+	float: left;
+	width: 381px;
+	margin: 5px 0px 0px 5px;
+}
+* html .s_childclass_main_box /* 二列式循环 */
+{
+	width: 383px;
+}
+
+.s_page a
+{
+	
+	color: blue;
+	text-decoration: underline;
+}
+.s_page li
+{
+    list-style:none;
+}
+.s_classlist_title
+{
+	font: normal normal bold 13px/150% Arial,"宋体",Helvetica,sans-serif;
+	border: 1px solid #9bbde6;
+}
+.s_classlist_text
+{
+	border-bottom: 1px solid #9bbde6;
+	border-left: 1px solid #9bbde6;
+	border-right: 1px solid #9bbde6;
+}
+.s_classlist_title_r, .s_classlist_title_c, .s_classlist_text_r, .s_classlist_text_c
+{
+	float: right;
+	text-align: center;
+	border-left: 1px solid #9bbde6;
+}
+.s_classlist_title_r, .s_classlist_title_c
+{
+	font-weight: bold;
+}
+.s_classlist_title_l
+{
+	font-weight: bold;
+}
+
+.s_classlist_title_l, .s_classlist_text_l
+{
+	padding-left: 5px;
+}
+.s_classlist_title_r, .s_classlist_text_r, .s_classlist_title_c, .s_classlist_text_c
+{
+	height: 24px;
+	width: 70px;
+	overflow: hidden;
+}
+.s_classlist_title_l, .s_classlist_title_c, .s_classlist_title_r, .s_classlist_text_l, .s_classlist_text_r, .s_classlist_text_c
+{
+	line-height: 24px;
+}
+
+/* 推荐软件图文 */
+.s_photo_list, .s_photo_list ul
+{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+.s_photo_list li
+{
+	padding: 0px;
+	margin: 5px 0px;
+	list-style: none;
+	width: 188px;
+	float: left;
+}
+
+/* ==软件小类栏目页列表形式== */
+/* 父栏目模板中无内容时使用 */
+.childclasslist_box
+{
+	margin: 5px 0px 0px 5px;
+}
+*html .childclasslist_box
+{
+	margin: 5px 0px 0px 10px;
+} 
+/* 子栏目模板中使用 */
+.c_main .childclasslist_box
+{
+	margin: 0px;
+}
+
+/* 子栏目标题及内容样式 */
+.childclasslist_title
+{
+	border: 1px dotted #E1E8EF;
+	background: #f4f8fd;
+	padding: 5px;
+}
+.childclasslist_title a
+{
+	font: normal normal bold 14px/150% Arial,"宋体",Helvetica,sans-serif;
+	color: #03c;
+	background: url(images/c_title.gif) no-repeat 10px 2px;
+	padding-left: 30px;
+}
+.childclasslist_time
+{
+	float: right;
+}
+.childclasslist_text
+{
+	padding: 5px;
+}
+.class_content
+{
+	height: auto !important;
+	height: 50px;
+	min-height: 50px;
+}
+.childclasslist_type
+{
+	border-top: 1px dotted #ccc;
+	padding: 5px;
+	font-weight: bold;
+}
+
+/* ==软件内容页== */
+/* 软件详细内容 */
+#s_info
+{
+	margin: 5px 200px 0px 0px;
+}
+#s_info_box
+{
+}
+#s_info_right, .s_info_correlative dl, .s_info_correlative dt
+{
+	margin: 0px;
+	padding: 0px;
+}
+/* 右侧相关软件 */
+#s_info_right
+{
+	float: right;
+	width: 195px;
+}
+.s_info_correlative
+{
+	border: 1px solid #9bbde6;
+}
+
+.s_info_correlative dt
+{
+	font: normal normal bold 13px/150% Arial,"宋体",Helvetica,sans-serif;
+	color: #0a4180;
+	text-align: center;
+	line-height: 24px;
+	background: url(images/tabtitle.gif) #fff repeat-x top;
+	border-bottom: 1px solid #9bbde6;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	border-left: 2px solid #fff;
+}
+.s_info_correlative dd
+{
+	border: 5px solid #fff;
+	margin: 0px;
+	padding: 0px 5px;
+	height: auto !important;
+	height: 90px;
+	min-height: 90px;
+}
+/* 软件标题 */
+.s_info_title
+{
+	font: normal normal bold 24px/150% Arial,"宋体",Helvetica,sans-serif;
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 5px solid #e1e8ef;
+}
+/* 软件详细信息 */
+.s_info_content
+{
+	padding: 10px;
+}
+.s_info_content_r
+{
+	float: right;
+	text-align: center;
+}
+.s_info_content_c
+{
+	float: left;
+}
+.s_info_content_l
+{
+	float: left;
+	width: 150px;
+}
+.s_info_content_r, .s_info_content_c, .s_info_content_l, .s_info_content_r ul, .s_info_content_c ul, .s_info_content_l ul, .s_info_content_r li, .s_info_content_c li, .s_info_content_l li
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.s_info_content_r li, .s_info_content_c li, .s_info_content_l li
+{
+	font-weight: bold;
+	display: block;
+}
+.s_info_content_c li, .s_info_content_l li
+{
+	border-bottom: 1px dotted #ccc;
+	line-height: 26px;
+}
+.s_info_content_r li
+{
+	text-align: center;
+}
+/* 详细信息字体颜色 */
+.s_font_weight, .s_font_red, .s_font_blue, .s_font_green, .s_font_collection
+{
+	font-weight: normal;
+}
+.s_font_red
+{
+	color: red;
+}
+.s_font_blue
+{
+	color: blue;
+}
+.s_font_green
+{
+	color: green;
+}
+/* 图片与收藏 */
+.s_font_PicUrl
+{
+	border: 0px;
+	width: 150px;
+	height: 160px;
+	overflow: hidden;
+}
+.s_font_PicUrl img
+{
+	width: 150px;
+}
+.s_font_collection
+{
+	width: 158px;
+	line-height: 30px;
+	background: url(images/s_font_collection.gif) #fff no-repeat center center;
+}
+
+
+/* 软件简介、下载 */
+.S_Intro, .S_DownloadUrl
+{
+	clear: both;
+	border: 1px solid #9bbde6;
+	margin-top: 5px;
+}
+.S_Intro dl, .S_Intro dt, .S_Intro dd, .S_DownloadUrl dl, .S_DownloadUrl dt, .S_DownloadUrl dd, .S_DownloadUrl_c, .S_DownloadUrl_c dl, .S_DownloadUrl_c dt, .S_DownloadUrl_c dd, .S_DownloadUrl_l, .S_DownloadUrl_l dl, .S_DownloadUrl_l dt, .S_DownloadUrl_l dd
+{
+	margin: 0px;
+	padding: 0px;
+}
+.S_Intro dt, .S_DownloadUrl dt
+{
+	font: normal normal bold 14px/30px Arial,"宋体",Helvetica,sans-serif;
+	height: 30px;
+	background: url(images/Channel_bg.gif) #a8c6e9 repeat-x top;
+	text-align: left;
+	clear: both;
+	padding-left: 20px;
+	color: #0a4180;
+}
+.S_Intro dd, .S_DownloadUrl dd
+{
+	padding: 5px;
+	height: auto !important;
+	height: 100px;
+	min-height: 100px;
+}
+.S_Intro dd
+{
+
+}
+
+/* 下载地址 */
+.S_DownloadUrl_c, .S_DownloadUrl_l
+{
+	float: left;
+	width: 210px;
+	overflow: hidden;
+}
+.S_DownloadUrl_c
+{
+	padding-left: 5px;
+	border-left: 1px dotted #ccc;
+}
+.S_DownloadUrl_l
+{
+	padding-right: 5px;
+}
+.S_DownloadUrl_c dt, .S_DownloadUrl_l dt
+{
+	background: #eee;
+	height: 24px;
+	font: normal normal bold 12px/24px Arial,"宋体",Helvetica,sans-serif;
+}
+.S_DownloadUrl_c dd, .S_DownloadUrl_l dd
+{
+	height: auto !important;
+	height: 50px;
+	min-height: 50px;
+}
+.S_DownloadUrl_c dd a, .S_DownloadUrl_l dd a
+{
+	padding-left: 20px;
+	background: url(images/DownloadUrl.gif) no-repeat top left;
+}
+.S_DownloadUrl_c dd a a:hover, .S_DownloadUrl_l dd a:hover
+{
+	padding-left: 20px;
+	background: url(images/DownloadUrl_hover.gif) no-repeat top left;
+}
+.S_DownloadUrl_ad
+{
+	float: right;
+	width: 320px;
+	overflow: hidden;
+}
+.S_DownloadUrl_ad img
+{
+	border: 0px;
+	margin-bottom: 5px;
+}
+

@@ -1,0 +1,267 @@
+﻿/*评论样式 CSS*/
+#bbs_title
+{
+	background: url(images/tabtitle.gif) #fff repeat-x top;
+	border: 1px solid #9bbde6;
+	line-height: 25px;
+	color: #000;
+	font-weight: bold;
+}
+#bbs_title dl
+{
+	margin: 0px;
+	border: 2px solid #fff;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#bbs_title_right
+{
+	float: right;
+	font-weight: normal;
+}
+#bbs_center
+{
+	background: #fff;
+	border-left: 1px solid #9bbde6;
+	border-right: 1px solid #9bbde6;
+	border-bottom: 1px solid #9bbde6;
+	clear: both;
+}
+#bbs_center .clearbox
+{
+	margin-top: -2px;
+}
+#bbs_left
+{
+	width: 155px;
+	float: left;
+	text-align: center;
+}
+#bbs_right
+{
+	padding: 5px;
+	margin-left: 155px;
+	border-left: 1px solid #9bbde6;
+	height: auto !important;
+	height: 150px;
+	min-height: 186px;
+}
+#bbs_text
+{
+	padding: 8px;
+	overflow-x: hidden;
+	height: auto !important;
+	height: 150px;
+	min-height: 186px;
+}
+#bbs_text dl, #bbs_text dt, #bbs_text dd
+{
+	margin: 0px;
+	padding: 0px;
+}
+#bbs_bot
+{
+	clear: both;
+	background: #fff;
+	border-bottom: 1px solid #9bbde6;
+	border-left: 1px solid #9bbde6;
+	border-right: 1px solid #9bbde6;
+	line-height: 26px;
+}
+#bbs_botleft
+{
+	text-align: center;
+	width: 155px;
+	float: left;
+	line-height: 26px;
+}
+* html #bbs_botleft
+{
+	width: 155px;
+	margin-top: 5px;
+	margin-bottom: -5px;
+}
+#bbs_botright
+{
+	margin-left: 155px;
+	border-left: 1px solid #9bbde6;
+	height: 26px;
+}
+* html #bbs_botright
+{
+	margin-left: 152px;
+}
+/* 中间线 */
+.bbs_center_line
+{
+	border-bottom: 1px solid #9bbde6;
+}
+.bbs_center_right
+{
+	text-align: right;
+}
+/* 评论虚线 */
+.commontbrokenline
+{
+	border-top: 1px dashed #9bbde6;
+	height: 1px;
+	overflow: hidden;
+}
+.compare_tdtop
+{
+	border-bottom: 1px solid #000;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+}
+.compare_tdinter
+{
+	border-right: 1px solid #c0c0c0;
+	border-left: 1px solid #c0c0c0;
+	text-align: center;
+}
+.compare_tdbg
+{
+	background: #deecf7;
+	line-height: 120%;
+}
+.compare_tdbg1
+{
+	background: #ffffff;
+	line-height: 120%;
+}
+.compare_title
+{
+	background: #ebeadb;
+	color: #000;
+	font-weight: normal;
+}
+/* 管理员回复 */
+.Reply
+{
+	border: 1px solid #DCE8F8;
+	padding: 5px;
+	background: #f4f8fd;
+}
+.Reply dl, .Reply dt, .Reply dd
+{
+	margin: 0px;
+	padding: 0px;
+}
+.Reply dt, .ReplyTime
+{
+	color: #4887DB;
+}
+.ReplyTime
+{
+	text-align: right;
+}
+
+/* ==文章评论样式== */
+.article_PK
+{
+	background: url(images/article_PK_bg.gif) repeat-y left;
+}
+.article_PK dl, .article_PK dt, .article_PK dd
+{
+	padding: 0px;
+	margin: 0px;
+	clear: both;
+}
+.article_PK dt
+{
+	height: 30px;
+	background: #fff;
+}
+.article_PK dd
+{
+	line-height: 20px;
+	height: auto !important;
+	height: 120px;
+	min-height: 120px;
+	border-left: 1px solid #9bbde6;
+	border-right: 1px solid #9bbde6;
+	border-bottom: 1px solid #9bbde6;
+}
+/* 书签式面板tabtitle */
+.PK_title, .PK_mouseover
+{
+	float: left;
+	width: 114px;
+	font: normal normal bold 13px/25px Arial,"宋体",Helvetica,sans-serif;
+	text-align: center;
+	overflow: hidden;
+}
+.PK_title
+{
+	cursor: pointer;
+	font-weight: normal;
+	color: #888;
+	background: url(images/tabtitle.gif) #fff repeat-x top;
+	border-left: 1px solid #a8cefc;
+	border-right: 1px solid #a8cefc;
+	border-top: 1px solid #a8cefc;
+	border-bottom: 1px solid #9bbde6;
+}
+.PK_title dl, .PK_mouseover dl
+{
+	background: url(images/tabtitle.gif) #fff repeat-x top;
+	border: 2px solid #fff;
+}
+.PK_mouseover
+{
+	color: #c00;
+	border-left: 1px solid #9bbde6;
+	border-right: 1px solid #9bbde6;
+	border-top: 1px solid #9bbde6;
+}
+#Tab0, #Tab1, #Tab2, #Tab3
+{
+	padding: 5px;
+}
+.PK_statement
+{
+	line-height: 30px;
+	color: #ccc;
+	text-align: right;
+	overflow: hidden;
+	border-bottom: 1px solid #9bbde6;
+}
+/* 评论记录分页 */
+.PK_page
+{
+	margin-top: 5px;
+	text-align: center;
+}
+/* 发表评论内容 */
+#indiv
+{
+	padding: 10px 5px;
+}
+#indiv .PK_indiv_l
+{
+	width: 280px;
+}
+#indiv .PK_indiv_r
+{
+	float: right;
+	text-align: center;
+}
+/* 评论发表状态 */
+#plstat
+{
+	margin-top: 5px;
+	padding: 5px;
+	border: 1px solid #9bbde6;
+}
+
+/* 评论PK快捷短语变色 */
+.pkzone
+{
+}
+
+.pkzoneover
+{
+    cursor :pointer;
+    background: #c00;
+}
+

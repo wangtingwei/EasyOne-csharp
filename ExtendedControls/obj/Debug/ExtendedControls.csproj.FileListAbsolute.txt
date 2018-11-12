@@ -1,0 +1,5 @@
+F:\EasyOne\WebSite\bin\EasyOne.ExtendedControls.dll
+F:\EasyOne\WebSite\bin\EasyOne.ExtendedControls.pdb
+F:\EasyOne\ExtendedControls\obj\Debug\ResolveAssemblyReference.cache
+F:\EasyOne\ExtendedControls\obj\Debug\EasyOne.ExtendedControls.dll
+F:\EasyOne\ExtendedControls\obj\Debug\EasyOne.ExtendedControls.pdb

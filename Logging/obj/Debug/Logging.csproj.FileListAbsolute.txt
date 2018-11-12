@@ -1,0 +1,5 @@
+F:\EasyOne\WebSite\bin\EasyOne.Logging.dll
+F:\EasyOne\WebSite\bin\EasyOne.Logging.pdb
+F:\EasyOne\Logging\obj\Debug\ResolveAssemblyReference.cache
+F:\EasyOne\Logging\obj\Debug\EasyOne.Logging.dll
+F:\EasyOne\Logging\obj\Debug\EasyOne.Logging.pdb

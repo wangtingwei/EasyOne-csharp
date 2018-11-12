@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="{PE.Label id="取得栏目META关键词" nodeid="@RequestInt_id" /}"  name="Keywords" />
+<meta content="{PE.Label id="取得栏目META网页描述" nodeid="@RequestInt_id" /}"  name="Description" />
+<title>{PE.Label id="取得节点名称" nid="@RequestInt_id"/}-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/article.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/Common.js"></script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/slider.js"></script>
+<script language="javascript" type="text/javascript">
+    function redirecturl(url)
+    {
+        location=url;
+    }
+    </script>
+</head>
+<body>
+{PE.Label id="网站顶部" /}
+<div id="center_all">
+  <div id="main_bg">
+    <div id="main_right">
+      <div id="main_right_box">
+        <!-- 网站位置导航信息开始 -->
+        <div class="r_navigation">
+          <div class="r_n_pic"> </div>
+          您现在的位置：{PE.SiteConfig.sitename/}{PE.Label id="栏目位置导航" nodeid="@RequestInt_id" /} </div>
+        {PE.Label id="右侧广告" /}
+        <div class="childclass_main">
+          <!-- 栏目循环列表开始 -->
+          {PE.DataSource id="categorylist" datasource="栏目循环列表" parentid="@RequestInt_id" page="true"
+          pagesize="4" urlpage="true" pagemain="true" xslt="true" /} 
+          {PE.Repeat id="categorylist" loop="10"}
+          <div class="childclass_main_box">
+            <div class="childclass_title">
+              <div class="more"> {PE.Field id="categorylist" fieldname="MoreLink" /} </div>
+              {PE.Field id="categorylist" fieldname="NodeLink" /} </div>
+            <div class="childclass_content">
+              <ul>
+                {PE.Label id="多模型通用内容信息列表_普通式" parentid="{PE.field fieldname="NodeID" /}" arrnodeid="0"
+                includechild="true" specialid="0" urltype="0" shownum="10" ishot="false" iselite="false"
+                inputername="" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="{PE.field fieldname="NodeID" /}" /}" showtype="1" titlelen="40" contentlen="0"
+                shownodename="false" showpropertytype="3" showincludepic="false" showauthor="true"
+                showdatetype="mm-dd" showhits="false" showhotsign="false" shownewsign="false" showtips="false"
+                showcommentlink="false" usepage="false" opentype="{PE.Label id="取得栏目下的内容打开方式" nodeid="{PE.field fieldname="NodeID" /}" /}" cols="1" hits="0" elitelevel="0"
+                span="" class="" /}
+              </ul>
+              <div class="clearbox"> </div>
+            </div>
+            <div class="childclass_bot"> </div>
+          </div>
+          {/PE.Repeat}
+          <!-- 栏目循环列表结束 -->
+          <div class="clearbox"> </div>
+        </div>
+        <div class="class_page"> {PE.Page id="url_动易后台风格" datasource="categorylist" /}</div>
+        <div class="c_spacing"> </div>
+        <!-- 最新图片文章开始 -->
+        <div class="c_main_one">
+          <dl>
+            <dt class="c_title">
+              <div class="more"> </div>
+              <a href="#">最新图文</a></dt>
+            <dd class="c_content">
+              <!-- 显示8张最新图片文章 -->
+              <div class="a_photo_list"> {PE.Label id="普通图片列表标签" tablename="PE_U_Article" parentid="@RequestInt_id" /}
+                <div class="clearbox"> </div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+        <!-- 最新图片文章结束 -->
+        {PE.Label id="文章搜索" /} </div>
+    </div>
+    {PE.Label id="网站首页左侧" /} </div>
+</div>
+{PE.Label id="网站底部" /}
+</body>
+</html>

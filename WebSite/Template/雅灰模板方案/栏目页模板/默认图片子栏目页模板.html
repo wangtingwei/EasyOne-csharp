@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="{PE.Label id="取得栏目META关键词" nodeid="@RequestInt_id" /}"  name="Keywords" />
+<meta content="{PE.Label id="取得栏目META网页描述" nodeid="@RequestInt_id" /}"  name="Description" />
+<title>{PE.Label id="取得节点名称" nid="@RequestInt_id" /}-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/photo.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/commentary.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/user.css" rel="stylesheet"type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath /}js/common.js"></script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath /}js/slider.js"></script>
+<script language="javascript" type="text/javascript">
+/* AJAX分页 */
+function changepage(pagenum,sourcename,spanname)
+{
+	var x = new AjaxRequest('XML','pe100_' + sourcename);
+        x.labelname = sourcename;
+        x.pagename = "Default.aspx";
+        x.currentpage = pagenum; 
+	    x.para = ['showclass=true', 'titlelen=40', 'contentlen=40', 'propertytype=none', 'showauthor=true', 'showdatetype=mm-dd', 'showhits=true', 'showhotsign=true', 'shownewsign=true', 'showtips=true', 'opentype=_blank', 'shownum=10', 'page=true', 'pagesize=2'];
+	    x.post('updatelabel', 'ajax.aspx', function(s) {
+            var xml = x.createXmlDom(s);
+            $("pe100_" + sourcename).innerHTML = xml.getElementsByTagName("body")[0].firstChild.data;
+
+            updatepage(spanname, sourcename, xml);
+	 });
+}
+
+function updatepage(spanname, sourcename, xml)
+{
+	var x = new AjaxRequest('XML','pe100_page_' + sourcename);
+         x.labelname = spanname;
+        x.sourcename = sourcename;
+        x.total = xml.getElementsByTagName("total")[0].firstChild.data;
+        x.currentpage = xml.getElementsByTagName("currentpage")[0].firstChild.data;
+        x.pagesize = xml.getElementsByTagName("pagesize")[0].firstChild.data;
+	    x.post('updatepage', 'ajax.aspx', function(s) {
+            var xml = x.createXmlDom(s);
+            $("pe100_page_" + sourcename).innerHTML = xml.getElementsByTagName("body")[0].firstChild.data;
+	 });
+}
+
+function redirecturl(url)
+{
+    location=url;
+}
+
+function jumpurl()
+{
+    var obj=$("page");
+    if(obj != null)
+    {
+        location="Default.aspx?page=" + obj.value;
+    }
+}
+    </script>
+<script id="ShowTab" type="text/javascript">
+          function ShowTabs(ID){
+               for (i=0;i<4;i++){
+                    if(i == ID){
+                        document.getElementById("TabTitle" + i).className="titlemouseover";
+                        document.getElementById("Tab" + i).style.display="";
+                    }
+                    else{
+                        document.getElementById("TabTitle" + i).className="tabtitle";
+                        document.getElementById("Tab" + i).style.display="none";
+                    }
+               }
+          } 
+    </script>
+</head>
+<body>
+{PE.label id="雅灰网站顶部" /}
+<!-- 中部网站导航 -->
+<table class="center_all" cellspacing="0">
+  <tr>
+    <td>
+      <table id="r_navigation" cellspacing="0">
+        <tr>
+          <td class="r_n_pic"></td>
+          <td class="logo_nav">您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a>{PE.Label id="栏目位置导航" nodeid="@RequestInt_id" /}</td>
+          <td id="top_link">
+            <ul>
+              <li>
+                <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="1" scrolldelay="4" align="left">
+                {PE.Label id="雅灰网站公告横向" /}
+                </marquee>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="center_all" cellspacing="0">
+  <tr>
+    <td>
+      <table class="main" cellspacing="0">
+        <tr>
+          <td class="main_left">
+
+
+<table class="width_100" cellspacing="0">
+              <tr>
+                <td>
+<table class="class_page edge_top" cellspacing="0">
+<tr>
+<td>{PE.Page id="url_动易后台风格" datasource="InfoList" unitname="张图片" /}</td>
+</tr>
+</table>
+          <!-- 子栏目列表信息列表开始 -->
+{PE.Label id="图片子栏目列表" parentid="@RequestInt_id" shownum="10" titlelen="20" hits="0" elitelevel="0" page="true" pagesize="10" urlpage="true" /}
+          <!-- 子栏目列表信息列表结束 -->
+<table class="class_page edge_top" cellspacing="0">
+<tr>
+<td>{PE.Page id="url_动易后台风格" datasource="InfoList" unitname="张图片" /}</td>
+</tr>
+</table>
+                </td>
+              </tr>
+</table>
+          </td>
+          <td width="5"></td>
+          <td class="main_right" valign="top">
+            {PE.Label id="雅灰文章右侧" /}
+          </td>
+        </tr>
+      </table>
+      <!-- main 结束 -->
+    </td>
+  </tr>
+</table>
+<!-- center_all 结束 -->
+{PE.Label id=" 雅灰网站底部" /}
+</body>
+</html>

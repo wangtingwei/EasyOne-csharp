@@ -1,0 +1,104 @@
+﻿{PE.DataSource id="cone" datasource="来源详细信息" copyfrom="@Request_copyfrom" xslt="true" /}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>来源-{PE.SiteConfig.sitename /}</title>
+<meta content="{PE.Label id="网站信息配置中的关键字" /}" name="Keywords" />
+<meta content="{PE.Label id="网站信息配置中网站描述" /}" name="Description"/>
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Gray/default.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/Common.js"></script>
+</head>
+<body>
+{PE.Label id="雅灰网站顶部" /}
+<table class="center_all" cellspacing="0">
+    <tr>
+        <td><table id="r_navigation" cellspacing="0">
+                <tr>
+                    <td class="r_n_pic"></td>
+                    <td class="logo_nav">您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a> >> 来源</td>
+                </tr>
+            </table></td>
+    </tr>
+</table>
+<table class="center_all" cellspacing="0">
+    <tr>
+        <td><table class="main" cellspacing="0">
+                <tr>
+                    <td class="main_left"><table class="width_100" cellspacing="0">
+                            <tr>
+                                <td><table class="c_main" cellspacing="0">
+                                        <tr>
+                                            <td><table class="cmain_tit">
+                                                    <tr>
+                                                        <td><a>来源简介</a></td>
+                                                    </tr>
+                                                </table></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="c_content"> {PE.Field id="cone" fieldname="ShowIntro" /} </td>
+                                        </tr>
+                                    </table>
+                                    <table class="c_main" cellspacing="0">
+                                        <tr>
+                                            <td><table class="cmain_tit">
+                                                    <tr>
+                                                        <td><a>作品列表</a></td>
+                                                    </tr>
+                                                </table></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="c_content"><!-- 作品列表标签 -->
+                                                <div>
+                                                {PE.Label id="来源文章作品列表_普通式" authorname="@Request_copyfrom" itype="1" idate="true" ilink="true" inum="20" iorder="0" tablename="PE_U_Article" mypage="true" mypagesize="10" myurlpage="true" span="" class="" /}
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="class_page" cellspacing="0">
+                                        <tr>
+                                            <td>{PE.Page id="url_动易后台风格" datasource="显示来源作品列表_普通式" unitname="个作品" /}</td>
+                                        </tr>
+                                    </table></td>
+                            </tr>
+                        </table></td>
+                    <td width="5"></td>
+                    <td class="main_right"><table class="r_main" cellspacing="0">
+                            <tr>
+                                <td class="r_main_title"> 来源头像 </td>
+                            </tr>
+                            <tr>
+                                <td class="r_main_content"><ul>
+                                        <!-- 来源头像 -->
+                                        <img src="{PE.SiteConfig.ApplicationPath/}{PE.SiteConfig.uploaddir/}/{PE.Field id="cone" fieldname="ShowPhoto" /}" alt="{PE.Field id="cone" fieldname="ShowName" /}" border="0" width="150" height="175" />
+                                    </ul></td>
+                            </tr>
+                        </table>
+                        <table class="r_main edge_bot" cellspacing="0">
+                            <tr>
+                                <td class="r_main_title"> 来源详细信息 </td>
+                            </tr>
+                            <tr>
+                                <td class="r_main_content"><ul>
+                                        <!-- 来源详细信息 -->
+                                        <li> 名称：{PE.Field id="cone" fieldname="ShowName" /} </li>
+                                        <li> 联系人：{PE.Field id="cone" fieldname="ShowContacter" /} </li>
+                                        <li> 地址：{PE.Field id="cone" fieldname="ShowAddress" /} </li>
+                                        <li> 电话：{PE.Field id="cone" fieldname="ShowTel" /} </li>
+                                        <li> 传真：{PE.Field id="cone" fieldname="ShowFax" /} </li>
+                                        <li> 邮编：{PE.Field id="cone" fieldname="ShowZipCode" /} </li>
+                                        <li> 主页：{PE.Field id="cone" fieldname="ShowHomePage" /} </li>
+                                        <li> 邮件：{PE.Field id="cone" fieldname="ShowEmail" /} </li>
+                                        <li> 分类：{PE.Field id="cone" fieldname="ShowType" /} </li>
+                                    </ul></td>
+                            </tr>
+                        </table></td>
+                </tr>
+            </table>
+            <!-- main 结束 -->
+        </td>
+    </tr>
+</table>
+{PE.Label id="雅灰网站底部" /}
+</body>
+</html>

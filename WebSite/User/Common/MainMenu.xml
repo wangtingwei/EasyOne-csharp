@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu>
+  <TopMenu id="0" text="信息管理">
+    <SubMenu href="javascript:JumpToMainRight('NodeTree.aspx','NavContent.aspx?action=add')" type="content" img="article_add.gif" text="发表信息" />
+    <SubMenu href="javascript:JumpToMainRight('NodeTree.aspx','ContentManage.aspx')" type="content" img="article_all.gif" text="所有信息" />
+    <SubMenu href="javascript:JumpToMainRight('NodeTree.aspx','ContentManage.aspx?Status=-1')" type="content" img="article_draft.gif" text="草 稿" />
+    <SubMenu href="javascript:JumpToMainRight('NodeTree.aspx','ContentManage.aspx?Status=101')" type="content" img="article_unpassed.gif" text="待审核的信息" />
+    <SubMenu href="javascript:JumpToMainRight('NodeTree.aspx','ContentManage.aspx?Status=99')" type="content" img="article_passed.gif" text="已审核的信息" />
+    <SubMenu href="javascript:JumpToMainRight('NodeTree.aspx','ContentManage.aspx?Status=-2')" type="content" img="article_reject.gif" text="未被采用的信息" />
+    <SubMenu href="javascript:JumpToMainRight('NodeTree.aspx','favorite.aspx')" type="content" img="article_favorite.gif" text="我收藏的信息" />
+    <SubMenu href="javascript:JumpToMainRight('CommentTree.aspx','CommentManage.aspx')" type="content" img="my_comment.gif" text="我发表的评论" />
+  </TopMenu>
+  <TopMenu id="1" text="资金管理">
+    <SubMenu href="User/Info/Bankroll.aspx?ShowType=6" img="detail_all.gif" text="所有明细记录" />
+    <SubMenu href="User/Info/Bankroll.aspx?ShowType=7" img="detail_income.gif" text="所有收入记录" />
+    <SubMenu href="User/Info/Bankroll.aspx?ShowType=8" img="detail_payout.gif" text="所有支出记录" />
+    <SubMenu href="User/Info/PaymentLog.aspx" img="detail_paymentlog.gif" text="在线支付记录" />
+  </TopMenu>
+  <TopMenu id="2" text="短消息管理">
+    <SubMenu href="User/Message/Message.aspx" type="AddMessage" img="m_new.gif" text="撰写短消息" />
+    <SubMenu href="User/Message/MessageManager.aspx?ManageType=1" img="m_draft.gif" text="草稿箱" />
+    <SubMenu href="User/Message/MessageManager.aspx?ManageType=0" img="m_box_in.gif" text="收件箱" />
+    <SubMenu href="User/Message/MessageManager.aspx?ManageType=2" img="m_box_out.gif" text="发件箱" />
+    <SubMenu href="User/Message/MessageManager.aspx?ManageType=3" img="m_box_recycle.gif" text="废件箱" />
+  </TopMenu>
+  <TopMenu id="3" text="好友管理">
+    <SubMenu href="User/UserFriend/FriendManage.aspx" img="userfriend_list.gif" text="好友管理" />
+    <SubMenu href="User/UserFriend/Friend.aspx" img="userfriend_add.gif" text="添加好友" />
+    <SubMenu href="User/UserFriend/FriendGroup.aspx" img="userfriend_group.gif" text="创建新组" />
+    <SubMenu href="User/UserFriend/FriendGroupManage.aspx" img="userfriend_manage.gif" text="分组管理" />
+  </TopMenu>
+  <TopMenu id="4" Type="Recharge" text="充值管理">
+    <SubMenu href="User/Info/ExchangePoint.aspx" type="Point" img="exchange_point.gif" text="兑换点券" />
+    <SubMenu href="User/Info/ExchangeValidDate.aspx" img="exchange_validdate.gif" text="兑换有效期" />
+    <SubMenu href="User/Info/CardList.aspx" img="exchange_cardlist.gif" text="充值卡管理" />
+    <SubMenu href="User/Info/Recharge.aspx" img="detail_mergeorder.gif" text="充值卡充值" />
+    <SubMenu href="User/info/DonatePoint.aspx" type="DonatePoint" img="userfriend_add.gif" text="赠送点券" />
+    <SubMenu href="User/info/BuyPoint.aspx" type="BuyPoint" img="detail_mergeorder.gif" text="购买点券" />
+  </TopMenu>
+  <TopMenu id="5" text="帐户管理">
+    <SubMenu href="User/Info/PointLog.aspx" type="Point" img="exchange_point.gif" text="点券明细" />
+    <SubMenu href="User/Default.aspx" img="user_check_info.gif" text="查看信息" />
+    <SubMenu href="User/Info/ModifyInfo.aspx" img="userfriend_info.gif" text="修改信息" />
+    <SubMenu href="User/Info/Password.aspx" img="userfriend_password.gif" text="修改密码" />
+    <SubMenu href="User/Info/PayPassword.aspx" type="PayPassword" img="userfriend_password.gif" text="修改预付款支付密码" />
+    <SubMenu href="User/Logout.aspx" img="userfriend_logout.gif" text="退出登录" />
+  </TopMenu>
+</menu>

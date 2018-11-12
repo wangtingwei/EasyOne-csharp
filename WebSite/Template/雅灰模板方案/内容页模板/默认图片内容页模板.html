@@ -1,0 +1,338 @@
+﻿{PE.DataSource id="cone" datasource="图片_内容页" itemid="@RequestInt_id" xslt="true" /}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="{PE.Field id="cone" fieldname="Title" /}" name="Description" />
+<meta content="{PE.Field id="cone" fieldname="KeyWord" /}" name="Keywords" />
+<title>{PE.Field id="cone" fieldname="Title" /}-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/photo.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/commentary.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/user.css" rel="stylesheet"type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath /}JS/Common.js"></script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath /}JS/jsPopup.js"></script>
+</head>
+<body onload="commentinit()">
+{PE.label id="雅灰网站顶部" /}
+<table class="center_all" cellspacing="0">
+    <tr>
+        <td>
+            <table class="main" cellspacing="0">
+                <tr>
+                    <td class="main_left">
+                        <table cellspacing="0">
+                            <tr>
+                                <td><img src="{PE.SiteConfig.ApplicationPath /}Skin/Gray/images/banner.gif" style="border:0;height:82px;width:765px;" alt="banner" /></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table id="l_nav" cellspacing="0">
+                                        <tr>
+                                            <td class="r_n_pic"></td>
+                                            <td class="logo_nav">您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a>{PE.Label id="内容位置导航" itemid="@RequestInt_id" /} </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table class="article" cellspacing="0">
+                                        <tr>
+                                            <td class="article_tit">{PE.Field id="cone" fieldname="Title" /}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info"> 图片名称：{PE.Field id="cone" fieldname="Title" charge="true"  /} | 作者：<a href="{PE.SiteConfig.ApplicationPath/}Common/ShowAuthor.aspx?authorname={PE.Field id="cone" fieldname="LinkAuthor" /}">{PE.Field id="cone" fieldname="Author" /}</a> | 来源：<a href="{PE.SiteConfig.ApplicationPath/}Common/ShowCopyFrom.aspx?copyfrom={PE.Field id="cone" fieldname="LinkCopyFrom" /}">{PE.Field id="cone" fieldname="CopyFrom" /}</a> | 点击数：{PE.Field id="cone" fieldname="Hits" /} | 发布时间：{PE.Field id="cone" fieldname="UpdateTime" /} </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="article_con">
+                                            	<div class="overflow_hidden">
+                                            	{PE.Charge}
+                                                {PE.Label id="显示图片" generalid="@RequestInt_id" /}
+                                                {/PE.Charge}
+                                                
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        	<td class="info"><span class="font_right">【<a href="{PE.SiteConfig.ApplicationPath /}User/Contents/Favorite.aspx?Action=add&Id={PE.Field id="cone" fieldname="GeneralID" /}">收藏</a>】<span >【<a href="{PE.SiteConfig.applicationpath/}ShowComment.aspx?id={PE.Field id="cone" fieldname="GeneralID" /}">查看评论</a>】</span>
+                                            </span></td>
+                                        </tr>
+                                    </table>
+                                    <table class="article edge_top edge_bot" cellspacing="0">
+                                    	<tr>
+                                        	<td class="intro">
+<h5>图片简介：</h5>
+{PE.Field id="cone" fieldname="PhotoIntro" /}
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                            	<td>
+                                 <span id="commentform"></span>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- main_left 左部结束 -->
+                    </td>
+                    <td class="width_5"></td>
+                    <td class="main_right">
+			            {PE.Label id="雅灰内容右侧" /}
+                    </td>
+                </tr>
+            </table>
+            <!-- main 结束 -->
+        </td>
+    </tr>
+</table>
+<!-- center_all 结束 -->
+{PE.Label id=" 雅灰网站底部" /}
+<!-- 评论变量区 -->
+<input id="username" type="hidden" value="游客" />
+<input id="position" type="hidden" value="1" />
+<input id="private" type="hidden" value="0" />
+<input id="score" type="hidden" value="3" />
+<input id="face" type="hidden" value="Images\Comment\01.gif" />
+<input id="gid" type="hidden" value="@RequestInt_id" />
+<input id="nid" type="hidden" value="{PE.Field id="cone" fieldname="NodeID" /}" />
+<input id="tid" type="hidden" value="1" />
+<!-- 评论变量区 -->
+<script language="javascript" type="text/javascript">
+function redirecturl(url, tarid)
+{
+    location=url.replace(/{\$pageid\/}/g,tarid);
+}
+
+//评论相关代码
+function commentinit()
+{
+    var x = new AjaxRequest('XML','commentform');
+    x.labelname = "内容评论PK标签";
+    x.para = ['generalid=@RequestInt_id'];
+    x.currentpage = 1;
+    x.post('updatelabel', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+        var xml = x.createXmlDom(s);
+        $("commentform").innerHTML = xml.getElementsByTagName("body")[0].firstChild.data;
+        changepage(1,'评论列表','JS_基本风格');
+        getcurrentuserinfo()
+    });
+}
+
+function SetPosition(st)
+{
+     for (i=-1;i<2;i++){
+          if(i == st){
+              $("Positon" + i).className="PK_mouseover";
+          }
+          else{
+              $("Positon" + i).className="PK_title";
+          }
+     }
+     $("position").value = st;
+}
+
+function addcomment()
+{
+    if(!$("guest").checked)
+    {
+        var strEmail = $("email").value;
+	    var regEmail = /^([a-zA-Z0-9]+[_|\-|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\-|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+	    var matchArray = strEmail.match(regEmail);
+    		
+	    if(matchArray == null)
+	    {
+            alert("请输入正确的Email格式！");
+            $("email").focus();
+            return false; 
+	    }
+	    
+        if($("iusername").value == '')
+        {
+            alert("请输入用户名");
+            $("iusername").focus();
+            return false;           
+        }
+        else
+        {
+            $("username").value = $("iusername").value;
+        }
+    }
+//    if($("commenttitle").value == '')
+//    {
+//        alert("请输入标题");
+//        $("commenttitle").focus();
+//        return false; 
+//    }
+    if($("content").value == '')
+    {
+        alert("请输入评论内容");
+        $("content").focus();
+        return false;                
+    }
+    var x = new AjaxRequest('XML','status');
+    x.para = ['username', 'commenttitle', 'content', 'email', 'face', 'gid', 'nid', 'tid', 'private', 'position', 'score'];
+    x.post('addcomment', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+        var xml = x.createXmlDom(s);
+        var  status = xml.getElementsByTagName("status")[0].firstChild.data;
+        document.getElementById("status").style.display = "none";
+        switch (status)
+        {
+            case "ok":
+                changepage(1,'评论列表','JS_基本风格');
+                break;
+            case "check":
+                alert("发表评论成功，请等待管理员审核。");  
+                break;
+            case "err":
+                alert("发表评论失败！");  
+                break;
+            case "nopurview":
+                alert("此栏目已禁止发表评论！");  
+                break;
+            case "noTourists":
+                alert("此栏目已禁止游客发表评论！");  
+                break;                    
+            default:
+                alert("发表评论失败！"); 
+                break;
+        }
+        $("content").value = '';
+    });
+}
+
+function addpkzone(commentid,position,content)
+{
+    var x = new AjaxRequest('XML','status');
+    x.para = ['commentid='+ commentid, 'position=' + position, 'content=' + content];
+    x.post('addpkzone', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+        var xml = x.createXmlDom(s);
+        var  status = xml.getElementsByTagName("status")[0].firstChild.data;
+        document.getElementById("status").style.display = "none";
+        switch (status)
+        {
+            case "ok":
+                changepage(1,'评论列表','JS_基本风格');
+                break;                  
+            default:
+                alert("辩论失败！"); 
+                break;
+        }
+    });
+}
+
+function changepage(pagenum,sourcename,spanname)
+{
+    var x = new AjaxRequest('XML','pe100_' + sourcename);
+    x.labelname = sourcename;
+    x.currentpage = pagenum; 
+	x.para = ['gid=@RequestInt_id', 'listnum=10', 'page=true', 'pagesize=10'];
+	x.post('updatelabel', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+        var xml = x.createXmlDom(s);
+        var plstr = "";
+        for (var i=0; i<xml.getElementsByTagName("body")[0].childNodes.length; i++)     
+        {
+            plstr += xml.getElementsByTagName("body")[0].childNodes[i].nodeValue;
+        }
+        $("pe100_" + sourcename).innerHTML = plstr;
+        updatepage(spanname, sourcename, xml);
+    });
+}
+
+function updatepage(spanname, sourcename, xml)
+{
+    if(parseInt(xml.getElementsByTagName("total")[0].firstChild.data) > 0)
+    {
+        var x = new AjaxRequest('XML','pe100_page_' + sourcename);
+        x.labelname = spanname;
+        x.sourcename = sourcename;
+        x.total = xml.getElementsByTagName("total")[0].firstChild.data;
+        x.currentpage = xml.getElementsByTagName("currentpage")[0].firstChild.data;
+        x.pagesize = xml.getElementsByTagName("pagesize")[0].firstChild.data;
+	    x.post('updatepage', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+            var xml = x.createXmlDom(s);
+            if($("pe100_page_" + sourcename) != null)
+            {
+                var plstr = "";
+                for (var i=0; i<xml.getElementsByTagName("body")[0].childNodes.length; i++)     
+                {
+                    plstr += xml.getElementsByTagName("body")[0].childNodes[i].nodeValue;
+                }
+                $("pe100_page_" + sourcename).innerHTML = plstr;
+            }
+	});
+    }
+}
+
+function setprivate()
+{
+    if($("open").checked)
+    {
+        $("private").value = 0;
+    }
+    else
+    {
+        $("private").value = 1;
+    }
+}
+ 
+function getcurrentuserinfo()
+{ 
+    try{
+        var x = new AjaxRequest('XML','');
+	x.post('logincheck','{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+            var xml = x.createXmlDom(s);
+            if(xml.getElementsByTagName("status")[0].firstChild.data == "ok")
+            {
+                if($("iusername")!=null)
+                {
+                    $("iusername").value = xml.getElementsByTagName("username")[0].firstChild.data;
+                    $("email").value = xml.getElementsByTagName("email")[0].firstChild.data;
+                }
+            }
+        });
+      }
+      catch(e){
+      };
+}
+
+function setguest()
+{
+    if($("guest").checked)
+    {
+        $("spanusername").style.display = 'none';
+        $("spanemail").style.display = 'none';
+    }
+    else
+    {
+        $("spanusername").style.display = '';
+        $("spanemail").style.display = '';
+    }
+}
+
+function ChangeStar(index, isfixed){
+     var colStars = document.getElementById("divStars").getElementsByTagName("input");
+     var i = 0;
+     var k = isfixed? parseInt(document.getElementById("score").value) : index;
+
+     for(i=0; i<colStars.length; i++){
+             colStars[i].src = (i<k? "{PE.SiteConfig.applicationpath/}Images/fstar.gif" : "{PE.SiteConfig.applicationpath/}Images/estar.gif");
+     }
+}
+
+function StarClick(index)
+{
+    document.getElementById("score").value=index;
+}
+
+function StarMouseOver(index){
+    ChangeStar(index,false);
+}
+
+function StarMouseOut(){
+    ChangeStar(0,true);
+}
+</script>
+</body>
+</html>

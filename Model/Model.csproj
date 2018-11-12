@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6D384AB-3258-4CEF-A462-08364D11FE94}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EasyOne.Model</RootNamespace>
+    <AssemblyName>EasyOne.Model</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\WebSite\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessManage\RoleFieldPermissionsInfo.cs" />
+    <Compile Include="AccessManage\RoleModulePermissionsInfo.cs" />
+    <Compile Include="AccessManage\RoleNodePermissionsInfo.cs" />
+    <Compile Include="AccessManage\RoleSpecialPermissionsInfo.cs" />
+    <Compile Include="Accessories\AuthorInfo.cs" />
+    <Compile Include="Accessories\BankInfo.cs" />
+    <Compile Include="Accessories\BankrollItemInfo.cs" />
+    <Compile Include="Accessories\CacheInfo.cs" />
+    <Compile Include="Accessories\CardInfo.cs" />
+    <Compile Include="Accessories\ChoicesetInfo.cs" />
+    <Compile Include="Accessories\ChoicesetValueInfo.cs" />
+    <Compile Include="Accessories\ChoicesetValueInfoCollection.cs" />
+    <Compile Include="Accessories\DataBaseVersionInfo.cs" />
+    <Compile Include="Accessories\DownloadErrorInfo.cs" />
+    <Compile Include="Accessories\DownServerInfo.cs" />
+    <Compile Include="Accessories\FavoriteInfo.cs" />
+    <Compile Include="Accessories\FileInfo.cs" />
+    <Compile Include="Accessories\KeywordInfo.cs" />
+    <Compile Include="Accessories\MailInfo.cs" />
+    <Compile Include="Accessories\MessageInfo.cs" />
+    <Compile Include="Accessories\PaymentLogInfo.cs" />
+    <Compile Include="Accessories\PayPlatformInfo.cs" />
+    <Compile Include="Accessories\RegionInfo.cs" />
+    <Compile Include="Accessories\SourceInfo.cs" />
+    <Compile Include="Accessories\WordReplaceInfo.cs" />
+    <Compile Include="AD\AdvertisementInfo.cs" />
+    <Compile Include="AD\ADZoneInfo.cs" />
+    <Compile Include="Analytics\StatInfoListInfo.cs" />
+    <Compile Include="Analytics\StatIPInfo.cs" />
+    <Compile Include="Analytics\StatOnlineInfo.cs" />
+    <Compile Include="Analytics\StatUpdateInfo.cs" />
+    <Compile Include="Analytics\StatVisitorInfo.cs" />
+    <Compile Include="Collection\CollectionExclosionInfo.cs" />
+    <Compile Include="Collection\CollectionFieldRuleInfo.cs" />
+    <Compile Include="Collection\CollectionFilterRuleInfo.cs" />
+    <Compile Include="Collection\CollectionHistoryInfo.cs" />
+    <Compile Include="Collection\CollectionItemInfo.cs" />
+    <Compile Include="Collection\CollectionListRuleInfo.cs" />
+    <Compile Include="Collection\CollectionPagingRuleInfo.cs" />
+    <Compile Include="CommonModel\FieldInfo.cs" />
+    <Compile Include="CommonModel\FieldInfoComparer.cs" />
+    <Compile Include="CommonModel\ModelInfo.cs" />
+    <Compile Include="CommonModel\ModelTemplatesInfo.cs" />
+    <Compile Include="Contents\CommentInfo.cs" />
+    <Compile Include="Contents\CommentPKZoneInfo.cs" />
+    <Compile Include="Contents\CommonModelInfo.cs" />
+    <Compile Include="Contents\ContentChargeInfo.cs" />
+    <Compile Include="Contents\ContentPermissionInfo.cs" />
+    <Compile Include="Contents\NodeInfo.cs" />
+    <Compile Include="Contents\NodePermissionInfo.cs" />
+    <Compile Include="Contents\NodeSettingInfo.cs" />
+    <Compile Include="Contents\NodesModelTemplateRelationShipInfo.cs" />
+    <Compile Include="Contents\SignInContentInfo.cs" />
+    <Compile Include="Contents\SignInLogInfo.cs" />
+    <Compile Include="Contents\SpecialCategoryInfo.cs" />
+    <Compile Include="Contents\SpecialCommonModelInfo.cs" />
+    <Compile Include="Contents\SpecialInfo.cs" />
+    <Compile Include="Crm\AddressInfo.cs" />
+    <Compile Include="Crm\ClientInfo.cs" />
+    <Compile Include="Crm\CompanyInfo.cs" />
+    <Compile Include="Crm\ComplainItemInfo.cs" />
+    <Compile Include="Crm\ContacterInfo.cs" />
+    <Compile Include="Crm\QuestionAllotInfo.cs" />
+    <Compile Include="Crm\QuestionInfo.cs" />
+    <Compile Include="Crm\ReplyInfo.cs" />
+    <Compile Include="Crm\ServiceInfo.cs" />
+    <Compile Include="Nullable.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shop\AgentInfo.cs" />
+    <Compile Include="Shop\CategorySaleroomInfo.cs" />
+    <Compile Include="Shop\CompareHitsOrderNumberInfo.cs" />
+    <Compile Include="Shop\CouponDetailInfo.cs" />
+    <Compile Include="Shop\CouponInfo.cs" />
+    <Compile Include="Shop\CouponItemInfo.cs" />
+    <Compile Include="Shop\CourierInfo.cs" />
+    <Compile Include="Shop\DeliverChargeInfo.cs" />
+    <Compile Include="Shop\DeliverItemInfo.cs" />
+    <Compile Include="Shop\DeliverTypeInfo.cs" />
+    <Compile Include="Shop\InvoiceInfo.cs" />
+    <Compile Include="Shop\MemberExpenditureInfo.cs" />
+    <Compile Include="Shop\MemberOrderlinessInfo.cs" />
+    <Compile Include="Shop\MemberOrdersInfo.cs" />
+    <Compile Include="Shop\OrderFeedbackDetailInfo.cs" />
+    <Compile Include="Shop\OrderFeedbackInfo.cs" />
+    <Compile Include="Shop\OrderFlowInfo.cs" />
+    <Compile Include="Shop\OrderInfo.cs" />
+    <Compile Include="Shop\OrderItemInfo.cs" />
+    <Compile Include="Shop\PackageInfo.cs" />
+    <Compile Include="Shop\PaymentTypeInfo.cs" />
+    <Compile Include="Shop\PresentInfo.cs" />
+    <Compile Include="Shop\PresentProjectInfo.cs" />
+    <Compile Include="Shop\PriceInfo.cs" />
+    <Compile Include="Shop\ProducerInfo.cs" />
+    <Compile Include="Shop\ProductDataInfo.cs" />
+    <Compile Include="Shop\ProductDetailInfo.cs" />
+    <Compile Include="Shop\ProductHitsInfo.cs" />
+    <Compile Include="Shop\ProductInfo.cs" />
+    <Compile Include="Shop\ProductOrderNumberInfo.cs" />
+    <Compile Include="Shop\ProductPriceInfo.cs" />
+    <Compile Include="Shop\RefundInfo.cs" />
+    <Compile Include="Shop\RemittanceInfo.cs" />
+    <Compile Include="Shop\SaleCountInfo.cs" />
+    <Compile Include="Shop\SaleListInfo.cs" />
+    <Compile Include="Shop\ShoppingCartInfo.cs" />
+    <Compile Include="Shop\StockInfo.cs" />
+    <Compile Include="Shop\StockItemInfo.cs" />
+    <Compile Include="Shop\TrademarkInfo.cs" />
+    <Compile Include="Shop\TransferLogInfo.cs" />
+    <Compile Include="Shop\UserOrderCommonInfo.cs" />
+    <Compile Include="Survey\SurveyFieldInfo.cs" />
+    <Compile Include="Survey\SurveyInfo.cs" />
+    <Compile Include="Survey\SurveyRecordInfo.cs" />
+    <Compile Include="Survey\SurveyVoteInfo.cs" />
+    <Compile Include="TemplateProc\ContentPageInfo.cs" />
+    <Compile Include="TemplateProc\LabelAttributeInfo.cs" />
+    <Compile Include="TemplateProc\LabelInfo.cs" />
+    <Compile Include="TemplateProc\LabelManageInfo.cs" />
+    <Compile Include="TemplateProc\PageInfo.cs" />
+    <Compile Include="TemplateProc\PagerManageInfo.cs" />
+    <Compile Include="TemplateProc\TemplateInfo.cs" />
+    <Compile Include="TemplateProc\Txt2ImgInfo.cs" />
+    <Compile Include="Templates\IncludeFileInfo.cs" />
+    <Compile Include="UserManage\AdministratorInfo.cs" />
+    <Compile Include="UserManage\AdminProfileInfo.cs" />
+    <Compile Include="UserManage\GroupInRoleInfo.cs" />
+    <Compile Include="UserManage\PermissionInfo.cs" />
+    <Compile Include="UserManage\RoleInfo.cs" />
+    <Compile Include="UserManage\UserFriendInfo.cs" />
+    <Compile Include="UserManage\UserGroupsInfo.cs" />
+    <Compile Include="UserManage\UserInfo.cs" />
+    <Compile Include="UserManage\UserPointLogInfo.cs" />
+    <Compile Include="UserManage\UserPurviewInfo.cs" />
+    <Compile Include="UserManage\UsersInGroupsInfo.cs" />
+    <Compile Include="UserManage\UserValidLogInfo.cs" />
+    <Compile Include="VoteInfo.cs" />
+    <Compile Include="VoteItemInfo.cs" />
+    <Compile Include="WorkFlow\FlowProcessInfo.cs" />
+    <Compile Include="WorkFlow\StatusInfo.cs" />
+    <Compile Include="WorkFlow\WorkFlowsInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{45E032CF-6CEF-4795-9C53-9832F1C51D14}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Enumerations\Enumerations.csproj">
+      <Project>{B42E08FB-9F11-4C31-BBAF-8EB607D9C6BA}</Project>
+      <Name>Enumerations</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

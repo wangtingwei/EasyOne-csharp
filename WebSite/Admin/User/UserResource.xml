@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ManageUserPurview>
+  <AddMoney>奖励会员资金</AddMoney>
+  <AddPoint>奖励会员点数</AddPoint>
+  <AddUserToRole>把会员添加为会员组</AddUserToRole>
+  <AddValid>奖励会员有效期</AddValid>
+  <DeleteUser>删除会员</DeleteUser>
+  <ExchangePoint>点券兑换</ExchangePoint>
+  <LockUser>锁住/解锁会员</LockUser>
+  <ManagePointLog>会员消费明细管理</ManagePointLog>
+  <ManageValidLog>会员有效期明细</ManageValidLog>
+  <ModifyUser>修改会员信息</ModifyUser>
+  <ModifyUserPurview>修改会员权限</ModifyUserPurview>
+  <SubtractMoney>减去会员资金</SubtractMoney>
+  <SubtractPoint>减去会员点数</SubtractPoint>
+  <SubtractValid>减去会员有效期</SubtractValid>
+  <ViewUser>查看会员信息</ViewUser>
+</ManageUserPurview>

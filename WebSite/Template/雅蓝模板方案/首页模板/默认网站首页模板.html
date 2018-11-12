@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="{PE.Label id="取得栏目META关键词" nodeid="-2" /}" name="Keywords" />
+<meta content="{PE.Label id="取得栏目META网页描述" nodeid="-2" /}" name="Description"/>
+<title>网站首页-{PE.SiteConfig.SiteTitle/}</title>
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/default.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}js/common.js"></script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}js/slider.js"></script>
+<script language="javascript" type="text/javascript">
+/* AJAX分页 */
+function changepage(pagenum,sourcename,spanname)
+{
+	var x = new AjaxRequest('XML','pe100_' + sourcename);
+        x.labelname = sourcename;
+        x.pagename = "{PE.SiteConfig.applicationpath/}Default.aspx";
+        x.currentpage = pagenum; 
+	    x.para = ['showclass=true', 'titlelen=40', 'contentlen=40', 'propertytype=none', 'showauthor=true', 'showdatetype=mm-dd', 'showhits=true', 'showhotsign=true', 'shownewsign=true', 'showtips=true', 'opentype=_blank', 'shownum=10', 'page=true', 'pagesize=2'];
+	    x.post('updatelabel', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+            var xml = x.createXmlDom(s);
+            $("pe100_" + sourcename).innerHTML = xml.getElementsByTagName("body")[0].firstChild.data;
+
+            updatepage(spanname, sourcename, xml);
+	 });
+}
+
+function updatepage(spanname, sourcename, xml)
+{
+	var x = new AjaxRequest('XML','pe100_page_' + sourcename);
+         x.labelname = spanname;
+        x.sourcename = sourcename;
+        x.total = xml.getElementsByTagName("total")[0].firstChild.data;
+        x.currentpage = xml.getElementsByTagName("currentpage")[0].firstChild.data;
+        x.pagesize = xml.getElementsByTagName("pagesize")[0].firstChild.data;
+	    x.post('updatepage', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+            var xml = x.createXmlDom(s);
+            $("pe100_page_" + sourcename).innerHTML = xml.getElementsByTagName("body")[0].firstChild.data;
+	 });
+}
+
+function redirecturl(url)
+{
+    location=url;
+}
+
+function jumpurl()
+{
+    var obj=$("page");
+    if(obj != null)
+    {
+        location="{PE.SiteConfig.applicationpath/}Default.aspx?page=" + obj.value;
+    }
+}
+    </script>
+<script id="ShowTab" type="text/javascript">
+          function ShowTabs(ID){
+               for (i=0;i<4;i++){
+                    if(i == ID){
+                        document.getElementById("TabTitle" + i).className="titlemouseover";
+                        document.getElementById("Tab" + i).style.display="";
+                    }
+                    else{
+                        document.getElementById("TabTitle" + i).className="tabtitle";
+                        document.getElementById("Tab" + i).style.display="none";
+                    }
+               }
+          } 
+    </script>
+</head>
+<body>
+{PE.Label id="网站顶部" /}
+<div id="center_all">
+  <div id="main_bg">
+    <div id="main_right">
+      <div id="main_right_box">
+        <!-- 网站位置导航信息开始 -->
+        <div class="r_navigation">
+          <div class="r_n_pic"></div>
+          您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a> </div>
+        <!-- Flash幻灯 -->
+        <div id="main_box_t">
+          <div class="c_slide"> {PE.Label id="文章频道js幻灯" width="298" height="160" imgheight="160" imgwidth="290" listnum="6" /} </div>
+        </div>
+        <!-- 新闻 -->
+        <div id="r_main_t">
+          <div class="r_news">
+            <div class="titlemouseover" id="TabTitle0" onmouseover="ShowTabs(0)">
+              <dl>
+                新闻动态
+              </dl>
+            </div>
+            <div class="tabtitle" id="TabTitle1" onmouseover="ShowTabs(1)">
+              <dl>
+                最新推荐
+              </dl>
+            </div>
+            <div class="tabtitle" id="TabTitle2" onmouseover="ShowTabs(2)">
+              <dl>
+                最新图文
+              </dl>
+            </div>
+            <div class="tabtitle" id="TabTitle3" onmouseover="ShowTabs(3)">
+              <dl>
+                会员投稿
+              </dl>
+            </div>
+            <div class="clearbox2"></div>
+          </div>
+          <div id="Tab0" class="article_new">
+            <div class="p_thumb_l"> {PE.Label id="带图片内容列表_文章_普通式" parentid="1" arrnodeid="1" includechild="true" specialid="0" shownum="1" ishot="false" iselite="false" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="1" /}" imgwidth="160" imgheight="120" titlelen="20" contentlen="0" showtips="false" urltype="0" hits="0" elitelevel="0" span="" class="" /} </div>
+            <div class="p_list_r">
+              <ul>
+                {PE.Label id="文章信息列表_普通式" parentid="1" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="8" ishot="false" iselite="false" inputername="" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="1" /}" showtype="1" titlelen="16" contentlen="0" shownodename="false" showpropertytype="6" showincludepic="false" showauthor="false" showdatetype="mm-dd" showhits="false" showhotsign="false" shownewsign="false" showtips="true" showcommentlink="false" usepage="false" opentype="{PE.Label id="取得栏目下的内容打开方式" nodeid="1" /}" cols="0" hits="0" elitelevel="0" /}
+              </ul>
+            </div>
+            <div class="clearbox"> </div>
+          </div>
+          <div id="Tab1" class="information_new" style="display: none;">
+            <ul>
+              <!-- 推荐级别elitelevel≥10 -->
+              {PE.Label id="多模型通用内容信息列表_普通式" tablename="PE_U_Article" parentid="1" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="14" ishot="false" iselite="false" inputername="" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="1" /}" showtype="1" titlelen="20" contentlen="0" shownodename="false" showpropertytype="10" showincludepic="false" showauthor="false" showdatetype="mm-dd" showhits="false" showhotsign="false" shownewsign="false" showtips="false" showcommentlink="false" usepage="false" opentype="{PE.Label id="取得栏目下的内容打开方式" nodeid="1" /}" cols="0" hits="0" elitelevel="10" span="" class="" /}
+            </ul>
+            <div class="clearbox"></div>
+          </div>
+          <div id="Tab2" class="product_new" style="display: none;"> {PE.Label id="普通图片列表标签" tablename="PE_U_Product" parentid="5" shownum="3" border="0" titlelen="10" /}
+            <div class="clearbox"></div>
+          </div>
+          <div id="Tab3" class="information_new" style="display: none;">
+            <ul>
+              {PE.Label id="多模型通用内容信息列表_普通式" tablename="PE_U_Article" parentid="1" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="14" ishot="false" iselite="false" inputername="" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="1" /}" showtype="1" titlelen="20" contentlen="0" shownodename="false" showpropertytype="2" showincludepic="false" showauthor="false" showdatetype="mm-dd" showhits="false" showhotsign="false" shownewsign="false" showtips="false" showcommentlink="false" usepage="false" opentype="{PE.Label id="取得栏目下的内容打开方式" nodeid="1" /}" cols="0" hits="0" elitelevel="0" span="" class="" /}
+            </ul>
+            <div class="clearbox"></div>
+          </div>
+        </div>
+        <div class="clearbox"> </div>
+        <div class="c_spacing"> </div>
+        <!-- 最新图文开始 -->
+        <div class="c_main_one">
+          <dl>
+            <dt class="c_title">
+              <div class="more"> <a href="{PE.Label id="显示栏目路径" nodeid="1" /}" target="_blank">[更多]</a></div>
+              <a href="{PE.Label id="显示栏目路径" nodeid="1" /}" target="_blank">最新图文</a></dt>
+            <dd class="c_content">
+              <!-- 显示8张最新图片文章 -->
+              <div class="p_class_list">{PE.Label id="普通图片列表标签" tablename="PE_U_Article" parentid="1" shownum="8" border="0" titlelen="10" /}
+                <div class="clearbox"></div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+        <!-- 最新图文结束 -->
+        <!-- 搜索开始 -->
+        {PE.Label id="全站搜索表单" /}
+        <!-- 搜索结束 -->
+        <div class="c_spacing"> </div>
+        <!-- 右侧二列一开始 -->
+        <div id="r_main"> {PE.Label id="网站公告垂直" /}
+          <div class="c_spacing"> </div>
+          <div class="r_content">
+            <dl>
+              <dt>推荐信息</dt>
+              <dd>
+                <ul>
+                  {PE.Label id="文章信息列表_普通式" parentid="1" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="9" ishot="false" iselite="false" inputername="" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="1" /}" showtype="1" titlelen="16" contentlen="0" shownodename="false" showpropertytype="6" showincludepic="false" showauthor="false" showdatetype="mm-dd" showhits="false" showhotsign="false" shownewsign="false" showtips="true" showcommentlink="false" usepage="false" opentype="{PE.Label id="取得栏目下的内容打开方式" nodeid="1" /}" cols="0" hits="0" elitelevel="10" /}
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="r_content">
+            <dl>
+              <dt>最新信息</dt>
+              <dd>
+                <ul>
+                  {PE.Label id="文章信息列表_普通式" parentid="1" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="9" ishot="false" iselite="false" inputername="" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="1" /}" showtype="1" titlelen="16" contentlen="0" shownodename="false" showpropertytype="6" showincludepic="false" showauthor="false" showdatetype="mm-dd" showhits="false" showhotsign="false" shownewsign="false" showtips="true" showcommentlink="false" usepage="false" opentype="{PE.Label id="取得栏目下的内容打开方式" nodeid="1" /}" cols="0" hits="0" elitelevel="0" /}
+                </ul>
+              </dd>
+            </dl>
+          </div>
+          <div class="c_spacing"> </div>
+        </div>
+        <div id="main_box">
+          <!-- 头条图文 -->
+          <div class="c_main">
+            <dl>
+              <dt class="c_title">
+                <div class="more"></div>
+                <a href="#">头条图文</a></dt>
+              <dd class="c_content">
+                <div class="imgtitle">
+                  <ul>
+                    {PE.Label id="头条图片显示列表" listnum="15" titlelen="36" useimg="true" /}
+                  </ul>
+                </div>
+                <div class="clearbox2"> </div>
+              </dd>
+            </dl>
+          </div>
+          <div class="c_spacing"> </div>
+          <!-- 二列式图文 -->
+          <div class="c_main">
+            <dl>
+              <dt class="c_title">
+                <div class="more"> <a href="{PE.Label id="显示栏目路径" nodeid="1" /}" target="_blank">[更多]</a></div>
+                <a href="{PE.Label id="显示栏目路径" nodeid="1" /}" target="_blank">二列式图文</a></dt>
+              <dd class="c_content">
+                <div class="p_thumb_l"> {PE.Label id="带图片内容列表_文章_普通式" parentid="1" arrnodeid="1" includechild="true" specialid="0" shownum="2" ishot="false" iselite="false" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="1" /}" imgwidth="160" imgheight="120" titlelen="20" contentlen="0" showtips="false" urltype="0" hits="0" elitelevel="0" span="" class="" /} </div>
+                <div class="p_list_r">
+                  <ul>
+                    {PE.Label id="多模型通用内容信息列表_普通式" tablename="PE_U_Article" parentid="1" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="13" ishot="false" iselite="false" inputername="" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="1" /}" showtype="1" titlelen="40" contentlen="0" shownodename="false" showpropertytype="3" showincludepic="false" showauthor="true" showdatetype="mm-dd" showhits="false" showhotsign="false" shownewsign="false" showtips="false" showcommentlink="false" usepage="false" opentype="{PE.Label id="取得栏目下的内容打开方式" nodeid="1" /}" cols="1" hits="0" elitelevel="0" span="" class="" /}
+                  </ul>
+                </div>
+                <div class="clearbox2"> </div>
+              </dd>
+            </dl>
+          </div>
+          <div class="c_spacing"> </div>
+          {PE.Label id="右侧广告" /}
+          <div class="c_spacing"> </div>
+          <div class="clearbox"> </div>
+        </div>
+        <!-- 右侧二列一结束 -->
+      </div>
+      <div id="main_right">
+        <div id="main_right_box">
+          <!-- 右侧二列二开始 -->
+          <div id="r_main">
+            <div class="r_content">
+              <dl>
+                <dt>推荐来源</dt>
+                <dd>
+                  <ul>
+                    {PE.Label id="推荐来源列表" shownum="5" showtype="0" imgheight="175" imgwidth="150" intronum="50" span="" class="" /}
+                  </ul>
+                  <ul>
+                    <li><a href="{PE.SiteConfig.ApplicationPath/}Common/ShowCopyFromList.aspx">查看更多>></a></li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+            <div class="c_spacing"> </div>
+            <div class="r_content">
+              <dl>
+                <dt>推荐作者</dt>
+                <dd>
+                  <ul>
+                    {PE.Label id="推荐作者列表" shownum="5" authortype="0" showtype="0" imgheight="175" imgwidth="150" intronum="50" span="" class="" /}
+                  </ul>
+                  <ul>
+                    <li><a href="{PE.SiteConfig.ApplicationPath/}Common/ShowAuthorList.aspx">查看更多>></a></li>
+                  </ul>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div id="main_box">
+            <div class="c_main">
+              <!-- 软件 -->
+              <div class="c_main_two">
+                <dl>
+                  <dt class="c_title">
+                    <div class="more"> <a href="{PE.Label id="显示栏目路径" nodeid="3" /}" target="_blank">[更多]</a></div>
+                    <a href="{PE.Label id="显示栏目路径" nodeid="3" /}" target="_blank">软件更新</a></dt>
+                  <dd class="c_content">
+                    <div class="p_list_two">
+                      <ul>
+                        {PE.Label id="软件信息列表_普通式" parentid="3" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="14" ishot="false" iselite="false" inputername="" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="3" /}" showtype="1" titlelen="16" contentlen="0" shownodename="false" showpropertytype="2" showincludepic="false" showauthor="false" showdatetype="mm-dd" showhits="false" showhotsign="false" shownewsign="false" showtips="true" showcommentlink="false" usepage="false" opentype="{PE.Label id="取得栏目下的内容打开方式" nodeid="3" /}" cols="0" hits="0" elitelevel="0" /}
+                      </ul>
+                    </div>
+                    <div class="clearbox2"> </div>
+                  </dd>
+                </dl>
+              </div>
+              <!-- 留言评论 -->
+              <div class="c_main_two">
+                <div class="c_spacing"> </div>
+                <div class="c_right">
+                  <dl>
+                    <dt class="c_title">
+                      <div class="more"> </div>
+                      最新评论</dt>
+                    <dd class="c_content">
+                      <!--{PE.Label id="评论列表" gid="0" listnum="8" page="false" pagesize="10" urlpage="false" /}-->
+                      <ul>
+                        {PE.Label id="最新评论" shownum="8" span="" class="" /}
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="c_left_box">
+                  <div class="c_left">
+                    <dl>
+                      <dt class="c_title">
+                        <div class="more"> <a href="{PE.Label id="显示栏目路径" nodeid="7" /}" target="_blank">[更多]</a></div>
+                        <a href="{PE.Label id="显示栏目路径" nodeid="7" /}" target="_blank">最新留言</a></dt>
+                      <dd class="c_content">
+                      <ul>
+                      {PE.Label id="最新留言列表" shownum="8" titlelen="20" span="" class="" /}
+                      </ul>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <div class="clearbox"> </div>
+              </div>
+              <div class="clearbox"> </div>
+            </div>
+          </div>
+          <!-- 右侧二列二结束 -->
+          <div class="c_spacing"> </div>
+          <!-- 图片更新开始 -->
+          <div class="c_main_one">
+            <dl>
+              <dt class="c_title">
+                <div class="more"> <a href="{PE.Label id="显示栏目路径" nodeid="2"/}" target="_blank">[更多]</a></div>
+                <a href="{PE.Label id="显示栏目路径" nodeid="2"/}" target="_blank">图片更新</a></dt>
+              <dd class="c_content">
+                <!-- 显示8张最新图片 -->
+                <div class="p_class_list">{PE.Label id="带图片内容列表_图片_普通式" parentid="2" arrnodeid="2" includechild="true" specialid="0" shownum="8" ishot="false" iselite="false" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="2" /}" imgwidth="160" imgheight="120" titlelen="20" contentlen="0" showtips="false" urltype="0" hits="0" elitelevel="0" span="" class="" /}
+                  <div class="clearbox"></div>
+                </div>
+              </dd>
+            </dl>
+          </div>
+          <!-- 图片更新结束 -->
+        </div>
+      </div>
+    </div>
+    {PE.Label id="网站首页左侧" /} </div>
+</div>
+{PE.Label id="网站底部" /}
+{PE.Label id="弹出公告"/}
+</body>
+</html>

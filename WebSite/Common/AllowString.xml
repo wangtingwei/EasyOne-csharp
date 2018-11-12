@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Main>
+  <AllowString><![CDATA[onmousewheel="return bbimg(this)"]]></AllowString>
+  <AllowString><![CDATA[onload="resizepic(this)"]]></AllowString>
+</Main>

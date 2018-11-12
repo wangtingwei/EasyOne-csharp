@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" enableLocalization="true">
+  <siteMapNode url="" title="您现在的位置：后台管理" description="您现在的位置：后台管理">
+    <siteMapNode url="" title="我的工作台" description="我的工作台">
+      <siteMapNode url="~/Admin/Profile/ModifyPassword.aspx" title="修改密码" description="修改密码" />
+      <siteMapNode url="~/Admin/Profile/ChangeTheme.aspx" title="主题控制" description="主题控制" />
+      <siteMapNode url="~/Admin/Profile/QuickLinksConfig.aspx" title="快捷导航配置" description="快捷导航配置" />
+    </siteMapNode>
+    <siteMapNode url="" title="内容管理" description="内容管理">
+      <siteMapNode url="~/Admin/Contents/ContentManage.aspx" title="栏目信息管理" description="栏目信息管理">
+        <siteMapNode url="~/Admin/Contents/ContentMessage.aspx" title="发送手机短信" description="发送手机短信" />
+        <siteMapNode url="~/Admin/Contents/SelectContentModel.aspx" title="选择模型" description="选择模型" />
+        <siteMapNode url="~/Admin/Contents/Content.aspx?Action=Add" title="添加内容" description="添加内容" />
+        <siteMapNode url="~/Admin/Contents/Content.aspx?Action=Modify" title="修改内容" description="修改内容" />
+        <siteMapNode url="~/Admin/Contents/ContentView.aspx" title="查看内容" description="查看内容" />
+        <siteMapNode url="~/Admin/Contents/ArticlePreview.aspx" title="查看文章" description="查看文章" />
+        <siteMapNode url="~/Admin/Contents/SoftPreview.aspx" title="查看软件" description="查看软件" />
+        <siteMapNode url="~/Admin/Contents/PhotoPreview.aspx" title="查看图片" description="查看图片" />
+        <siteMapNode url="~/Admin/Contents/ContentArchivingManage.aspx" title="信息归档管理" description="信息归档管理" />
+        <siteMapNode url="~/Admin/Contents/ContentAdvancedSearch.aspx" title="信息高级查询" description="信息高级查询" />
+        <siteMapNode url="~/Admin/Contents/ContentAdvancedSearchManage.aspx" title="信息高级查询管理" description="信息高级查询管理" />
+        <siteMapNode url="~/Admin/Contents/ContentBatchSet.aspx" title="信息批量设置" description="信息批量设置" />
+        <siteMapNode url="~/Admin/Contents/ContentBatchModfiy.aspx" title="信息批量替换" description="信息批量替换" />
+        <siteMapNode url="~/Admin/Contents/ContentBatchMove.aspx" title="信息批量移动" description="信息批量移动" />
+        <siteMapNode url="~/Admin/Contents/ContentRecycle.aspx" title="回收站管理" description="回收站管理" />
+        <siteMapNode url="~/Admin/Contents/ContentHtml.aspx" title="生成管理" description="生成管理" />
+        <siteMapNode url="~/Admin/Contents/ContentSignin.aspx" title="签收管理" description="签收管理" />
+        <siteMapNode url="~/Admin/Contents/AddContentToSpecial.aspx?Action=Content" title="添加内容到专题" description="添加内容到专题" />
+        <siteMapNode url="~/Admin/Contents/AddContentToNode.aspx" title="添加内容到栏目" description="添加内容到栏目" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Contents/SpecialInfosManage.aspx" title="专题信息管理" description="专题信息管理">
+        <siteMapNode url="~/Admin/Contents/AddContentToSpecial.aspx?Action=Special" title="添加到其它专题" description="添加到其它专" />
+        <siteMapNode url="~/Admin/Contents/MoveToOtherSpecial.aspx" title="移动到另一专题" description="移动到另一专题" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Contents/CommentManage.aspx" title="评论管理" description="评论管理">
+        <siteMapNode url="~/Admin/Contents/ContentCommentManage.aspx" title="内容评论管理" description="内容评论管理" />
+        <siteMapNode url="~/Admin/Contents/CommentRestore.aspx" title="回复评论" description="回复评论" />
+        <siteMapNode url="~/Admin/Contents/CommentReplyModify.aspx" title="回复评论" description="回复评论" />
+        <siteMapNode url="~/Admin/Contents/CommentExcerpt.aspx" title="引用评论" description="引用评论" />
+        <siteMapNode url="~/Admin/Contents/CommentPKZoneManage.aspx" title="辩论PK" description="辩论PK" />
+        <siteMapNode url="~/Admin/Contents/CommentModify.aspx" title="修改评论" description="修改评论" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Collection/ItemManage.aspx" title="采集项目管理" description="采集项目管理">
+        <siteMapNode url="~/Admin/Collection/CollectionFilter.aspx" title="添加采集过滤" description="添加采集过滤" />
+        <siteMapNode url="~/Admin/Collection/CollectionFilter.aspx?Action=Modify" title="修改采集过滤" description="修改采集过滤" />
+        <siteMapNode url="~/Admin/Collection/CollectionFilterManage.aspx" title="采集过滤管理" description="采集过滤管理" />
+        <siteMapNode url="~/Admin/Collection/Exclosion.aspx" title="添加采集排除" description="添加采集排除" />
+        <siteMapNode url="~/Admin/Collection/Exclosion.aspx?Action=Modify" title="修改采集排除" description="修改采集排除" />
+        <siteMapNode url="~/Admin/Collection/ExclosionManage.aspx" title="采集排除管理" description="采集排除管理" />
+        <siteMapNode url="~/Admin/Collection/Collection.aspx" title="采集主程序" description="采集主程序" />
+        <siteMapNode url="~/Admin/Collection/CollectionMain.aspx" title="项目采集" description="项目采集" />
+        <siteMapNode url="~/Admin/Collection/HistoryManage.aspx" title="采集历史记录" description="采集历史记录" />
+        <siteMapNode url="~/Admin/Collection/ConfigStep1.aspx" title="采集配置第一步" description="采集配置第一步" />
+        <siteMapNode url="~/Admin/Collection/ConfigStep2.aspx" title="采集配置第二步" description="采集配置第二步" />
+        <siteMapNode url="~/Admin/Collection/ConfigStep3.aspx" title="采集配置第三步" description="采集配置第三步" />
+        <siteMapNode url="~/Admin/Collection/CollectionProc.aspx" title="采集进度" description="采集进度" />
+      </siteMapNode>
+      <siteMapNode url="" title="网站统计" description="网站统计">
+        <siteMapNode url="~/Admin/Statistics/SiteCount.aspx?Action=CategoryMonth" title="按栏目/月份统计" description="按栏目/月份统计" />
+        <siteMapNode url="~/Admin/Statistics/SiteCount.aspx?Action=CategoryInputer" title="按栏目/录入者统计" description="按栏目/录入者统计" />
+        <siteMapNode url="~/Admin/Statistics/SiteCount.aspx?Action=CategoryManager" title="按栏目/审核者统计" description="按栏目/审核者统计" />
+        <siteMapNode url="~/Admin/Statistics/SiteCount.aspx?Action=InputerMonth" title="按录入者/月份统计" description="按录入者/月份统计" />
+        <siteMapNode url="~/Admin/Statistics/SiteCount.aspx?Action=ManagerMonth" title="按审核者/月份统计" description="按审核者/月份统计" />
+      </siteMapNode>
+      <siteMapNode url="" title="内容转换" description="内容转换">
+        <siteMapNode url="~/Admin/Accessories/InsideLinkManage.aspx" title="站内链接管理" description="站内链接管理">
+          <siteMapNode url="~/Admin/Accessories/InsideLinkManage.aspx?ListType=1" title="$resources:SiteMapPathResources,LinkTarget" description="$resources:SiteMapPathResources,LinkTarget" />
+          <siteMapNode url="~/Admin/Accessories/InsideLinkManage.aspx?ListType=3" title="$resources:SiteMapPathResources,LinkAddress" description="$resources:SiteMapPathResources,LinkAddress" />
+          <siteMapNode url="~/Admin/Accessories/InsideLink.aspx" title="添加站内链接" description="添加站内链接" />
+          <siteMapNode url="~/Admin/Accessories/InsideLink.aspx?Action=Modify" title="修改站内链接" description="修改站内链接" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Accessories/WordFilterManage.aspx" title="字符过滤管理" description="字符过滤管理">
+          <siteMapNode url="~/Admin/Accessories/WordFilterManage.aspx?ListType=1" title="$resources:SiteMapPathResources,ReplaceTarget" description="$resources:SiteMapPathResources,ReplaceTarget" />
+          <siteMapNode url="~/Admin/Accessories/WordFilterManage.aspx?ListType=2" title="$resources:SiteMapPathResources,ReplaceContent" description="$resources:SiteMapPathResources,ReplaceContent" />
+          <siteMapNode url="~/Admin/Accessories/WordFilter.aspx" title="添加字符过滤" description="添加字符过滤" />
+          <siteMapNode url="~/Admin/Accessories/WordFilter.aspx?Action=Modify" title="修改字符过滤" description="修改字符过滤" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="其他管理" description="其他管理">
+        <siteMapNode url="~/Admin/Accessories/SourceManage.aspx" title="来源管理" description="来源管理">
+          <siteMapNode url="~/Admin/Accessories/Source.aspx" title="添加来源信息" description="添加来源信息" />
+          <siteMapNode url="~/Admin/Accessories/Source.aspx?Action=Modify" title="修改来源信息" description="修改来源信息" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Accessories/AuthorManage.aspx" title="作者管理" description="作者管理">
+          <siteMapNode url="~/Admin/Accessories/Author.aspx" title="添加作者" description="添加作者" />
+          <siteMapNode url="~/Admin/Accessories/Author.aspx?Action=Modify" title="修改作者" description="修改作者" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Accessories/KeyWordManage.aspx" title="关键字管理" description="关键字管理">
+          <siteMapNode url="~/Admin/Accessories/KeyWordManage.aspx?SearchType=" title="所有关键字test" description="所有关键字test" />
+          <siteMapNode url="~/Admin/Accessories/KeyWordManage.aspx?SearchType=0" title="$resources:SiteMapPathResources,NormalKeyword" description="$resources:SiteMapPathResources,NormalKeyword" />
+          <siteMapNode url="~/Admin/Accessories/KeyWordManage.aspx?SearchType=1" title="$resources:SiteMapPathResources,SearchKeyword" description="$resources:SiteMapPathResources,SearchKeyword" />
+          <siteMapNode url="~/Admin/Accessories/KeyWord.aspx" title="添加关键字" description="添加关键字" />
+          <siteMapNode url="~/Admin/Accessories/KeyWord.aspx?Action=Modify" title="修改关键字" description="修改关键字" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Accessories/DownloadErrorManage.aspx" title="下载报错管理" description="下载报错管理">
+          <siteMapNode url="~/Admin/Accessories/DownloadErrorManage.aspx?Field=" title="所有下载报错" description="所有下载报错" />
+          <siteMapNode url="~/Admin/Accessories/DownloadErrorManage.aspx?Field=InfoID" title="$resources:SiteMapPathResources,InfoID" description="$resources:SiteMapPathResources,InfoID" />
+          <siteMapNode url="~/Admin/Accessories/DownloadErrorManage.aspx?Field=ErrorDate" title="$resources:SiteMapPathResources,ErrorDate" description="$resources:SiteMapPathResources,ErrorDate" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Accessories/DownServerManage.aspx" title="下载服务器管理" description="下载服务器管理">
+          <siteMapNode url="~/Admin/Accessories/DownServer.aspx" title="添加下载服务器" description="添加下载服务器" />
+          <siteMapNode url="~/Admin/Accessories/DownServer.aspx?Action=Modify" title="修改下载服务器" description="修改下载服务器" />
+          <siteMapNode url="~/Admin/Accessories/DownServerOrder.aspx" title="下载服务器排序" description="下载服务器排序" />
+        </siteMapNode>
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="用户管理" description="用户管理">
+      <siteMapNode url="~/Admin/User/AdministratorManage.aspx" title="管理员管理" description="管理员管理">
+        <siteMapNode url="~/Admin/User/Administrator.aspx" title="添加管理员" description="添加管理员" />
+        <siteMapNode url="~/Admin/User/Administrator.aspx?Action=Modify" title="修改管理员" description="修改管理员" />
+        <siteMapNode url="~/Admin/User/RoleManage.aspx" title="角色管理" description="角色管理">
+          <siteMapNode url="~/Admin/User/Role.aspx" title="添加角色" description="添加角色" />
+          <siteMapNode url="~/Admin/User/Role.aspx?Action=Modify" title="修改角色" description="修改角色" />
+          <siteMapNode url="~/Admin/User/RoleMember.aspx" title="角色成员管理" description="角色成员管理" />
+          <siteMapNode url="~/Admin/User/RolePermissions.aspx" title="常规模块权限设置" description="常规模块权限设置" />
+          <siteMapNode url="~/Admin/User/RoleFieldPermissions.aspx?PermissionsType=Role" title="字段权限设置" description="字段权限设置" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/User/UserManage.aspx" title="会员管理" description="会员管理">
+        <siteMapNode url="~/Admin/User/AddIncome.aspx" title="添加会员银行汇款信息" description="添加会员银行汇款信息" />
+        <siteMapNode url="~/Admin/User/AddOtherIncome.aspx" title="会员其他收入" description="会员其他收入" />
+        <siteMapNode url="~/Admin/User/AddPayment.aspx" title="添加会员支出金额" description="添加会员支出金额" />
+        <siteMapNode url="~/Admin/User/AddPoint.aspx" title="奖励点券" description="奖励点券" />
+        <siteMapNode url="~/Admin/User/AddValidDate.aspx" title="添加用户有效期" description="添加用户有效期" />
+        <siteMapNode url="~/Admin/User/BatchAddMoney.aspx" title="批量添加奖金" description="批量添加奖金" />
+        <siteMapNode url="~/Admin/User/BatchAddPoint.aspx" title="批量添加点券" description="批量添加点券" />
+        <siteMapNode url="~/Admin/User/BatchAddValidDate.aspx" title="批量添加用户有效期" description="批量添加用户有效期" />
+        <siteMapNode url="~/Admin/User/BatchAddValidDate.aspx?Action=SubtractValidDate" title="批量扣除用户有效期" description="批量扣除用户有效期" />
+        <siteMapNode url="~/Admin/User/BatchAddMoney.aspx?Action=SubtractMoeny" title="批量扣除奖金" description="批量扣除奖金" />
+        <siteMapNode url="~/Admin/User/BatchMinusMoney.aspx" title="批量扣除奖金" description="批量扣除奖金" />
+        <siteMapNode url="~/Admin/User/BatchMinusPoint.aspx" title="批量扣除点券" description="批量扣除点券" />
+        <siteMapNode url="~/Admin/User/BatchAddPoint.aspx?Action=SubtractPoint" title="批量扣除点券" description="批量扣除点券" />
+        <siteMapNode url="~/Admin/User/BatchMinusValidDate.aspx" title="批量扣除用户有效期" description="批量扣除用户有效期" />
+        <siteMapNode url="~/Admin/User/BatchMove.aspx" title="批量移动会员" description="批量移动会员" />
+        <siteMapNode url="~/Admin/User/ExchangePoint.aspx" title="会员点券兑换" description="会员点券兑换" />
+        <siteMapNode url="~/Admin/User/ExchangeValid.aspx" title="会员有效期兑换" description="会员有效期兑换" />
+        <siteMapNode url="~/Admin/User/LogSearch.aspx" title="复杂查询" description="复杂查询" />
+        <siteMapNode url="~/Admin/User/MinusPoint.aspx" title="扣除点券" description="扣除点券" />
+        <siteMapNode url="~/Admin/User/MinusValidDate.aspx" title="扣除用户有效期" description="扣除用户有效期" />
+        <siteMapNode url="~/Admin/User/ModifyPurview.aspx" title="会员权限修改" description="会员权限修改" />
+        <siteMapNode url="~/Admin/User/User.aspx" title="添加会员" description="添加会员" />
+        <siteMapNode url="~/Admin/User/User.aspx?Action=Modify" title="修改用户" description="修改用户" />
+        <siteMapNode url="~/Admin/User/UserShow.aspx" title="查看会员信息" description="查看会员信息" />
+        <siteMapNode url="~/Admin/User/RegCompany.aspx" title="将个人会员升级为企业会员 " description="将个人会员升级为企业会员" />
+        <siteMapNode url="~/Admin/User/RegClient.aspx" title="将会员升级为客户 " description="将会员升级为客户" />
+        <siteMapNode url="~/Admin/User/UserGroupManage.aspx" title="会员组管理" description="会员组管理">
+          <siteMapNode url="~/Admin/User/UserGroup.aspx" title="添加会员组" description="添加会员组" />
+          <siteMapNode url="~/Admin/User/UserGroup.aspx?Action=Modify" title="修改会员组" description="修改会员组" />
+          <siteMapNode url="~/Admin/User/UserGroupPermissions.aspx" title="设置会员组权限" description="设置会员组权限" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/User/CardsManage.aspx" title="充值卡管理" description="充值卡管理">
+        <siteMapNode url="~/Admin/User/CardsManage.aspx?Action=Search" title="$resources:SiteMapPathResources,CardsSearch" description="$resources:SiteMapPathResources,CardsSearch" peCardType="-1|所有充值卡,0|本站充值卡,1|其他公司卡" peCardStatus="1|未使用的,2|已使用的,3|已失效的" peField="1|卡号,2|面值(单位：元),3|代理商,4|使用者" />
+        <siteMapNode url="~/Admin/User/CardsManage.aspx?CardType=-1" title="所有充值卡" description="所有充值卡" />
+        <siteMapNode url="~/Admin/User/CardsManage.aspx?CardType=0" title="本站充值卡" description="本站充值卡" />
+        <siteMapNode url="~/Admin/User/CardsManage.aspx?CardType=1" title="其他公司卡" description="其他公司卡" />
+        <siteMapNode url="~/Admin/User/CardsManage.aspx?CardStatus=1" title="所有未使用的充值卡" description="所有未使用的充值卡" />
+        <siteMapNode url="~/Admin/User/CardsManage.aspx?CardStatus=2" title="所有已使用的充值卡" description="所有已使用的充值卡" />
+        <siteMapNode url="~/Admin/User/CardsManage.aspx?CardStatus=3" title="所有已失效的充值卡" description="所有已失效的充值卡" />
+        <siteMapNode url="~/Admin/User/CardAdd.aspx" title="添加充值卡" description="添加充值卡" />
+        <siteMapNode url="~/Admin/User/CardBatchAdd.aspx" title="批量生成充值卡" description="批量生成充值卡" />
+        <siteMapNode url="~/Admin/User/CardModify.aspx" title="修改充值卡" description="修改充值卡" />
+        <siteMapNode url="~/Admin/User/CardShow.aspx" title="查看充值卡信息" description="查看充值卡信息" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/User/BankrollItemList.aspx" title="资金明细记录管理" description="资金明细记录管理">
+        <siteMapNode url="~/Admin/User/BankrollItemListSearch.aspx" title="复杂查询" description="复杂查询" />
+        <siteMapNode url="~/Admin/User/BankrollItemDetail.aspx" title="资金明细记录详情" description="资金明细记录详情" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/User/PointLog.aspx" title="会员点券明细管理" description="会员点券明细管理">
+        <siteMapNode url="~/Admin/User/PointLogDetail.aspx" title="点券明细记录详情" description="点券明细记录详情" />
+        <siteMapNode url="~/Admin/User/LogSearch.aspx?LogType=1" title="明细复杂查询" description="明细复杂查询" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/User/ValidLog.aspx" title="会员有效期明细管理" description="会员有效期明细管理">
+        <siteMapNode url="~/Admin/User/ValidLog.aspx?SearchType=0" title="最近10天内的新有效期明细记录" description="最近10天内的新有效期明细记录" />
+        <siteMapNode url="~/Admin/User/ValidLog.aspx?SearchType=1" title="最近一月内的新有效期明细记录" description="最近一月内的新有效期明细记录" />
+        <siteMapNode url="~/Admin/User/ValidLog.aspx?SearchType=2" title="所有添加有效期记录" description="所有添加有效期记录" />
+        <siteMapNode url="~/Admin/User/ValidLog.aspx?SearchType=3" title="所有扣除有效期记录" description="所有扣除有效期记录" />
+        <siteMapNode url="~/Admin/User/ValidLog.aspx?SearchType=-1" title="所有有效期明细记录" description="所有有效期明细记录" />
+        <siteMapNode url="~/Admin/User/ValidLog.aspx?SearchType=11" title="有效期明细复杂查询记录" description="有效期明细复杂查询记录" />
+        <siteMapNode url="~/Admin/User/ValidLog.aspx?SearchType=10&amp;Field=1" title="$resources:SiteMapPathResources,ValidLogUserName" description="$resources:SiteMapPathResources,ValidLogUserName" />
+        <siteMapNode url="~/Admin/User/ValidLog.aspx?SearchType=10&amp;Field=2" title="$resources:SiteMapPathResources,ValidLogConsumeTime" description="$resources:SiteMapPathResources,ValidLogConsumeTime" />
+        <siteMapNode url="~/Admin/User/ValidLogDetail.aspx" title="会员有效期明细记录详情" description="会员有效期明细记录详情" />
+        <siteMapNode url="~/Admin/User/LogSearch.aspx?LogType=2" title="明细复杂查询" description="明细复杂查询" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/User/PaymentLogManage.aspx" title="在线支付记录管理" description="在线支付记录管理">
+        <siteMapNode url="~/Admin/User/PaymentLogManage.aspx?SearchType=0" title="所有在线支付记录" description="所有在线支付记录" />
+        <siteMapNode url="~/Admin/User/PaymentLogManage.aspx?SearchType=1" title="最近10天内的新在线支付记录" description="最近10天内的新在线支付记录" />
+        <siteMapNode url="~/Admin/User/PaymentLogManage.aspx?SearchType=2" title="最近一月内的新在线支付记录" description="最近一月内的新在线支付记录" />
+        <siteMapNode url="~/Admin/User/PaymentLogManage.aspx?SearchType=3" title="未提交的在线支付记录" description="未提交的在线支付记录" />
+        <siteMapNode url="~/Admin/User/PaymentLogManage.aspx?SearchType=4" title="未成功的在线支付记录" description="未成功的在线支付记录理" />
+        <siteMapNode url="~/Admin/User/PaymentLogManage.aspx?SearchType=5" title="支付成功的在线支付记录" description="支付成功的在线支付记录" />
+        <siteMapNode url="~/Admin/User/PaymentLogManage.aspx?SearchType=10" title="$resources:SiteMapPathResources,PaymentLog" description="$resources:SiteMapPathResources,PaymentLog" peField="PaymentNum|在线支付记录编号中含有,UserName|用户名中含有,PayTime|支付时间为" />
+        <siteMapNode url="~/Admin/User/PaymentLogDetail.aspx" title="在线支付记录详情" description="在线支付记录详情" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/User/CompanyManage.aspx" title="企业管理" description="企业管理">
+        <siteMapNode url="~/Admin/User/CompanyShow.aspx" title="详细信息" description="详细信息" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="附件管理" description="附件管理">
+      <siteMapNode url="~/Admin/ADZone/ADManage.aspx" title="网站广告管理" description="网站广告管理">
+        <siteMapNode url="~/Admin/ADZone/ADManage.aspx?ListType=1" title="$resources:SiteMapPathResources,ADName" description="$resources:SiteMapPathResources,ADName" />
+        <siteMapNode url="~/Admin/ADZone/ADManage.aspx?ListType=2" title="$resources:SiteMapPathResources,ADIntro" description="$resources:SiteMapPathResources,ADIntro" />
+        <siteMapNode url="~/Admin/ADZone/Advertisement.aspx" title="添加广告" description="添加广告" />
+        <siteMapNode url="~/Admin/ADZone/Advertisement.aspx?Action=Modify" title="修改广告" description="修改广告" />
+        <siteMapNode url="~/Admin/ADZone/JSTemplate.aspx" title="广告JS模板管理" description="广告JS模板管理" />
+        <siteMapNode url="~/Admin/ADZone/ModifyJSTemplate.aspx" title="修改广告JS模板内容" description="修改广告JS模板内容" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/ADZone/ADZoneManage.aspx" title="广告版位管理" description="广告版位管理">
+        <siteMapNode url="~/Admin/ADZone/ADZoneManage.aspx?ListType=1" title="$resources:SiteMapPathResources,ADZoneName" description="$resources:SiteMapPathResources,ADZoneName" />
+        <siteMapNode url="~/Admin/ADZone/ADZoneManage.aspx?ListType=2" title="$resources:SiteMapPathResources,ADZoneIntro" description="$resources:SiteMapPathResources,ADZoneIntro" />
+        <siteMapNode url="~/Admin/ADZone/ADZone.aspx" title="添加广告版位" description="添加广告版位" />
+        <siteMapNode url="~/Admin/ADZone/ADZone.aspx?Action=Modify" title="修改广告版位" description="修改广告版位" />
+        <siteMapNode url="~/Admin/ADZone/ADZoneImport.aspx" title="广告版位导入" description="广告版位导入" />
+        <siteMapNode url="~/Admin/ADZone/ADZoneExport.aspx" title="广告版位导出" description="广告版位导出" />
+        <siteMapNode url="~/Admin/ADZone/PreviewAD.aspx" title="预览版位JS效果" description="预览版位JS效果" />
+        <siteMapNode url="~/Admin/ADZone/ShowJSCode.aspx" title="版位JS调用代码" description="版位JS调用代码" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Survey/SurveyManage.aspx" title="问卷调查管理" description="问卷调查管理">
+        <siteMapNode url="~/Admin/Survey/SurveyManage.aspx?Action=Search" title="$resources:SiteMapPathResources,SurveySearch" description="$resources:SiteMapPathResources,SurveySearch" peSearchType="0|名称中含有,1|创建日期为,2|截止日期为" />
+        <siteMapNode url="~/Admin/Survey/SurveyResult.aspx?Action=Search" title="$resources:SiteMapPathResources,SurveySearch" description="$resources:SiteMapPathResources,SurveySearch" peSearchType="0|名称中含有,1|创建日期为,2|截止日期为" />
+        <siteMapNode url="~/Admin/Survey/SurveyCode.aspx?Action=Search" title="$resources:SiteMapPathResources,SurveySearch" description="$resources:SiteMapPathResources,SurveySearch" peSearchType="0|名称中含有,1|创建日期为,2|截止日期为" />
+        <siteMapNode url="~/Admin/Survey/Survey.aspx?Action=Add" title="添加问卷" description="添加问卷" />
+        <siteMapNode url="~/Admin/Survey/QuestionManage.aspx" title="问题管理" description="问题管理" />
+        <siteMapNode url="~/Admin/Survey/Survey.aspx?Action=Modify" title="修改问卷" description="修改问卷" />
+        <siteMapNode url="~/Admin/Survey/Question.aspx" title="添加问题" description="添加问题" />
+        <siteMapNode url="~/Admin/Survey/Question.aspx?Action=Modify" title="修改问题" description="修改问题" />
+        <siteMapNode url="~/Admin/Survey/QuestionPreview.aspx" title="预览问题" description="预览问题" />
+        <siteMapNode url="~/Admin/Survey/SurveyCode.aspx" title="调用代码" description="调用代码" />
+        <siteMapNode url="~/Admin/Survey/SurveyResult.aspx" title="调查结果管理" description="调查结果管理" />
+        <siteMapNode url="~/Admin/Survey/ShowCountData.aspx" title="调查结果" description="调查结果" />
+        <siteMapNode url="~/Admin/Survey/ShowCountData3.aspx" title="调查结果" description="调查结果" />
+        <siteMapNode url="~/Admin/Survey/ShowCountData2.aspx" title="调查结果" description="调查结果" />
+        <siteMapNode url="~/Admin/Survey/QuestionDetail.aspx" title="问题详情" description="问题详情" />
+        <siteMapNode url="~/Admin/Survey/AnswerList.aspx" title="问题回答详情" description="问题回答详情" />
+      </siteMapNode>
+      <siteMapNode url="" title="访问统计管理" description="访问统计管理">
+        <siteMapNode url="~/Admin/Analytics/StatConfig.aspx" title="访问统计参数配置" description="访问统计参数配置" />
+        <siteMapNode url="~/Admin/Analytics/StatInfoListReport.aspx" title="网站综合统计信息" description="网站综合统计信息" />
+        <siteMapNode url="~/Admin/Analytics/StatInit.aspx" title="数据初始化" description="数据初始化" />
+        <siteMapNode url="~/Admin/Analytics/StatVisitorReport.aspx" title="最近访问记录" description="最近访问记录" />
+        <siteMapNode url="~/Admin/Analytics/ShowClientDetail.aspx" title="访问记录详情" description="访问记录详情" />
+        <siteMapNode url="~/Admin/Analytics/CodeReference.aspx" title="统计代码调用" description="统计代码调用" />
+        <siteMapNode url="~/Admin/Analytics/StatOtherReport.aspx" title="访问统计分析" description="访问统计分析" />
+        <siteMapNode url="~/Admin/Analytics/StatUserDataReport.aspx" title="访问统计分析" description="访问统计分析" />
+        <siteMapNode url="~/Admin/Analytics/StatTimeReport.aspx" title="访问统计分析" description="访问统计分析" />
+        <siteMapNode url="~/Admin/Analytics/IPManage.aspx" title="统计IP库管理" description="统计IP库管理">
+          <siteMapNode url="~/Admin/Analytics/IPAdd.aspx" title="统计IP库添加" description="统计IP库添加" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="" title="信息发送管理" description="信息发送管理">
+        <siteMapNode url="~/Admin/Accessories/MessageManage.aspx" title="短消息管理" description="短消息管理">
+          <siteMapNode url="~/Admin/Accessories/MessageSend.aspx" title="发送短消息" description="发送短消息" />
+          <siteMapNode url="~/Admin/Accessories/MessageBatchDel.aspx" title="批量删除短消息" description="批量删除短消息" />
+          <siteMapNode url="~/Admin/Accessories/MessageRead.aspx" title="查看短消息" description="查看短消息" />
+        </siteMapNode>
+        <siteMapNode url="" title="发送手机短信" description="发送手机短信">
+          <siteMapNode url="~/Admin/Sms/SmsMessageToUser.aspx" title="给会员发送手机短信 " description="给会员发送手机短信" />
+          <siteMapNode url="~/Admin/Sms/SmsMessageToContacter.aspx" title="给联系人发送手机短信" description="给会员发送手机短信" />
+          <siteMapNode url="~/Admin/Sms/SmsMessageToOther.aspx" title="发送给其他人 " description="发送给其他人" />
+        </siteMapNode>
+        <siteMapNode url="" title="邮件列表管理" description="邮件列表管理">
+          <siteMapNode url="~/Admin/Accessories/MailListSend.aspx" title="邮件发送" description="邮件发送" />
+          <siteMapNode url="~/Admin/Accessories/MailListExport.aspx" title="邮件列表批量导出" description="邮件列表批量导出" />
+        </siteMapNode>
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Accessories/LogManager.aspx" title="网站日志管理" description="网站日志管理">
+        <siteMapNode url="~/Admin/Accessories/LogManager.aspx?Category=0" title="所有日志" description="所有日志" />
+        <siteMapNode url="~/Admin/Accessories/LogManager.aspx?Category=1" title="登录成功的日志" description="登录成功的日志" />
+        <siteMapNode url="~/Admin/Accessories/LogManager.aspx?Category=2" title="登录失败的日志" description="登录失败的日志" />
+        <siteMapNode url="~/Admin/Accessories/LogManager.aspx?Category=4" title="越权操作的日志" description="越权操作的日志" />
+        <siteMapNode url="~/Admin/Accessories/LogManager.aspx?Category=5" title="异常日志" description="异常日志" />
+        <siteMapNode url="~/Admin/Accessories/LogManager.aspx?KeyWord=" title="所有日志" description="所有日志" />
+        <siteMapNode url="~/Admin/Accessories/LogManager.aspx?SearchType=UserIP" title="$resources:SiteMapPathResources,UserIPText" description="$resources:SiteMapPathResources,UserIPText" />
+        <siteMapNode url="~/Admin/Accessories/LogManager.aspx?SearchType=UserName" title="$resources:SiteMapPathResources,UserNameText" description="$resources:SiteMapPathResources,UserNameText" />
+        <siteMapNode url="~/Admin/Accessories/LogManager.aspx?SearchType=Title" title="$resources:SiteMapPathResources,TitleText" description="$resources:SiteMapPathResources,TitleText" />
+        <siteMapNode url="~/Admin/Accessories/LogDetail.aspx" title="日志详情" description="日志详情" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Accessories/CompareFilesOnline.aspx" title="在线比较网站文件" description="在线比较网站文件">
+        <siteMapNode url="~/Admin/Accessories/CompareFilesOnline.aspx?Action=Server" title="以官方文件为准进行比较" description="以官方文件为准进行比较" />
+        <siteMapNode url="~/Admin/Accessories/CompareFilesOnline.aspx?Action=Local" title="以本地文件为准进行比较" description="以本地文件为准进行比较" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Accessories/FileManage.aspx" title="上传文件管理" description="上传文件管理" />
+      <siteMapNode url="~/Admin/Accessories/CacheManage.aspx" title="缓存管理" description="缓存管理">
+        <siteMapNode url="~/Admin/Accessories/CacheShow.aspx" title="查看缓存内容" description="查看缓存内容" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="系统设置" description="系统设置">
+      <siteMapNode url="" title="网站配置" description="网站配置">
+        <siteMapNode url="~/Admin/Configuration/SiteInfo.aspx" title="网站信息配置" description="网站信息配置" />
+        <siteMapNode url="~/Admin/Configuration/SiteOption.aspx" title="网站参数配置" description="网站参数配置" />
+        <siteMapNode url="~/Admin/Configuration/UserConfig.aspx" title="用户参数配置" description="用户参数配置" />
+        <siteMapNode url="~/Admin/Configuration/MailConfig.aspx" title="邮件参数配置" description="邮件参数配置" />
+        <siteMapNode url="~/Admin/Configuration/ThumbConfig.aspx" title="缩略图参数配置" description="缩略图参数配置" />
+        <siteMapNode url="~/Admin/Configuration/IPLockConfig.aspx" title="IP访问限定配置" description="IP访问限定配置" />
+        <siteMapNode url="~/Admin/Configuration/SmsConfig.aspx" title="手机短信配置" description="手机短信配置" />
+        <siteMapNode url="~/Admin/Configuration/RssConfig.aspx" title="RSS/WAP配置" description="RSS/WAP配置" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Contents/ModelManage.aspx" title="内容模型管理" description="内容模型管理">
+        <siteMapNode url="~/Admin/Contents/Model.aspx" title="添加内容模型" description="添加内容模型" />
+        <siteMapNode url="~/Admin/Contents/Model.aspx?Action=Modify" title="修改内容模型" description="修改内容模型" />
+        <siteMapNode url="~/Admin/CommonModel/FieldManage.aspx?ModelType=1" title="字段管理" description="字段管理" />
+        <siteMapNode url="~/Admin/CommonModel/Field.aspx?ModelType=1" title="字段管理" description="字段管理" />
+        <siteMapNode url="~/Admin/CommonModel/Field.aspx?Action=Modify&amp;ModelType=1" title="字段管理" description="字段管理" />
+        <siteMapNode url="~/Admin/CommonModel/Field.aspx?Action=Copy&amp;ModelType=1" title="字段管理" description="字段管理" />
+        <siteMapNode url="~/Admin/CommonModel/ModelPreView.aspx?ModelType=1" title="模型预览" description="模型预览" />
+        <siteMapNode url="~/Admin/CommonModel/ModelTemplate.aspx?ModelType=1" title="添加模型模板" description="添加模型模板" />
+        <siteMapNode url="~/Admin/CommonModel/ModelTemplate.aspx?Action=Modify&amp;ModelType=1" title="修改模型模板" description="修改模型模板" />
+        <siteMapNode url="~/Admin/CommonModel/ModelTemplate.aspx?Action=AddModelToFieldTemplate&amp;ModelType=1" title="保存为模型模板" description="保存为模型模板" />
+        <siteMapNode url="~/Admin/CommonModel/ModelTemplateManage.aspx?ModelType=1" title="模型模板管理" description="模型模板管理" />
+        <siteMapNode url="~/Admin/CommonModel/TemplateFieldManage.aspx?ModelType=1" title="模型模板字段管理" description="模型模板字段管理" />
+        <siteMapNode url="~/Admin/CommonModel/ModelTemplateImport.aspx?ModelType=1" title="模型模板导入管理" description="模型模板导入管理" />
+        <siteMapNode url="~/Admin/CommonModel/ModelTemplateExport.aspx?ModelType=1" title="模型模板导出管理" description="模型模板导出管理" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Contents/WorkFlowsManage.aspx" title="流程管理" description="流程管理">
+        <siteMapNode url="~/Admin/Contents/WorkFlows.aspx" title="添加流程" description="添加流程" />
+        <siteMapNode url="~/Admin/Contents/WorkFlows.aspx?Action=Modify" title="修改流程" description="修改流程" />
+        <siteMapNode url="~/Admin/Contents/FlowProcessManage.aspx" title="流程步骤管理" description="流程步骤管理" />
+        <siteMapNode url="~/Admin/Contents/FlowProcess.aspx" title="添加流程步骤" description="添加流程步骤" />
+        <siteMapNode url="~/Admin/Contents/FlowProcessManage.aspxAction=Modify" title="修改流程步骤" description="修改流程步骤" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Contents/StatusManage.aspx" title="稿件状态码管理" description="稿件状态码管理">
+        <siteMapNode url="~/Admin/Contents/Status.aspx" title="添加稿件状态码" description="添加稿件状态码" />
+        <siteMapNode url="~/Admin/Contents/StatusManage.aspx?Action=Modify" title="修改稿件状态码" description="修改稿件状态码" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Contents/CategoryManage.aspx" title="节点管理" description="节点管理">
+        <siteMapNode url="~/Admin/Contents/CategoryBatchSet.aspx" title="批量设置节点属性" description="批量设置节点属性" />
+        <siteMapNode url="~/Admin/Contents/Category.aspx" title="添加栏目节点" description="添加栏目节点" />
+        <siteMapNode url="~/Admin/Contents/Single.aspx" title="添加单页节点" description="添加单页节点" />
+        <siteMapNode url="~/Admin/Contents/Single.aspx?Action=Modify" title="修改单页节点" description="修改单页节点" />
+        <siteMapNode url="~/Admin/Contents/OutLink.aspx" title="外部链接添加" description="外部链接添加" />
+        <siteMapNode url="~/Admin/Contents/CategoryMove.aspx" title="移动节点" description="移动节点" />
+        <siteMapNode url="~/Admin/Contents/CategoryOrder.aspx" title="节点排序" description="节点排序" />
+        <siteMapNode url="~/Admin/Contents/CategoryPatch.aspx" title="修复节点" description="修复节点" />
+        <siteMapNode url="~/Admin/Contents/CategoryReset.aspx" title="复位所有节点" description="复位所有节点" />
+        <siteMapNode url="~/Admin/Contents/CategoryUnite.aspx" title="节点合并" description="节点合并" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Contents/SpecialCategoryManage.aspx" title="专题类别管理" description="专题类别管理">
+        <siteMapNode url="~/Admin/Contents/SpecialManage.aspx" title="专题管理" description="专题管理">
+          <siteMapNode url="~/Admin/Contents/Special.aspx" title="添加专题" description="添加专题" />
+          <siteMapNode url="~/Admin/Contents/Special.aspx?Action=Modfiy" title="修改专题" description="修改专题" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Contents/SpecialCategory.aspx" title="添加专题类别" description="添加专题类别" />
+        <siteMapNode url="~/Admin/Contents/SpecialCategoryOrder.aspx" title="专题类别排序" description="专题类别排序" />
+        <siteMapNode url="~/Admin/Contents/SpecialOrder.aspx" title="专题排序" description="专题排序" />
+        <siteMapNode url="~/Admin/Contents/SpecialUnite.aspx" title="合并专题" description="合并专题" />
+        <siteMapNode url="~/Admin/Contents/SpecialBatchSet.aspx" title="批量设置" description="批量设置" />
+      </siteMapNode>
+      <siteMapNode url="" title="模板标签管理" description="模板标签管理">
+        <siteMapNode url="~/Admin/Template/LabelManage.aspx" title="标签管理" description="标签管理">
+          <siteMapNode url="~/Admin/Template/Label.aspx" title="标签设置" description="标签设置" />
+          <siteMapNode url="~/Admin/Template/LabelProperty.aspx" title="标签参数设置" description="标签参数设置" />
+          <siteMapNode url="~/Admin/Template/LabelSqlBuild.aspx" title="标签查询设置" description="标签查询设置" />
+          <siteMapNode url="~/Admin/Template/LabelTemplate.aspx" title="标签模板设置" description="标签模板设置" />
+          <siteMapNode url="~/Admin/Template/LabelTemplateStatic.aspx" title="标签模板设置" description="标签模板设置" />
+          <siteMapNode url="~/Admin/Template/LabelBatch.aspx" title="标签批量设置" description="标签批量设置" />
+          <siteMapNode url="~/Admin/Template/LabelImport.aspx" title="导入导出" description="导入导出" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Template/PagerManage.aspx" title="分页标签管理" description="分页标签管理">
+          <siteMapNode url="~/Admin/Template/Pager.aspx" title="添加分页标签" description="添加分页标签" />
+          <siteMapNode url="~/Admin/Template/PagerImport.aspx" title="导入导出" description="导入导出" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Template/StyleManage.aspx" title="风格管理" description="风格管理">
+          <siteMapNode url="~/Admin/Template/StyleSheets.aspx" title="添加风格" description="添加风格" />
+          <siteMapNode url="~/Admin/Template/StyleSheets.aspx?Action=Modify" title="修改风格" description="修改风格" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Template/TemplateManage.aspx" title="模板管理" description="模板管理">
+          <siteMapNode url="~/Admin/Template/Template.aspx" title="添加模板" description="添加模板" />
+          <siteMapNode url="~/Admin/Template/Template.aspx?Action=Modify" title="修改模板" description="修改模板" />
+          <siteMapNode url="~/Admin/Template/TemplateReplace.aspx" title="模板内容替换" description="模板内容替换" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Template/IncludeFileManage.aspx" title="内嵌代码管理" description="内嵌代码管理">
+          <siteMapNode url="~/Admin/Template/IncludeFile.aspx" title="添加内嵌代码" description="添加内嵌代码" />
+          <siteMapNode url="~/Admin/Template/IncludeFile.aspx?Action=Modify" title="修改内嵌代码" description="修改内嵌代码" />
+          <siteMapNode url="~/Admin/Template/IncludeFilePreview.aspx" title="预览内嵌代码" description="预览内嵌代码" />
+        </siteMapNode>
+        <siteMapNode url="~/Admin/Configuration/FrontPageTemplateConfig.aspx" title="动态页模板配置" description="动态页模板配置" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Configuration/Choiceset.aspx" title="数据字典管理" description="数据字典管理" />
+      <siteMapNode url="~/Admin/Accessories/RegionManage.aspx" title="行政区划管理" description="行政区划管理">
+        <siteMapNode url="~/Admin/Accessories/RegionManage.aspx?SearchType=Province" title="$resources:SiteMapPathResources,RegionProvince" description="$resources:SiteMapPathResources,RegionProvince" />
+        <siteMapNode url="~/Admin/Accessories/RegionManage.aspx?SearchType=City" title="$resources:SiteMapPathResources,RegionCity" description="$resources:SiteMapPathResources,RegionCity" />
+        <siteMapNode url="~/Admin/Accessories/RegionManage.aspx?SearchType=Area" title="$resources:SiteMapPathResources,RegionArea" description="$resources:SiteMapPathResources,RegionArea" />
+        <siteMapNode url="~/Admin/Accessories/RegionManage.aspx?SearchType=PostCode" title="$resources:SiteMapPathResources,RegionPostCode" description="$resources:SiteMapPathResources,RegionPostCode" />
+        <siteMapNode url="~/Admin/Accessories/RegionManage.aspx?SearchType=AreaCode" title="$resources:SiteMapPathResources,RegionAreaCode" description="$resources:SiteMapPathResources,RegionAreaCode" />
+        <siteMapNode url="~/Admin/Accessories/Region.aspx" title="添加行政区划" description="添加行政区划" />
+        <siteMapNode url="~/Admin/Accessories/Region.aspx?Action=Modify" title="修改行政区划" description="修改行政区划" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Accessories/BankManage.aspx" title="银行账户管理" description="银行账户管理">
+        <siteMapNode url="~/Admin/Accessories/Bank.aspx" title="添加银行账户" description="添加银行账户" />
+        <siteMapNode url="~/Admin/Accessories/Bank.aspx?Action=Modify" title="修改银行账户" description="修改银行账户" />
+      </siteMapNode>
+      <siteMapNode url="~/Admin/Accessories/PayPlatformManage.aspx" title="在线支付平台管理" description="在线支付平台管理">
+        <siteMapNode url="~/Admin/Accessories/PayPlatform.aspx" title="添加在线支付平台" description="添加在线支付平台" />
+        <siteMapNode url="~/Admin/Accessories/PayPlatform.aspx?Action=Modify" title="修改在线支付平台" description="修改在线支付平台" />
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="" title="生成管理" description="生成管理">
+      <siteMapNode url="~/Admin/Contents/AutoCreateHtml.aspx" title="自动生成配置" description="自动生成配置" />
+      <siteMapNode url="~/Admin/Contents/CreateHtmlContent.aspx" title="生成内容页" description="生成内容页" />
+      <siteMapNode url="~/Admin/Contents/CreateHtmlSingle.aspx" title="生成单页节点" description="生成单页节点" />
+      <siteMapNode url="~/Admin/Contents/CreateHtmlNodes.aspx" title="生成栏目列表页" description="生成栏目列表页" />
+      <siteMapNode url="~/Admin/Contents/CreateHtmlSpecialCategory.aspx" title="生成专题类别页" description="生成专题类别页" />
+      <siteMapNode url="~/Admin/Contents/CreateHtmlSpecial.aspx" title="生成专题列表页" description="生成专题列表页" />
+      <siteMapNode url="~/Admin/Contents/SiteOtherCreate.aspx" title="生成网站综合数据" description="生成网站综合数据" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

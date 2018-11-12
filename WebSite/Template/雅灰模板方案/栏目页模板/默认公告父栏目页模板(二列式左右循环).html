@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="{PE.Label id="取得栏目META关键词" nodeid="@RequestInt_id" /}"  name="Keywords" />
+<meta content="{PE.Label id="取得栏目META网页描述" nodeid="@RequestInt_id" /}"  name="Description" />
+<title>{PE.Label id="取得节点名称" nid="@RequestInt_id"/}-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/article.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/user.css" rel="stylesheet"type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath /}js/common.js"></script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath /}js/slider.js"></script>
+<script language="javascript" type="text/javascript">
+function redirecturl(url)
+{
+	location=url;
+}
+</script>
+</head>
+<body>
+{PE.label id="雅灰网站顶部" /}
+<!-- 中部网站导航 -->
+<table class="center_all" cellspacing="0">
+  <tr>
+    <td>
+      <table id="r_navigation" cellspacing="0">
+        <tr>
+          <td class="r_n_pic"></td>
+          <td class="logo_nav">您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a>{PE.Label id="栏目位置导航" nodeid="@RequestInt_id" /}</td>
+          <td id="top_link">
+            <ul>
+              <li>
+                <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="1" scrolldelay="4" align="left">
+                {PE.Label id="雅灰网站公告横向" /}
+                </marquee>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="center_all" cellspacing="0">
+  <tr>
+    <td>
+      <table class="main" cellspacing="0">
+        <tr>
+          <td class="main_left">
+
+
+<table class="width_100" cellspacing="0">
+<tr>
+<td>
+
+<div class="childclass_main edge_top2">
+          <!-- 栏目循环列表开始 -->
+			{PE.DataSource id="categorylist" datasource="栏目循环列表" parentid="@RequestInt_id" page="true" pagesize="4" pagemain="true" urlpage="true" xslt="true" /}
+			{PE.Repeat id="categorylist" loop="0"}
+			<div class="childclass_main_box">
+				<div class="childclass_title">
+					<div class="more">
+					{PE.Field id="categorylist" fieldname="MoreLink" /}
+					</div>
+					{PE.Field id="categorylist" fieldname="NodeLink" /}
+				</div>
+				<div class="childclass_content">
+					<ul>
+					{PE.Label id="公告信息列表_普通式" parentid="{PE.field fieldname="NodeID" /}" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="11" ishot="false" iselite="false" inputername="" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="{PE.field fieldname="NodeID" /}" /}" showtype="1" titlelen="16" contentlen="0" shownodename="false" showpropertytype="6" showincludepic="false" showauthor="false" showdatetype="mm-dd" showhits="false" showhotsign="false" shownewsign="false" showtips="true" showcommentlink="false" usepage="false" opentype="{PE.Label id="取得栏目下的内容打开方式" nodeid="{PE.field fieldname="NodeID" /}" /}" cols="0" hits="0" elitelevel="0" /}
+					  </ul>
+					<div class="clearbox">
+					</div>
+				</div>
+				<div class="childclass_bot">
+				</div>
+			</div>
+			{/PE.Repeat}
+          <!-- 栏目循环列表结束 -->
+          <div class="clearbox"></div>
+        </div>
+</td>
+</tr>
+</table>
+
+<table class="class_page" cellspacing="0">
+<tr>
+<td>
+{PE.Page id="url_动易后台风格" datasource="categorylist" /}
+</td>
+</tr>
+</table>
+
+        <!-- 最新图文开始 -->
+<table class="c_main a_photo_list margin_top_5" cellspacing="0">
+                    <tr>
+                      <td><table class="cmain_tit">
+                          <tr>
+                            <td><span class="showicon">最新图文</span></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                    <tr>
+                      <td class="c_content">
+              <!-- 显示8张最新图片文章 -->
+              <div class="a_photo_list"> {PE.Label id="普通图片列表标签" tablename="PE_U_Article" parentid="@RequestInt_id" /}
+                <div class="clearbox"></div>
+              </div>
+                        </td>
+                    </tr>
+                  </table>
+        <!-- 最新图文结束 -->
+
+
+          </td>
+          <td width="5"></td>
+          <td class="main_right" valign="top">
+            {PE.Label id="雅灰文章右侧" /}
+          </td>
+        </tr>
+      </table>
+      <!-- main 结束 -->
+    </td>
+  </tr>
+</table>
+<!-- center_all 结束 -->
+{PE.Label id=" 雅灰网站底部" /}
+</body>
+</html>

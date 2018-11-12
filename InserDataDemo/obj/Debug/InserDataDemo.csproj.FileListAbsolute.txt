@@ -1,0 +1,5 @@
+F:\EasyOne\InserDataDemo\obj\Debug\ResolveAssemblyReference.cache
+F:\EasyOne\InserDataDemo\bin\InserDataDemo.dll
+F:\EasyOne\InserDataDemo\bin\InserDataDemo.pdb
+F:\EasyOne\InserDataDemo\obj\Debug\InserDataDemo.dll
+F:\EasyOne\InserDataDemo\obj\Debug\InserDataDemo.pdb

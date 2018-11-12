@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="{PE.Label id="网站信息配置中的关键字" /}" name="Keywords" />
+<meta content="{PE.Label id="网站信息配置中网站描述" /}" name="Description"/>
+<title>{PE.Control.PageTitle/}-会员中心</title>
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/user.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath /}js/common.js"></script>
+<script type="text/javascript" src="{PE.SiteConfig.applicationpath/}JS/jquery.pack.js"></script>
+<script language="javascript" type="text/javascript">
+function redirecturl(url, tarid)
+{
+	location=url.replace(/{\$pageid\/}/g,tarid);
+}
+</script>
+<style>
+table {
+	table-layout: auto!important;
+}
+</style>
+</head>
+<body>
+{PE.label id="雅灰网站顶部" /}
+<table class="center_all" cellspacing="0">
+    <tr>
+        <td><table id="r_navigation" cellspacing="0">
+                <tr>
+                    <td class="r_n_pic"></td>
+                    <td>您现在的位置：{PE.Control.YourPosition/}</td>
+                </tr>
+            </table></td>
+    </tr>
+</table>
+<table class="center_all" cellspacing="0">
+    <tr>
+    	<td>
+        	<table class="main margin_bot_5" cellspacing="0">
+            	<tr>
+                    <td class="member_left">
+                        {PE.Control.form1/}
+                    </td>
+                    <td class="width_5"></td>
+                    <td> 
+                        {PE.Control.UserCenterNavigation/}
+                    </td>
+        		</tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+{PE.Label id="雅灰会员中心底部信息" /}
+</body>
+</html>

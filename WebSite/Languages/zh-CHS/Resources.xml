@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+  <resource name = "Exception_NoSuchUser">用户 {0} 不存在！</resource>
+  <resource name = "Exception_PasswordNotMatch">用户 {0} 密码不匹配！</resource>
+  <resource name = "Exception_LockedUser">用户 {0} 被锁定！</resource>
+  <resource name = "Exception_ConnectionFalse">数据库连接错误！</resource>
+  <resource name = "Exception_SameCard">转账对象和目标为同一用户！</resource>
+  <resource name = "Exception_NotenoughMoney">用户 {0} 余额不足！</resource>
+  <resource name = "Exception_RefreshedError">重复刷新提交数据错误！</resource>
+</root>

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="{PE.Label id="网站信息配置中的关键字" /}" name="Keywords" />
+<meta content="{PE.Label id="网站信息配置中网站描述" /}" name="Description"/>
+<title>收银台-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/product.css" rel="stylesheet" type="text/css" />
+<script src="{PE.SiteConfig.ApplicationPath /}js/common.js" type="text/javascript" language="javascript"></script>
+<script src="{PE.SiteConfig.ApplicationPath /}js/slider.js" type="text/javascript" language="javascript"></script>
+</head>
+<body>
+{PE.Label id="网站顶部" /}
+<div id="center_all">
+  <div id="main_bg">
+    <div id="main_right">
+      <div id="main_right_box">
+        <!-- 网站位置导航信息开始 -->
+        <div class="r_navigation">
+          <div class="r_n_pic"></div>
+          您现在的位置：{PE.SiteConfig.sitename/}>>收银台 </div>
+        {PE.Label id="右侧广告" /}
+        <div class="c_spacing"> </div>
+        <div class="p_main_box"> {PE.Control.form1/}
+          <div class="border">
+            <div class="title">小 贴 士</div>
+            <ul>
+              <li>请仔细核对您选购的商品清单和收货人的信息，并单击“<span style="color:#ff0000">确认订单</span>”按钮进入确认订单信息页面（<span style="color:#0033ff">订购流程第三步</span>） </li>
+              <li>如果要调整您所购的商品，请单击“调整购物车”按钮，返回购物车内进行相应操作 </li>
+              <li>系统默认收货人的信息为您注册时填写的信息，如果需要调整，请直接在此处修改 </li>
+              <li>单击“重新填写信息”按钮，刚会将收货人的信息恢复到您注册时填写的信息</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    {PE.Label id="商店节点左侧(1)" /} </div>
+</div>
+{PE.Label id="网站底部" /}
+</body>
+</html>

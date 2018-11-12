@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{PE.Label id="取得节点名称" nid="@RequestInt_id"/}-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Gray/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Gray/article.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<!-- 子栏目列表信息列表开始 -->
+<table class="center_all" cellspacing="5">
+	<tr>
+    	<td>
+        	<table cellspacing="0" class="r_announce">
+            	<tr>
+                	<td id="announce_vertical">
+                    {PE.Label id="公告列表" shownum="4" showtime="true" titlelen="20" showauthor="true" target="{PE.Label id="取得栏目下的内容打开方式" nodeid="@RequestInt_id" /}" showcontent="true" contentlen="200" contenttype="html" /}
+                    </td>
+                </tr>
+            </table>        
+        </td>
+    </tr>
+</table>
+<!-- 子栏目列表信息列表结束 -->
+</body>
+</html>

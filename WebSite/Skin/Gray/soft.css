@@ -1,0 +1,338 @@
+﻿/* ==软件节点定义== */
+
+/* 书签面板软件 */
+.soft_new
+{
+}
+.soft_new ul
+{
+	padding: 0px 0px 0px 10px;
+	margin: 0px;
+}
+.soft_new li
+{
+	padding: 0px;
+	margin: 0px;
+	width: 50%;
+	float: left;
+	line-height: 22px;
+	border-bottom: 1px dotted #ccc;
+}
+
+/* ==软件大类栏目页列表形式(软件s_childclass_main_box比文章大类栏目列表二列式childclass_main_box少了border边框，所以宽度少2个像素)==  */
+.s_childclass_main_box /* 二列式循环 */
+{
+	float: left;
+	width: 381px;
+	margin: 5px 0px 0px 5px;
+}
+* html .s_childclass_main_box /* 二列式循环 */
+{
+	width: 383px;
+}
+
+.s_classlist_title
+{
+	font: normal normal bold 13px/150% Arial,"宋体",Helvetica,sans-serif;
+	border: 1px solid #c9c9c9;
+}
+.s_classlist_text
+{
+	border-bottom: 1px solid #c9c9c9;
+	border-left: 1px solid #c9c9c9;
+	border-right: 1px solid #c9c9c9;
+}
+.s_classlist_title_r, .s_classlist_title_c, .s_classlist_text_r, .s_classlist_text_c
+{
+	float: right;
+	text-align: center;
+	border-left: 1px solid #c9c9c9;
+}
+.s_classlist_title_r, .s_classlist_title_c
+{
+	font-weight: bold;
+}
+.s_classlist_title_l
+{
+	font-weight: bold;
+}
+
+.s_classlist_title_l, .s_classlist_text_l
+{
+	padding-left: 5px;
+}
+.s_classlist_title_r, .s_classlist_text_r, .s_classlist_title_c, .s_classlist_text_c
+{
+	height: 24px;
+	width: 80px;
+	overflow: hidden;
+}
+.s_classlist_title_l, .s_classlist_title_c, .s_classlist_title_r, .s_classlist_text_l, .s_classlist_text_r, .s_classlist_text_c
+{
+	line-height: 24px;
+}
+
+/* 推荐软件图文 */
+.s_photo_list, .s_photo_list ul
+{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+.s_photo_list li
+{
+	padding: 0px;
+	margin: 5px 0px;
+	list-style: none;
+	width: 188px;
+	float: left;
+}
+
+.a_photo_list
+{
+	margin-bottom:0px;
+}
+.a_photo_list ul
+{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+.a_photo_list li
+{
+	padding: 0px;
+	margin: 5px 0px;
+	list-style: none;
+	width: 185px;
+	float: left;
+}
+
+/* ==软件小类栏目页列表形式== */
+/* 父栏目模板中无内容时使用 */
+.childclasslist_box
+{
+	margin: 5px 0px 0px 5px;
+}
+*html .childclasslist_box
+{
+	margin: 5px 0px 0px 10px;
+} 
+/* 子栏目模板中使用 */
+.c_main .childclasslist_box
+{
+	margin: 0px;
+}
+
+/* 子栏目标题及内容样式 */
+.childclasslist_title
+{
+	border: 1px dotted #E1E8EF;
+	background: #f4f8fd;
+	padding: 5px;
+}
+.childclasslist_title a
+{
+	font: normal normal bold 14px/150% Arial,"宋体",Helvetica,sans-serif;
+	color: #03c;
+	background: url(../Default/images/c_title.gif) no-repeat 10px 2px;
+	padding-left: 30px;
+}
+.childclasslist_time
+{
+	float: right;
+}
+.childclasslist_text
+{
+	padding: 5px;
+}
+.class_content
+{
+	height: auto !important;
+	height: 50px;
+	min-height: 50px;
+}
+.childclasslist_type
+{
+	border-top: 1px dotted #ccc;
+	padding: 5px;
+	font-weight: bold;
+}
+
+/* ==软件内容页== */
+#s_info {
+	width: 100%;
+}
+/* 软件详细内容 */
+#s_info_right, .s_info_correlative dl, .s_info_correlative dt
+{
+	margin: 0px;
+	padding: 0px;
+}
+/* 右侧相关软件 */
+#s_info_right
+{
+	float: right;
+	width: 195px;
+}
+.s_info_correlative
+{
+	border: 1px solid #c9c9c9;
+}
+
+.s_info_correlative dt
+{
+	font: normal normal bold 13px/150% Arial,"宋体",Helvetica,sans-serif;
+	color: #0a4180;
+	text-align: center;
+	line-height: 24px;
+	background: url(../Default/images/tabtitle.gif) #fff repeat-x top;
+	border-bottom: 1px solid #c9c9c9;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	border-left: 2px solid #fff;
+}
+.s_info_correlative dd
+{
+	border: 5px solid #fff;
+	margin: 0px;
+	padding: 0px 5px;
+	height: auto !important;
+	height: 90px;
+	min-height: 90px;
+}
+/* 软件标题 */
+.s_info_title
+{
+	font: normal normal bold 24px/150% Arial,"宋体",Helvetica,sans-serif;
+	text-align: center;
+	padding: 5px;
+	margin-bottom: 10px;
+	border: 5px solid #f7f7f7;
+}
+/* 软件详细信息 */
+.s_info_content_r
+{
+	text-align: center;
+	padding: 10px 10px 10px 0px;
+}
+.s_info_content_c
+{
+	padding: 10px 0px;
+}
+.s_info_content_l
+{
+	width: 150px;
+	padding: 10px 0px 10px 10px;
+}
+.s_info_content_r li, .s_info_content_c li, .s_info_content_l li
+{
+	font-weight: bold;
+	display: block;
+}
+.s_info_content_c li, .s_info_content_l li
+{
+	border-bottom: 1px dotted #ccc;
+	line-height: 26px;
+}
+.s_info_content_r li
+{
+	text-align: center;
+}
+/* 详细信息字体颜色 */
+.s_font_weight, .s_font_red, .s_font_blue, .s_font_green, .s_font_collection
+{
+	font-weight: normal;
+}
+.s_font_red
+{
+	color: red;
+}
+.s_font_blue
+{
+	color: blue;
+}
+.s_font_green
+{
+	color: green;
+}
+/* 图片与收藏 */
+.s_font_PicUrl
+{
+	border: 0px;
+	width: 150px;
+	height: 160px;
+	overflow: hidden;
+	margin: auto;
+}
+.s_font_PicUrl img
+{
+	width: 150px;
+}
+.s_font_collection
+{
+	width: 158px;
+	line-height: 30px;
+	margin: 10px auto 0px;
+	background: url(../Default/images/s_font_collection.gif) #fff no-repeat center center;
+}
+/* 下载地址 */
+.S_DownloadUrl
+{
+	width: 210px;
+	overflow: hidden;
+	padding-left: 5px;
+}
+.S_DownloadUrl dt
+{	
+	color:#666666;
+	background: #eee;
+	height: 24px;
+	font: normal normal bold 12px/24px Arial,"宋体",Helvetica,sans-serif;
+	padding-left:20px;
+}
+.S_DownloadUrl dd
+{
+	height: auto !important;
+	height: 50px;
+	min-height: 50px;
+}
+.S_DownloadUrl dd a
+{
+	padding-left: 20px;
+	background: url(../Default/images/DownloadUrl.gif) no-repeat top 5px;
+}
+.S_DownloadUrl dd a:hover
+{
+	padding-left: 20px;
+	background: url(../Default/images/DownloadUrl_hover.gif) no-repeat top 5px;
+}
+.S_DownloadUrl_ad
+{
+	float: right;
+	width: 320px;
+	overflow: hidden;
+}
+.S_DownloadUrl_ad img
+{
+	border: 0px;
+	margin-bottom: 5px;
+}
+
+/* 下载提示 */
+.s_notice {
+	width: 100%;
+}
+.s_notice li {
+	margin-left: 30px;
+	list-style: square;
+	line-height: 22px;
+}
+.s_notice a{
+	color: blue;
+	text-decoration: underline;
+}
+
+/* 信息列表框重写义 */
+.c_content {
+	height: 100px;
+}

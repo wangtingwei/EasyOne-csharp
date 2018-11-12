@@ -1,0 +1,111 @@
+﻿{PE.DataSource id="cone" datasource="文章_内容页" itemid="@RequestInt_id" xslt="true" /}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="{PE.Field id="cone" fieldname="KeyWord" /}" name="Keywords" />
+<meta content="{PE.Field id="cone" fieldname="Intro" /}" name="Description"/>
+<title>{PE.Field id="cone" fieldname="Title" /}-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.installdir/}Skin/Default/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.installdir/}Skin/Default/article.css" rel="stylesheet" type="text/css" />
+
+
+<script language="javascript" type="text/javascript">
+
+//改变图片大小
+function resizepic(thispic)
+{
+if(thispic.width>550){thispic.height=thispic.height*550/thispic.width;thispic.width=550;} 
+}
+//无级缩放图片大小
+function bbimg(o)
+{
+  return true;
+}
+//双击鼠标滚动屏幕的代码
+getViewPortScrollY = function()
+{
+    var scrollY = 0;
+    if ((document.documentElement) && (document.documentElement.scrollTop))
+    {
+        scrollY = document.documentElement.scrollTop;
+    }
+    else if ((document.body) && (document.body.scrollTop))
+    {
+        scrollY = document.body.scrollTop;
+    }
+    else if (window.pageYOffset)
+    {
+        scrollY = window.pageYOffset;
+    }
+    else if (window.scrollY)
+    {
+        scrollY = window.scrollY;
+    }
+    return scrollY;
+}; 
+var currentpos,timer;
+function initialize()
+{
+timer=setInterval ("scrollwindow ()",30);
+}
+function sc()
+{
+clearInterval(timer);
+}
+function scrollwindow()
+{
+currentpos=getViewPortScrollY();
+window.scroll(0,++currentpos);
+if (currentpos !=getViewPortScrollY())
+sc();
+}
+document.onmousedown=sc
+document.ondblclick=initialize
+
+//更改字体大小
+var status0='';
+var curfontsize=10;
+var curlineheight=18;
+function fontZoomA(){
+  if(curfontsize>8){
+    document.getElementById('fontzoom').style.fontSize=(--curfontsize)+'pt';
+	document.getElementById('fontzoom').style.lineHeight=(--curlineheight)+'pt';
+  }
+}
+function fontZoomB(){
+  if(curfontsize<64){
+    document.getElementById('fontzoom').style.fontSize=(++curfontsize)+'pt';
+	document.getElementById('fontzoom').style.lineHeight=(++curlineheight)+'pt';
+  }
+}
+</script>
+</head>
+<body>
+<div class="c_main_box">
+<a href="javascript:window.print()"><img src="{PE.SiteConfig.installdir/}Images/printpage.gif" alt="打印本文" border="0"/>打印本文</a>
+<a href="javascript:window.close()"><img src="{PE.SiteConfig.installdir/}Images/pageclose.gif" alt="关闭窗口" border="0"/>关闭窗口</a>
+</div>
+<!-- 主体内容开始 -->
+<div class="c_main_box"  {PE.Field id="cone" fieldname="ArticleProtect" /}>
+  <!-- 标题 -->
+  <div class="c_title_text"> <span>
+	<h1> <span><font style="{PE.Field id="Font1" fieldname="TitleFontType" /}{PE.Field id="cone" fieldname="TitleFontColor" /}">{PE.Field id="cone" fieldname="Title" /}</font></span> </h1>
+	</span> </div>
+  <!-- 作者 -->
+  <div class="c_title_author">作者：{PE.Field id="cone" fieldname="Author" /}　来源：{PE.Field id="cone" fieldname="CopyFrom" /}　发布时间：{PE.Field id="cone" fieldname="UpdateTime" /} </div>
+  <!-- 正文 -->
+  <div class="c_content_text">
+	<div class="c_content_overflow" id="fontzoom">{PE.Field id="cone" fieldname="Content" htmldecode="true" charge="true"  showerr="true" /}
+	</div>
+  </div>
+  <div class="c_bot_text"></div>
+</div>
+{PE.Label id="打印页" /}
+<!-- 主体内容结束 -->
+<div class="c_main_box">
+<a href="javascript:window.print()"><img src="{PE.SiteConfig.installdir/}Images/printpage.gif" alt="打印本文" border="0"/>打印本文</a>
+<a href="javascript:window.close()"><img src="{PE.SiteConfig.installdir/}Images/pageclose.gif" alt="关闭窗口" border="0"/>关闭窗口</a>
+</div>
+</body>
+</html>

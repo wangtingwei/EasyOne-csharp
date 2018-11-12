@@ -1,0 +1,104 @@
+﻿{PE.DataSource id="cone" datasource="作者详细信息" authorname="@Request_authorname" xslt="true" /}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="{PE.Label id="网站信息配置中的关键字" /}" name="Keywords" />
+<meta content="{PE.Field id="cone" fieldname="AuthorIntro" /}" name="Description"/>
+<title>作者-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/default.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/Common.js"></script>
+</head>
+<body>
+{PE.Label id="网站顶部" /}
+<div id="center_all">
+<div id="main_bg">
+<div id="main_right">
+  <div id="main_right_box">
+    <!-- 网站位置导航信息开始 -->
+    <div class="r_navigation">
+      <div class="r_n_pic"></div>
+      您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a> >>作者</div>
+    {PE.Label id="右侧广告" /}
+    <!-- 网站位置导航信息结束 -->
+    <div class="r_ad"> </div>
+    <div class="c_spacing"></div>
+    <div class="c_main_box">
+      <div class="c_title"> 作者简介</div>
+      <div class="c_content">
+        <!-- 作者简介 -->
+        {PE.Field id="cone" fieldname="AuthorIntro" /}
+        <div class="c_bot"> </div>
+      </div>
+    </div>
+    <div class="c_spacing"> </div>
+    <div class="c_main_box">
+      <div class="c_title"> 作品列表</div>
+      <div class="c_content">
+        <ul>
+          <!-- 作品列表标签 -->
+          {PE.Label id="作者文章作品列表_普通式" authorname="@Request_authorname" updatetime="@RequestDate_updatetime" itype="2" idate="true" ilink="true" inum="20" iorder="0" tablename="PE_U_Article" mypage="true" mypagesize="10" myurlpage="true" span="" class="" /}
+          <div class="clearbox"> </div>
+        </ul>
+      </div>
+    </div>
+    <div class="class_page">{PE.Page id="url_动易后台风格" datasource="显示作者作品列表_普通式" unitname="个作品" /}</div>
+  </div>
+</div>
+<!-- 作者页左侧开始 -->
+<div id="main_left">
+<div class="user_box">
+  <dl>
+    <dt>作者头像</dt>
+    <dd>
+      <ul>
+        <!-- 作者头像 -->
+        <img src="{PE.SiteConfig.ApplicationPath/}{PE.SiteConfig.uploaddir/}/{PE.Field id="cone" fieldname="AuthorPhoto" /}" alt="{PE.Field id="cone" fieldname="AuthorName" /}" border="0" width="150" height="175" />
+      </ul>
+    </dd>
+  </dl>
+</div>
+<div class="left_box">
+<dl>
+<dt>日期查询</dt>
+<dd>
+  <ul>
+  <li>
+    <script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/AuthorDate.js"></script>
+    <script language="javascript">getlink("{PE.SiteConfig.ApplicationPath/}Common/ShowAuthor","{PE.Field id="cone" fieldname="AuthorName" /}");</script>
+    <a href="{PE.SiteConfig.ApplicationPath/}Common/ShowAuthor.aspx?authorname={PE.Field id="cone" fieldname="AuthorName" /}&updatetime=">显示全部文章</a>
+  </li>
+  </ul>
+</dd>
+</dl>
+</div>
+<div class="left_box">
+    <dl>
+      <dt>作者详细信息</dt>
+      <dd>
+        <ul>
+          <!-- 作者详细信息 -->
+          <li> 姓名：{PE.Field id="cone" fieldname="AuthorName" /} </li>
+          <li> 性别：{PE.Field id="cone" fieldname="AuthorSex" /} </li>
+          <li> 生日：{PE.Field id="cone" fieldname="AuthorBirthDay" /} </li>
+          <li> 公司：{PE.Field id="cone" fieldname="AuthorCompany" /} </li>
+          <li> 部门：{PE.Field id="cone" fieldname="AuthorDepartment" /} </li>
+          <li> 地址：{PE.Field id="cone" fieldname="AuthorAddress" /} </li>
+          <li> 电话：{PE.Field id="cone" fieldname="AuthorTel" /} </li>
+          <li> 传真：{PE.Field id="cone" fieldname="AuthorFax" /} </li>
+          <li> 邮编：{PE.Field id="cone" fieldname="AuthorZipCode" /} </li>
+          <li> 主页：{PE.Field id="cone" fieldname="AuthorHomePage" /} </li>
+          <li> 邮件：{PE.Field id="cone" fieldname="AuthorEmail" /} </li>
+          <li> 分类：{PE.Field id="cone" fieldname="AuthorType" /} </li>
+        </ul>
+        <div class="clearbox"> </div>
+      </dd>
+    </dl>
+    </div>
+    <!-- 作者页左侧结束 -->
+    </div>
+    </div>
+    </div>
+    {PE.Label id="网站底部" /}
+</body>
+</html>

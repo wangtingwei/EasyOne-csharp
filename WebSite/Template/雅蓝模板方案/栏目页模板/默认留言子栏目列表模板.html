@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="{PE.Label id="取得栏目META关键词" nodeid="@RequestInt_id" /}" name="Keywords" />
+<meta content="{PE.Label id="取得栏目META网页描述" nodeid="@RequestInt_id" /}" name="Description"/>
+<title>雁过留声首页-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/article.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/commentary.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}js/common.js"></script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}js/slider.js"></script>
+<script language="javascript" type="text/javascript">
+    function redirecturl(url)
+    {
+        location=url;
+    }
+    </script>
+</head>
+<body>
+{PE.Label id="网站顶部" /}
+<div id="center_all">
+  <div id="main_bg">
+    <div id="main_right">
+      <div id="main_right_box">
+        <!-- 网站位置导航信息开始 -->
+        <div class="r_navigation">
+          <div class="r_n_pic"></div>
+          您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a>{PE.Label id="栏目位置导航" nodeid="@RequestInt_id" /} </div>
+        <!-- 网站位置导航信息结束 -->
+        {PE.Label id="右侧广告" /}
+        <div class="c_spacing"> </div>
+        <div class="r_navigation">
+          <div class="r_n_pic"></div>
+          <a href="{PE.SiteConfig.ApplicationPath/}Common/GuestWrite.aspx?id=@RequestInt_id&amp;modelId=21" target="_self">签写留言</a> </div>
+        <!-- 子栏目列表信息列表开始 -->
+        {PE.Label id="留言列表信息_留言本方式" parentid="@RequestInt_id" titlelen="50" elitelevel="0" mypage="true" mypagesize="10" span="" class="" /}
+        <!-- 子栏目列表信息列表结束 -->
+        <div class="class_page">{PE.Page id="url_动易后台风格" datasource="InfoList" unitname="条留言" /}</div>
+        <!-- 右侧二列结束 -->
+      </div>
+    </div>
+    {PE.Label id="文章节点左侧" /} </div>
+</div>
+</div>
+{PE.Label id="网站底部" /}
+</body>
+</html>

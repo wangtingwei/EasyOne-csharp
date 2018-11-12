@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="{PE.Label id="取得栏目META关键词" nodeid="@RequestInt_id" /}"  name="Keywords" />
+<meta content="{PE.Label id="取得栏目META网页描述" nodeid="@RequestInt_id" /}"  name="Description" />
+<title>雁过留声首页-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/user.css" rel="stylesheet"type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Gray/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Gray/article.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Gray/commentary.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}js/common.js"></script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}js/slider.js"></script>
+<script language="javascript" type="text/javascript">
+    function redirecturl(url)
+    {
+        location=url;
+    }
+    </script>
+</head>
+<body>
+{PE.label id="雅灰网站顶部" /}
+<table class="center_all" cellspacing="0">
+  <tr>
+    <td>
+      <table id="r_navigation" cellspacing="0">
+        <tr>
+          <td class="r_n_pic"></td>
+          <td class="logo_nav">您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a>{PE.Label id="栏目位置导航" nodeid="@RequestInt_id" /}</td>
+          <td id="top_link">
+            <ul>
+              <li>
+                <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="1" scrolldelay="4" align="left">
+                {PE.Label id="雅灰网站公告横向" /}
+                </marquee>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="center_all" cellspacing="0">
+  <tr>
+    <td>
+      <table class="main" cellspacing="0">
+        <tr>
+          <td class="main_left">
+
+        <!-- 子栏目列表信息列表开始 -->
+        {PE.Label id="留言列表信息_留言本方式" parentid="@RequestInt_id" titlelen="50" elitelevel="0" mypage="true" mypagesize="10" span="" class="" /}
+        <!-- 子栏目列表信息列表结束 -->
+            <table class="class_page" cellspacing="0">
+            <tr>
+            <td>{PE.Page id="url_动易后台风格" datasource="InfoList" unitname="条留言" /}</td>
+            </tr>
+            </table>
+            
+            <table id="l_nav" cellspacing="0">
+            <tr>
+              <td class="r_n_pic"></td>
+              <td class="logo_nav"><a href="{PE.SiteConfig.ApplicationPath/}Common/GuestWrite.aspx?id=@RequestInt_id&amp;modelId=21" target="_self">签写留言</a></td>
+            </tr>
+            </table>
+
+          </td>
+          <td width="5"></td>
+          <td class="main_right">
+            {PE.Label id="雅灰文章右侧" /}
+          </td>
+        </tr>
+      </table>
+      <!-- main 结束 -->
+    </td>
+  </tr>
+</table>
+<!-- center_all 结束 -->
+
+{PE.Label id=" 雅灰网站底部" /}
+</body>
+</html>

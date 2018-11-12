@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<menu>
+  <channelMenu id="MenuMyDeskTop" operateCode="None" Description="" title="我的工作台">
+    <Welcome id="" operateCode="None" leftUrl="" Description="" rightUrl=""><![CDATA[管理员：<span class="AdminName"><strong>{0}</strong></span>，欢迎您！&nbsp;&nbsp;&nbsp;&nbsp;]]></Welcome>
+    <MyWorktable id="工作台首页" operateCode="None" Description="" leftUrl="Profile/QuickLinks.aspx" rightUrl="Profile/MyWorktable.aspx" />
+    <ChangeTheme id="主题控制" operateCode="None" Description="" leftUrl="Profile/QuickLinks.aspx" rightUrl="Profile/ChangeTheme.aspx" />
+    <QuickLinksConfig id="快捷导航配置" operateCode="None" Description="" leftUrl="Profile/QuickLinksSort.aspx" rightUrl="Profile/QuickLinksConfig.aspx" />
+    <ModifyPassword id="修改密码" operateCode="None" Description="" leftUrl="" rightUrl="Profile/ModifyPassword.aspx" />
+    <SignOut id="" operateCode="None" leftUrl="" rightUrl="" Description=""><![CDATA[<span class="SignOut">安全退出</span>]]></SignOut>
+  </channelMenu>
+  <channelMenu id="ContentManage" title="内容管理" operateCode="ContentManage" ShowOnForm="true" Description="">
+    <mainMenu id="ContentManage" title="信息管理" operateCode="InfoManage" leftUrl="Contents/NodeTree.aspx" rightUrl="Contents/ContentManage.aspx" ShowOnForm="true" Description="">
+      <subMenu id="CategoryInfoManage" title="按栏目管理" operateCode="CategoryInfoManage" leftUrl="Contents/NodeTree.aspx" rightUrl="Contents/ContentManage.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="SpecialInfoManage" title="按专题管理" operateCode="SpecialInfoManage" leftUrl="Contents/SpecialTree.aspx" rightUrl="Contents/SpecialInfosManage.aspx" ShowOnForm="true" Description="" />
+    </mainMenu>
+    <mainMenu id="CreateHtmlManage" title="生成管理" operateCode="CreateHtmlManage" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/CreateHtmlContent.aspx" ShowOnForm="true" Description="">
+      <subMenu id="CreateHtmlContent" title="生成内容页" operateCode="CreateHtmlManage" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/CreateHtmlContent.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CreateHtmlSingle" title="生成单页节点" operateCode="CreateHtmlManage" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/CreateHtmlSingle.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CreateHtmlNodes" title="生成栏目列表页" operateCode="CreateHtmlManage" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/CreateHtmlNodes.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CreateHtmlSpecialCategory" title="生成专题类别页" operateCode="CreateHtmlManage" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/CreateHtmlSpecialCategory.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CreateHtmlSpecial" title="生成专题列表页" operateCode="CreateHtmlManage" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/CreateHtmlSpecial.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CreateHtmlSpecial" title="生成网站综合数据" operateCode="CreateHtmlManage" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/SiteOtherCreate.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CreateHtmlProgress" title="查看生成进度" operateCode="CreateHtmlManage" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/CreateHtmlProgress.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="AutoCreateHtmlContent" title="自动生成配置" operateCode="CreateHtmlManage" leftUrl="Contents/CreateHtmlGuide.aspx" rightUrl="Contents/AutoCreateHtml.aspx" ShowOnForm="false" Description="" />
+    </mainMenu>
+    <mainMenu id="CommentManage" title="评论管理" operateCode="CommentManage" leftUrl="Contents/CommentGuide.aspx" rightUrl="Contents/CommentManage.aspx" ShowOnForm="true" Description="">
+      <subMenu id="ModifyComment" title="修改评论" operateCode="CommentManage" leftUrl="Contents/CommentGuide.aspx" rightUrl="Contents/CommentModify.aspx" ShowOnMenu="false" ShowOnForm="false" Description="" />
+      <subMenu id="ModifyCommentReply" title="修改回复评论" operateCode="CommentManage" leftUrl="Contents/CommentGuide.aspx" rightUrl="Contents/CommentReplyModify.aspx" ShowOnMenu="false" ShowOnForm="false" Description="" />
+    </mainMenu>
+    <mainMenu id="CollectionManage" title="采集管理" operateCode="CollectionManage" leftUrl="Collection/Guide.aspx" rightUrl="Collection/ItemManage.aspx" ShowOnForm="true" Description="">
+      <subMenu id="CollectionItemManage" title="开始采集" operateCode="CollectionManage" leftUrl="Collection/Guide.aspx" rightUrl="Collection/CollectionMain.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CollectionItemManage" title="采集管理" operateCode="CollectionManage" leftUrl="Collection/Guide.aspx" rightUrl="Collection/ItemManage.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CollectionHistoryManage" title="采集历史记录" operateCode="CollectionManage" leftUrl="" rightUrl="Collection/HistoryManage.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CollectionFilterManage" title="采集过滤管理" operateCode="CollectionManage" leftUrl="Collection/CollectionFilterGuide.aspx" rightUrl="Collection/CollectionFilterManage.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CollectionFilterManage" title="采集排除规则管理" operateCode="CollectionManage" leftUrl="Collection/ExclosionGuide.aspx" rightUrl="Collection/ExclosionManage.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CollectionHtmlProgress" title="查看采集进度" operateCode="CollectionManage" leftUrl="Collection/Guide.aspx" rightUrl="Collection/CollectionProc.aspx" ShowOnForm="false" Description="" />
+    </mainMenu>
+    <mainMenu id="SiteCount" title="网站统计" operateCode="SiteCount" leftUrl="" rightUrl="" ShowOnForm="true" Description="">
+      <subMenu id="CountByCategoryMonth" title="按栏目/月份统计" operateCode="None" leftUrl="Statistics/SiteCountGuid.aspx" rightUrl="Statistics/SiteCount.aspx?Action=CategoryMonth" ShowOnForm="false" Description="" />
+      <subMenu id="CountByCategoryInputer" title="按栏目/录入者统计" operateCode="None" leftUrl="Statistics/SiteCountGuid.aspx" rightUrl="Statistics/SiteCount.aspx?Action=CategoryInputer" ShowOnForm="false" Description="" />
+      <subMenu id="CountByCategoryEditor" title="按栏目/审核者统计" operateCode="None" leftUrl="Statistics/SiteCountGuid.aspx" rightUrl="Statistics/SiteCount.aspx?Action=CategoryManager" ShowOnForm="false" Description="" />
+      <subMenu id="CountByInputerMonth" title="按录入者/月份统计" operateCode="None" leftUrl="Statistics/SiteCountGuid.aspx" rightUrl="Statistics/SiteCount.aspx?Action=InputerMonth" ShowOnForm="false" Description="" />
+      <subMenu id="CountByEditorMonth" title="按审核者/月份统计" operateCode="None" leftUrl="Statistics/SiteCountGuid.aspx" rightUrl="Statistics/SiteCount.aspx?Action=ManagerMonth" ShowOnForm="false" Description="" />
+    </mainMenu>
+    <mainMenu id="ConvertManage" title="内容转换" operateCode="ConvertManage" leftUrl="" rightUrl="" ShowOnForm="true" Description="">
+      <subMenu id="InsideLinkManage" title="站内链接管理" operateCode="InsideLinkManage" leftUrl="Accessories/InsideLinkGuide.aspx" rightUrl="Accessories/InsideLinkManage.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="WordFilterManage" title="字符过滤管理" operateCode="WordFilterManage" leftUrl="Accessories/WordFilterGuide.aspx" rightUrl="Accessories/WordFilterManage.aspx" ShowOnForm="true" Description="" />
+    </mainMenu>
+    <mainMenu id="AccessoriesManage" title="其他管理" operateCode="AccessoriesManage" leftUrl="" rightUrl="" ShowOnForm="true" Description="">
+      <subMenu id="AuthorManage" title="作者管理" operateCode="AuthorManage" leftUrl="Accessories/AuthorGuide.aspx" rightUrl="Accessories/AuthorManage.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="SourceManage" title="来源管理" operateCode="SourceManage" leftUrl="Accessories/SourceGuide.aspx" rightUrl="Accessories/SourceManage.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="KeyWordManage" title="关键字管理" operateCode="KeyWordManage" leftUrl="Accessories/KeyWordGuide.aspx" rightUrl="Accessories/KeyWordManage.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="DownloadErrorManage" title="下载报错管理" operateCode="DownloadErrorManage" leftUrl="Accessories/DownloadErrorGuide.aspx" rightUrl="Accessories/DownloadErrorManage.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="DownServerManage" title="下载服务器管理" operateCode="DownServerManage" leftUrl="Accessories/DownServerGuide.aspx" rightUrl="Accessories/DownServerManage.aspx" ShowOnForm="true" Description="" />
+    </mainMenu>
+  </channelMenu>
+  <channelMenu id="User" title="用户管理" operateCode="User" ShowOnForm="true" Description="">
+    <mainMenu id="AdministratorSuperManage" title="管理员管理" operateCode="AdministratorSuperManage" leftUrl="User/AdministratorGuide.aspx" rightUrl="User/AdministratorManage.aspx" ShowOnForm="false" Description="">
+      <subMenu id="AdministratorAdd" title="管理员管理" operateCode="AdministratorManage" leftUrl="User/AdministratorGuide.aspx" rightUrl="User/AdministratorManage.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="AdministratorManage" title="添加管理员" operateCode="AdministratorManage" leftUrl="User/AdministratorGuide.aspx" rightUrl="User/Administrator.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="UserRoleManage" title="角色管理" operateCode="UserRoleManage" leftUrl="User/RoleGuide.aspx" rightUrl="User/RoleManage.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="UserRoleAdd" title="添加角色" operateCode="UserRoleManage" leftUrl="User/RoleGuide.aspx" rightUrl="User/Role.aspx" ShowOnForm="false" Description="" />
+    </mainMenu>
+    <mainMenu id="UserSuperManage" title="会员管理" operateCode="UserSuperManage" leftUrl="User/UserGuide.aspx" rightUrl="User/UserManage.aspx" ShowOnForm="true" Description="">
+      <subMenu title="会员管理" id="UserManage" operateCode="UserManage" leftUrl="User/UserGuide.aspx" rightUrl="User/UserManage.aspx" ShowOnForm="true" Description="">
+        <Purview id="UserAdd" title="添加会员" operateCode="UserAdd" Description="" ShowOnForm="true" />
+        <Purview id="UserView" title="查看会员信息" operateCode="UserView" Description="" ShowOnForm="true" />
+        <Purview id="UserModify" title="修改会员信息" operateCode="UserModify" Description="" ShowOnForm="true" />
+        <Purview id="UserModifyPermissions" title="修改会员权限" operateCode="UserModifyPermissions" Description="" ShowOnForm="true" />
+        <Purview id="UserLock" title="锁住与解锁会员" operateCode="UserLock" Description="" ShowOnForm="true" />
+        <Purview id="UserDelete" title="删除会员（批量删除会员）" operateCode="UserDelete" Description="" ShowOnForm="true" />
+        <Purview id="UserMove" title="会员移动（包括批量移动）" operateCode="UserMove" Description="" ShowOnForm="true" />
+        <Purview id="UserUpdateToClient" title="升级为客户" operateCode="UserUpdateToClient" Description="" ShowOnForm="true" />
+        <Purview id="UserUpdateToCompany" title="升级为企业会员" operateCode="UserUpdateToCompany" Description="" ShowOnForm="true" />
+        <Purview id="UserMoneyManage" title="会员资金管理" operateCode="UserMoneyManage" Description="" ShowOnForm="true" />
+        <Purview id="UserPointManage" title="会员点券管理" operateCode="UserPointManage" Description="" ShowOnForm="true" />
+        <Purview id="UserValidDateManage" title="会员有效期管理" operateCode="UserValidDateManage" Description="" ShowOnForm="true" />
+        <Purview id="UserConsumeLogManage" title="会员消费明细管理" operateCode="UserConsumeLogManage" Description="" ShowOnForm="true" />
+        <Purview id="UserValidDateLogManage" title="会员有效期明细管理" operateCode="UserValidDateLogManage" Description="" ShowOnForm="true" />
+      </subMenu>
+      <subMenu title="添加会员" id="AddUser" operateCode="UserAdd" leftUrl="User/UserGuide.aspx" rightUrl="User/User.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="UserGroupManage" title="会员组管理" operateCode="UserGroupManage" leftUrl="User/UserGroupGuide.aspx" rightUrl="User/UserGroupManage.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="UserGroupAdd" title="添加会员组" operateCode="UserGroupManage" leftUrl="User/UserGroupGuide.aspx" rightUrl="User/UserGroup.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CompanyManage" title="企业管理" operateCode="CompanyManage" leftUrl="User/CompanyGuide.aspx" rightUrl="User/CompanyManage.aspx" ShowOnForm="true" Description="" />
+    </mainMenu>
+    <mainMenu id="CardsManage" title="充值卡管理" operateCode="CardManage" leftUrl="User/CardGuide.aspx" rightUrl="User/CardsManage.aspx" ShowOnForm="true" Description="" />
+    <mainMenu id="BankrollItemList" title="资金明细" operateCode="BankrollItemList" leftUrl="User/BankrollItemListGuide.aspx" rightUrl="User/BankrollItemList.aspx" ShowOnForm="true" Description="" />
+    <mainMenu id="PointLog" title="会员点券明细" operateCode="PointLog" leftUrl="User/PointLogGuide.aspx" rightUrl="User/PointLog.aspx?SearchType=-1" ShowOnForm="true" Description="" />
+    <mainMenu id="ValidLog" title="会员有效期明细" operateCode="ValidLog" leftUrl="User/ValidLogGuide.aspx" rightUrl="User/ValidLog.aspx?SearchType=-1" ShowOnForm="true" Description="" />
+    <mainMenu id="PaymentLogManage" title="在线支付明细" operateCode="PaymentLogManage" leftUrl="User/PaymentLogGuide.aspx" rightUrl="User/PaymentLogManage.aspx" ShowOnForm="true" Description="" />
+  </channelMenu>
+  <channelMenu id="Plus" title="附件管理" operateCode="Plus" ShowOnForm="true" Description="">
+    <mainMenu id="ADManage" title="广告管理" operateCode="AdManage" leftUrl="ADZone/ADGuide.aspx" rightUrl="ADZone/ADManage.aspx" ShowOnForm="true" Description="">
+      <subMenu id="ADZoneManage" title="广告版位管理" operateCode="AdManage" leftUrl="ADZone/ADZoneGuide.aspx" rightUrl="ADZone/ADZoneManage.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="ADManage" title="广告管理" operateCode="AdManage" leftUrl="ADZone/ADGuide.aspx" rightUrl="ADZone/ADManage.aspx" ShowOnForm="false" Description="" />
+    </mainMenu>
+    <mainMenu id="SurveyManage" title="问卷调查管理" operateCode="SurveyManage" leftUrl="Survey/SurveyGuide.aspx" rightUrl="Survey/SurveyManage.aspx" ShowOnForm="true" Description="">
+      <subMenu id="SurveyAdd" title="创建问卷" operateCode="SurveyCreate" leftUrl="Survey/SurveyGuide.aspx" rightUrl="Survey/Survey.aspx?Action=Add" ShowOnForm="true" Description="" />
+      <subMenu id="SurveyManage" title="问卷管理" operateCode="SurveyQuestionnaireManage" leftUrl="Survey/SurveyGuide.aspx" rightUrl="Survey/SurveyManage.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="SurveyCode" title="问卷调用代码" operateCode="SurveyCode" leftUrl="Survey/SurveyCodeGuide.aspx" rightUrl="Survey/SurveyCode.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="SurveyResult" title="问卷调查结果" operateCode="SurveyResultPreview" leftUrl="Survey/SurveyResultGuide.aspx" rightUrl="Survey/SurveyResult.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="SurveyResult" title="问卷模板编辑" operateCode="SurveyTemplateManage" leftUrl="" rightUrl="" ShowOnMenu="false" ShowOnForm="true" Description="" />
+    </mainMenu>
+    <mainMenu id="StatInfoList" title="网站访问统计" operateCode="None" leftUrl="Analytics/CounterGuide.aspx" rightUrl="Analytics/StatInfoListReport.aspx" ShowOnForm="true" Description="">
+      <subMenu id="StatManage" title="访问统计查看" operateCode="StatInfoList" leftUrl="" rightUrl="" ShowOnMenu="false" ShowOnForm="true" Description="" />
+      <subMenu id="StatManage" title="访问统计管理" operateCode="StatManage" leftUrl="" rightUrl="" ShowOnMenu="false" ShowOnForm="true" Description="" />
+      <subMenu id="StatInfoList" title="访问统计分析" operateCode="None" leftUrl="Analytics/CounterGuide.aspx" rightUrl="Analytics/StatInfoListReport.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="StatInit" title="统计数据初始化" operateCode="StatManage" leftUrl="Analytics/CounterGuide.aspx" rightUrl="Analytics/StatInit.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CodeReference" title="统计代码调用" operateCode="None" leftUrl="Analytics/CounterGuide.aspx" rightUrl="Analytics/CodeReference.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="StatConfig" title="访问统计参数配置" operateCode="StatManage" leftUrl="Analytics/CounterGuide.aspx" rightUrl="Analytics/StatConfig.aspx" ShowOnForm="false" Description="" />
+    </mainMenu>
+    <mainMenu id="SendInfoManage" title="信息发送管理" operateCode="SendInfoManage" leftUrl="" rightUrl="" ShowOnForm="true" Description="">
+      <subMenu id="MessageManage" title="短消息管理" operateCode="MessageManage" leftUrl="Accessories/MessageGuide.aspx" rightUrl="Accessories/MessageManage.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="SmsManage" title="发送手机短信" operateCode="SmsManage" leftUrl="SMS/SmsGuid.aspx" rightUrl="Sms/SmsMessageToUser.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="MailListSend" title="邮件列表" operateCode="MailListSend" leftUrl="Accessories/MailListGuide.aspx" rightUrl="Accessories/MailListSend.aspx" ShowOnForm="true" Description="" />
+    </mainMenu>
+    <mainMenu id="LogManager" title="网站日志管理" operateCode="LogManager" leftUrl="Accessories/LogManagerGuide.aspx" rightUrl="Accessories/LogManager.aspx" ShowOnForm="true" Description="" />
+    <mainMenu id="CompareFilesOnline" title="在线比较文件" operateCode="CompareFilesOnline" leftUrl="Accessories/CompareFilesOnlineGuide.aspx" rightUrl="Accessories/CompareFilesOnline.aspx" ShowOnForm="true" Description="" />
+    <mainMenu id="FileManage" title="上传文件管理" operateCode="UploadFiledManage" leftUrl="Accessories/FilesGuide.aspx" rightUrl="Accessories/FileManage.aspx" ShowOnForm="true" Description="" />
+    <mainMenu id="CacheManage" title="缓存管理" operateCode="CacheManage" leftUrl="Accessories/CacheManageGuide.aspx" rightUrl="Accessories/CacheManage.aspx" ShowOnForm="true" Description="" />
+  </channelMenu>
+  <channelMenu id="CommonModel" operateCode="CommonModel" Description="" title="系统设置" ShowOnForm="true">
+    <mainMenu id="SiteConfig" title="网站配置" operateCode="SiteConfig" leftUrl="" rightUrl="" ShowOnForm="false" Description="">
+      <subMenu id="SiteInfo" title="网站信息配置" operateCode="None" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/SiteInfo.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="SiteOption" title="网站参数配置" operateCode="None" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/SiteOption.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="UserConfig" title="用户参数配置" operateCode="None" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/UserConfig.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="MailConfig" title="邮件参数配置" operateCode="None" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/MailConfig.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="ThumbConfig" title="缩略图参数配置" operateCode="None" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/ThumbConfig.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="IPLockConfig" title="IP访问限定配置" operateCode="None" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/IPLockConfig.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="SmsConfig" title="手机短信配置" operateCode="None" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/SmsConfig.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="RssConfig" title="RSS/WAP配置" operateCode="None" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/RssConfig.aspx" ShowOnForm="false" Description="" />
+    </mainMenu>
+    <mainMenu id="ContentModelManage" title="内容模型管理" operateCode="ContentModelManage" leftUrl="Contents/ManageGuide.aspx" rightUrl="Contents/ModelManage.aspx" ShowOnForm="true" Description="">
+      <subMenu id="ContentModel" title="内容模型管理" operateCode="ContentModel" leftUrl="Contents/ManageGuide.aspx" rightUrl="Contents/ModelManage.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="WorkFlowManage" title="流程管理" operateCode="WorkFlowManage" leftUrl="Contents/WorkFlowsGuide.aspx" rightUrl="Contents/WorkFlowsManage.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="StatusManage" title="稿件状态码管理" operateCode="StatusManage" leftUrl="Contents/StatusGuide.aspx" rightUrl="Contents/StatusManage.aspx" ShowOnForm="true" Description="" />
+    </mainMenu>
+    <mainMenu id="NodesManage" title="节点管理" operateCode="NodesManage" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/CategoryManage.aspx" ShowOnForm="true" Description="">
+      <subMenu id="Category" title="添加栏目节点" operateCode="None" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/Category.aspx?Action=add" ShowOnForm="false" Description="" />
+      <subMenu id="BatchCategory" title="批量添加节点" operateCode="None" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/Category.aspx?Action=add&amp;AddType=BatchCategory" ShowOnForm="false" Description="" />
+      <subMenu id="Single" title="添加单页节点" operateCode="None" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/Single.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="OutLink" title="添加外部链接" operateCode="None" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/OutLink.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CategoryOrder" title="节点排序" operateCode="None" leftUrl="Contents/CategoryOrderGuid.aspx" rightUrl="Contents/CategoryOrder.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CategoryUnite" title="合并节点" operateCode="None" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/CategoryUnite.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CategoryMove" title="移动节点" operateCode="None" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/CategoryMove.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CategoryBatchSet" title="批量设置" operateCode="None" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/CategoryBatchSet.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CategoryReset" title="复位所有节点" operateCode="None" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/CategoryReset.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="CategoryPatch" title="修复节点结构" operateCode="None" leftUrl="Contents/CategoryGuide.aspx" rightUrl="Contents/CategoryPatch.aspx" ShowOnForm="false" Description="" />
+    </mainMenu>
+    <mainMenu id="SpecialManage" title="专题管理" operateCode="SpecialManage" leftUrl="Contents/SpecialGuide.aspx" rightUrl="Contents/SpecialManage.aspx" ShowOnForm="true" Description="">
+      <subMenu id="SpecialCategoryManage" title="专题类别管理" operateCode="SpecialManage" leftUrl="Contents/SpecialGuide.aspx" rightUrl="Contents/SpecialCategoryManage.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="SpecialCategoryOrder" title="专题类别排序" operateCode="SpecialManage" leftUrl="Contents/SpecialGuide.aspx" rightUrl="Contents/SpecialCategoryOrder.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="SpecialCategory" title="添加专题类别" operateCode="SpecialManage" leftUrl="Contents/SpecialGuide.aspx" rightUrl="Contents/SpecialCategory.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="SpecialUnite" title="合并专题" operateCode="SpecialManage" leftUrl="Contents/SpecialGuide.aspx" rightUrl="Contents/SpecialUnite.aspx" ShowOnForm="false" Description="" />
+      <subMenu id="SpecialBatchSet" title="批量设置" operateCode="SpecialManage" leftUrl="Contents/SpecialGuide.aspx" rightUrl="Contents/SpecialBatchSet.aspx" ShowOnForm="false" Description="" />
+    </mainMenu>
+    <mainMenu id="TemplateLabelManage" title="模板标签管理" operateCode="TemplateLabelManage" leftUrl="Template/TemplateManageGuide.aspx" rightUrl="Template/TemplateManage.aspx" ShowOnForm="true" Description="">
+      <subMenu id="LabelManage" title="标签管理" operateCode="LabelManage" leftUrl="Template/LabelGuide.aspx" rightUrl="Template/LabelManage.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="StyleManage" title="风格管理" operateCode="StyleManage" leftUrl="Template/StyleGuide.aspx" rightUrl="Template/StyleManage.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="TemplateManage" title="模板管理" operateCode="TemplateManage" leftUrl="Template/TemplateManageGuide.aspx" rightUrl="Template/TemplateManage.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="IncludeFileManage" title="内嵌代码管理" operateCode="IncludeFileManage" leftUrl="Template/IncludeFileGuide.aspx" rightUrl="Template/IncludeFileManage.aspx" ShowOnForm="true" Description="" />
+      <subMenu id="FrontPageTemplateConfig" title="动态页模板配置" operateCode="None" leftUrl="Configuration/SiteConfigGuide.aspx" rightUrl="Configuration/FrontPageTemplateConfig.aspx" ShowOnForm="false" Description="" />
+    </mainMenu>
+    <mainMenu id="Choiceset" title="数据字典管理" operateCode="ChoicesetManage" leftUrl="Configuration/ChoicesetGuide.aspx" rightUrl="Configuration/Choiceset.aspx" ShowOnForm="true" Description="" />
+    <mainMenu id="RegionManage" title="行政区划管理" operateCode="RegionManage" leftUrl="Accessories/RegionGuide.aspx" rightUrl="Accessories/RegionManage.aspx" ShowOnForm="true" Description="" />
+    <mainMenu id="BankAccountManage" title="银行账户管理" operateCode="BankAccountManage" leftUrl="Accessories/BankGuide.aspx" rightUrl="Accessories/BankManage.aspx" ShowOnForm="true" Description="" />
+    <mainMenu id="PayPlatformManage" title="在线支付平台管理" operateCode="PayPlatformManage" leftUrl="Accessories/PayPlatformGuide.aspx" rightUrl="Accessories/PayPlatformManage.aspx" ShowOnForm="true" Description="" />
+  </channelMenu>
+</menu>

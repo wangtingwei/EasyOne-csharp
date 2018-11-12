@@ -1,0 +1,93 @@
+﻿{PE.DataSource id="cone" datasource="公告_内容页" itemid="@RequestInt_id" xslt="true" /}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="{PE.Label id="网站信息配置中的关键字" /}" name="Keywords" />
+<meta content="{PE.Label id="网站信息配置中网站描述" /}" name="Description"/>
+<title>{PE.Field id="cone" fieldname="Title" /}-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/article.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/commentary.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/user.css" rel="stylesheet"type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath /}JS/Common.js"></script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath /}JS/jsPopup.js"></script>
+<script language="javascript" type="text/javascript">
+function redirecturl(url, tarid)
+{
+    location=url.replace(/{\$pageid\/}/g,tarid);
+}
+</script>
+<script id="ShowTab" type="text/javascript">
+function ShowTabs(ID){
+   for (i=0;i<3;i++){
+        if(i == ID){
+            $("TabTitle" + i).className="PK_mouseover";
+            $("Tab" + i).style.display="";
+        }
+        else{
+            $("TabTitle" + i).className="PK_title";
+            $("Tab" + i).style.display="none";
+        }
+   }
+} 
+</script>
+</head>
+<body>
+{PE.label id="雅灰网站顶部" /}
+<table class="center_all" cellspacing="0">
+    <tr>
+        <td>
+            <table class="main" cellspacing="0">
+                <tr>
+                    <td class="main_left">
+                        <table cellspacing="0">
+                            <tr>
+                                <td><img src="{PE.SiteConfig.ApplicationPath /}Skin/Gray/images/banner.gif" style="border:0;height:82px;width:765px;" alt="banner" /></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table id="l_nav" cellspacing="0">
+                                        <tr>
+                                            <td class="r_n_pic"></td>
+                                            <td class="logo_nav">您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a>{PE.Label id="内容位置导航" itemid="@RequestInt_id" /} </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <table class="article" cellspacing="0">
+                                        <tr>
+                                            <td class="article_tit">{PE.Field id="cone" fieldname="Title" /}</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="info"> 发布人：{PE.Field id="cone" fieldname="Inputer" /} | 发布时间：{PE.Field id="cone" fieldname="DateAndTime" /} | 点击数：{PE.Field id="cone" fieldname="Hits" /}  </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="article_con" valign="top" id="fontzoom">
+	                                            <div class="overflow_hidden">
+	                                            {PE.Field id="cone" fieldname="Content"  charge="true" showerr="true"/}
+                                            	</div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </table>
+                        <!-- main_left 左部结束 -->
+                    </td>
+                    <td class="width_5"></td>
+                    <td class="main_right">
+			            {PE.Label id="雅灰内容右侧" /}
+                    </td>
+                </tr>
+            </table>
+            <!-- main 结束 -->
+        </td>
+    </tr>
+</table>
+<!-- center_all 结束 -->
+{PE.Label id=" 雅灰网站底部" /}
+</body>
+</html>

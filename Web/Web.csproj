@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A21860A6-0777-4451-AD9D-42F074957000}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EasyOne.Web</RootNamespace>
+    <AssemblyName>EasyOne.Web</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\WebSite\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminMapProvider.cs" />
+    <Compile Include="Configuration\CheckPermissionsElement.cs" />
+    <Compile Include="Configuration\CheckSecurityCodeElement.cs" />
+    <Compile Include="Configuration\ComponentsSectionGroup.cs" />
+    <Compile Include="Configuration\NoCheckAdminLogOnElement.cs" />
+    <Compile Include="Configuration\NoCheckType.cs" />
+    <Compile Include="Configuration\NoCheckUrlReferrerElement.cs" />
+    <Compile Include="Configuration\PageElement.cs" />
+    <Compile Include="Configuration\PageElementCollection.cs" />
+    <Compile Include="Configuration\ParamElement.cs" />
+    <Compile Include="Configuration\ParamElementCollection.cs" />
+    <Compile Include="Configuration\ParamType.cs" />
+    <Compile Include="Configuration\PermissionsPageElement.cs" />
+    <Compile Include="Configuration\PermissionsPageElementCollection.cs" />
+    <Compile Include="Configuration\QueryStringsMode.cs" />
+    <Compile Include="Configuration\QueryStringsSection.cs" />
+    <Compile Include="Configuration\SecurityCheckPageElement.cs" />
+    <Compile Include="Configuration\SecurityCheckPageElementCollection.cs" />
+    <Compile Include="Configuration\SecuritySection.cs" />
+    <Compile Include="HttpModule\CommonModule.cs" />
+    <Compile Include="HttpModule\ExceptionModule.cs" />
+    <Compile Include="HttpModule\InvalidSessionException.cs" />
+    <Compile Include="HttpModule\IPLockModule.cs" />
+    <Compile Include="HttpModule\QueryStringModule.cs" />
+    <Compile Include="HttpModule\RefreshModule.cs" />
+    <Compile Include="HttpModule\SecureSessionModule.cs" />
+    <Compile Include="HttpModule\SecurityModule.cs" />
+    <Compile Include="NoLeechImageHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Theme.cs" />
+    <Compile Include="ThemeManager.cs" />
+    <Compile Include="UI\AdminPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\BaseUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\BaseWebPart.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\DynamicPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UI\HtmlTemplateTitle.cs" />
+    <Compile Include="UI\TemplatePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserMapProvider.cs" />
+    <Compile Include="Utility.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Bll\Bll.csproj">
+      <Project>{59772C89-7A38-4F86-9FF5-BAAC78BD9F73}</Project>
+      <Name>Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{45E032CF-6CEF-4795-9C53-9832F1C51D14}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Components\Components.csproj">
+      <Project>{7A177EF1-8426-4DBF-98C8-C432035D2EC1}</Project>
+      <Name>Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Enumerations\Enumerations.csproj">
+      <Project>{B42E08FB-9F11-4C31-BBAF-8EB607D9C6BA}</Project>
+      <Name>Enumerations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{A6D384AB-3258-4CEF-A462-08364D11FE94}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\StaticHtml\StaticHtml.csproj">
+      <Project>{C9D6CB17-60CF-4257-9A14-5450BE19EAC7}</Project>
+      <Name>StaticHtml</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,73 @@
+<%@ Master Language="C#" AutoEventWireup="true" Inherits="EasyOne.WebSite.Admin.GuideMaster" Codebehind="Guide.master.cs" %>
+<!DOCTYPE html PUBLIC "-//W3C//Dtd XHTML 1.0 transitional//EN" "http://www.w3.org/tr/xhtml1/Dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>左侧向导页</title>
+
+    <script type="text/javascript">
+    function JumpToMainRight(url) { parent.frames["main_right"].location = url; }
+    function ReloadMainRight() { parent.frames["main_right"].location.reload(); }
+    function Switch(obj)
+    {
+        obj.className = (obj.className == "guideexpand") ? "guidecollapse" : "guideexpand";
+        var nextDiv;
+        if (obj.nextSibling)
+        {
+            if(obj.nextSibling.nodeName=="DIV")
+            {
+                nextDiv = obj.nextSibling;
+            }
+            else
+            {
+                if(obj.nextSibling.nextSibling)
+                {
+                    if(obj.nextSibling.nextSibling.nodeName=="DIV")
+                    {
+                        nextDiv = obj.nextSibling.nextSibling;
+                    }
+                }
+            }
+            if(nextDiv)
+            {
+                nextDiv.style.display = (nextDiv.style.display != "") ? "" : "none"; 
+            }
+        }
+    }
+    function keylock(evt)
+    {
+	    if((evt.keyCode == 13) && (this.OpenMainRight))
+	    {
+	        this.OpenMainRight();
+	    }
+    }
+    String.prototype.trim = function()
+    {
+        // 用正则表达式将前后空格
+        // 用空字符串替代。
+        return this.replace(/(^\s*)|(\s*$)/g, "");
+    }
+    </script>
+
+</head>
+<body id="Guidebody" onkeydown="keylock(event)">
+    <form id="formGuide" runat="server">
+        <div id="Guide_back">
+            <ul>
+                <li id="Guide_top">
+                    <div id="Guide_toptext">
+                        <asp:ContentPlaceHolder ID="CphTitle" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </li>
+                <li id="Guide_main">
+                    <div id="Guide_box">
+                        <asp:ContentPlaceHolder ID="CphSubMenu" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </li>
+                <li id="Guide_bottom"></li>
+            </ul>
+        </div>
+    </form>
+</body>
+</html>

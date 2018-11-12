@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="{PE.Label id="取得栏目META关键词" nodeid="@RequestInt_id" /}"  name="Keywords" />
+<meta content="{PE.Label id="取得栏目META网页描述" nodeid="@RequestInt_id" /}"  name="Description" />
+<title>{PE.Label id="取得节点名称" nid="@RequestInt_id" /}-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/product.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/user.css" rel="stylesheet"type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath /}js/common.js"></script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath /}js/slider.js"></script>
+<script language="javascript" type="text/javascript">
+function redirecturl(url)
+{
+    location=url;
+}
+
+    </script>
+</head>
+<body>
+{PE.label id="雅灰网站顶部" /}
+<!-- 中部网站导航 -->
+<table class="center_all" cellspacing="0">
+  <tr>
+    <td>
+      <table id="r_navigation" cellspacing="0">
+        <tr>
+          <td class="r_n_pic"></td>
+          <td class="logo_nav">您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a>{PE.Label id="栏目位置导航" nodeid="@RequestInt_id" /} </td>
+          <td id="top_link">
+            <ul>
+              <li>
+                <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="1" scrolldelay="4" align="left">
+                {PE.Label id="雅灰网站公告横向" /}
+                </marquee>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+
+<table class="center_all" cellspacing="0">
+  <tr>
+    <td>
+      <table class="main" cellspacing="0">
+        <tr>
+          <td class="main_left">
+
+{PE.Label id="商店搜索" /}
+<table class="width_100 margin_top_5" cellspacing="0">
+<tr><td>
+          <!-- 显示父栏目信息一列式列表开始 -->
+		{PE.DataSource id="categorylist" datasource="栏目循环列表" parentid="@RequestInt_id" page="true"  pagesize="10" pagemain="true"  xslt="true" /}
+		<div class="childclass_main_box3">
+			<div class="class_title">
+				{PE.field id="categorylist" fieldname="ParentNodePath" /}
+			</div>
+			<div class="class_content">
+				<div class="p_childclass_list">
+				<ul>
+					{PE.Repeat id="categorylist" loop="10"}
+					<li>
+						{PE.Label id="商品栏目图片列表标签" parentid="{PE.field fieldname="NodeID" /}" shownum="1" border="0" titlelen="10" /}
+						<div class="pe_u_thumb_list">
+							<ul>
+							{PE.Label id="商品信息列表_普通式" parentid="{PE.field fieldname="NodeID" /}" arrnodeid="0" includechild="true" specialid="0" urltype="0" shownum="10" ishot="false" iselite="false" inputername="" datenum="0" ordertype="{PE.Label id="取得栏目下的内容排序方式" nodeid="{PE.field fieldname="NodeID" /}" /}" showtype="1" titlelen="30" contentlen="0" shownodename="false" showpropertytype="2" showincludepic="false" showauthor="false" showdatetype="mm-dd" showhits="false" showhotsign="false" shownewsign="false" showtips="true" showcommentlink="false" usepage="false" opentype="_blank" cols="1" hits="0" elitelevel="0" /}
+							</ul>
+						</div>
+					</li>
+					{/PE.Repeat}
+				</ul>
+				</div>
+				<div class="clearbox">
+				</div>
+			</div>
+		</div>
+          <!-- 显示父栏目信息一列式列表结束 -->
+</td></tr>
+</table>
+
+<table class="class_page" cellspacing="0">
+<tr>
+<td>{PE.Page id="url_动易后台风格" datasource="categorylist" unitname="个商品" /}</td>
+</tr>
+</table>
+
+          </td>
+          <td width="5"></td>
+          <td class="main_right" valign="top">
+            {PE.Label id="雅灰文章右侧" /}
+          </td>
+        </tr>
+      </table>
+      <!-- main 结束 -->
+    </td>
+  </tr>
+</table>
+<!-- center_all 结束 -->
+{PE.Label id=" 雅灰网站底部" /}
+</body>
+</html>

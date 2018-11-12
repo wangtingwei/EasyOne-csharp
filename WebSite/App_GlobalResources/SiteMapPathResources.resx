@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AddressConsigneeName" xml:space="preserve">
+    <value>收货人名中含有 &lt;span style='Color:#F00'&gt;{$Key}&lt;/span&gt; 的地址信息</value>
+  </data>
+  <data name="AddressHomePhone" xml:space="preserve">
+    <value>电话号码中含有 &lt;span style='Color:#F00'&gt;{$Key}&lt;/span&gt; 的地址信息</value>
+  </data>
+  <data name="AddressMobile" xml:space="preserve">
+    <value>手机号码中含有 &lt;span style='Color:#F00'&gt;{$Key}&lt;/span&gt; 的地址信息</value>
+  </data>
+  <data name="AddressStreet" xml:space="preserve">
+    <value>街道地址中含有 &lt;span style='Color:#F00'&gt;{$Key}&lt;/span&gt; 的地址信息</value>
+  </data>
+  <data name="AddressUserName" xml:space="preserve">
+    <value>用户名中含有 &lt;span style='Color:#F00'&gt;{$Key}&lt;/span&gt; 的地址信息</value>
+  </data>
+  <data name="AddressZipCode" xml:space="preserve">
+    <value>邮政编码中含有 &lt;span style='Color:#F00'&gt;{$Key}&lt;/span&gt; 的地址信息</value>
+  </data>
+  <data name="ADIntro" xml:space="preserve">
+    <value>搜索广告简介含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的关键字</value>
+  </data>
+  <data name="ADName" xml:space="preserve">
+    <value>搜索广告名称含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的关键字</value>
+  </data>
+  <data name="ADZoneIntro" xml:space="preserve">
+    <value>搜索版位简介含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的关键字</value>
+  </data>
+  <data name="ADZoneName" xml:space="preserve">
+    <value>搜索版位名称含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的关键字</value>
+  </data>
+  <data name="ServiceSearch" xml:space="preserve">
+    <value>{@Field} &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的数据</value>
+  </data>
+  <data name="ConsignmenAddress" xml:space="preserve">
+    <value>联系地址中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="ConsignmenAgentName" xml:space="preserve">
+    <value> &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 代理的订单</value>
+  </data>
+  <data name="ConsignmenClientName" xml:space="preserve">
+    <value>客户名称中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="ConsignmenContacterName" xml:space="preserve">
+    <value>收货人姓名中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="ConsignmenDateAndTime" xml:space="preserve">
+    <value> &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 下单的订单</value>
+  </data>
+  <data name="ConsignmenOrderNum" xml:space="preserve">
+    <value>订单编号中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="ConsignmenPhone" xml:space="preserve">
+    <value>联系电话中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="ConsignmenProductName" xml:space="preserve">
+    <value>购买商品的名称中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="ConsignmenQQ" xml:space="preserve">
+    <value>用户的QQ中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="ConsignmenRemark" xml:space="preserve">
+    <value>备注/留言中中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="ConsignmenUserName" xml:space="preserve">
+    <value>用户名中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="ContacterID" xml:space="preserve">
+    <value>联系人ID为 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的数据</value>
+  </data>
+  <data name="ContacterName" xml:space="preserve">
+    <value>联系人名称为 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的数据</value>
+  </data>
+  <data name="CouponNum" xml:space="preserve">
+    <value>优惠券号码中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的数据</value>
+  </data>
+  <data name="CouponTitle" xml:space="preserve">
+    <value>优惠券名称中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的数据</value>
+  </data>
+  <data name="CouponUserName" xml:space="preserve">
+    <value>用户名称中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的数据</value>
+  </data>
+  <data name="ErrorDate" xml:space="preserve">
+    <value>最近 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 天的下载报错地址</value>
+  </data>
+  <data name="InfoID" xml:space="preserve">
+    <value>关键字中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的下载报错地址</value>
+  </data>
+  <data name="LinkAddress" xml:space="preserve">
+    <value>链接地址中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的站内链接</value>
+  </data>
+  <data name="LinkTarget" xml:space="preserve">
+    <value>链接目标中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的站内链接</value>
+  </data>
+  <data name="NormalKeyword" xml:space="preserve">
+    <value>常规关键字含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的关键字</value>
+  </data>
+  <data name="RegionArea" xml:space="preserve">
+    <value>所属县区中含有关键字 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的记录</value>
+  </data>
+  <data name="RegionAreaCode" xml:space="preserve">
+    <value>区号中含有关键字 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的记录</value>
+  </data>
+  <data name="RegionCity" xml:space="preserve">
+    <value>所属城市中含有关键字 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的记录</value>
+  </data>
+  <data name="RegionPostCode" xml:space="preserve">
+    <value>邮政编码中含有关键字 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的记录</value>
+  </data>
+  <data name="RegionProvince" xml:space="preserve">
+    <value>所属省份中含有关键字 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的记录</value>
+  </data>
+  <data name="ReplaceContent" xml:space="preserve">
+    <value>替换内容中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的关键字</value>
+  </data>
+  <data name="ReplaceTarget" xml:space="preserve">
+    <value>替换目标中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的关键字</value>
+  </data>
+  <data name="SearchKeyword" xml:space="preserve">
+    <value>搜索关键字 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的关键字</value>
+  </data>
+  <data name="StockFormNum" xml:space="preserve">
+    <value>单据编号是 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的有：</value>
+  </data>
+  <data name="StockInputDate" xml:space="preserve">
+    <value>录入日期是 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的有：</value>
+  </data>
+  <data name="StockInputPerson" xml:space="preserve">
+    <value>录入者是 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的有：</value>
+  </data>
+  <data name="TitleText" xml:space="preserve">
+    <value>标题中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的日志</value>
+  </data>
+  <data name="UserIPText" xml:space="preserve">
+    <value>用户IP中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的日志</value>
+  </data>
+  <data name="UserNameText" xml:space="preserve">
+    <value>用户名称中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的日志</value>
+  </data>
+  <data name="ValidLogConsumeTime" xml:space="preserve">
+    <value>消费时间为 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的有效期明细记录</value>
+  </data>
+  <data name="ValidLogUserName" xml:space="preserve">
+    <value>用户名称中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的有效期明细记录</value>
+  </data>
+  <data name="ComplainClientID" xml:space="preserve">
+    <value>客户ID等于 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的投诉记录</value>
+  </data>
+  <data name="ComplainClientName" xml:space="preserve">
+    <value>客户名称中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的投诉记录</value>
+  </data>
+  <data name="ComplainDate" xml:space="preserve">
+    <value>投诉日期为 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的投诉记录</value>
+  </data>
+  <data name="DeliverClientName" xml:space="preserve">
+    <value>客户名称中含有关键字 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的记录</value>
+  </data>
+  <data name="DeliverConsignee" xml:space="preserve">
+    <value>收货人姓名中含有关键字 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的记录</value>
+  </data>
+  <data name="DeliverDate" xml:space="preserve">
+    <value>发退货日期为 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的记录</value>
+  </data>
+  <data name="DeliverDealer" xml:space="preserve">
+    <value>经手人中含有关键字 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的记录</value>
+  </data>
+  <data name="DeliverExpressageCompany" xml:space="preserve">
+    <value>快递公司中含有关键字 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的记录</value>
+  </data>
+  <data name="DeliverExpressageNum" xml:space="preserve">
+    <value>快递单号中含有关键字 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的记录</value>
+  </data>
+  <data name="DeliverUserName" xml:space="preserve">
+    <value>用户名中含有关键字 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的记录</value>
+  </data>
+  <data name="InvoiceClientName" xml:space="preserve">
+    <value>客户名称中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的记录</value>
+  </data>
+  <data name="InvoiceDate" xml:space="preserve">
+    <value>发票日期为 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的记录</value>
+  </data>
+  <data name="InvoiceDealer" xml:space="preserve">
+    <value>开票人含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的记录</value>
+  </data>
+  <data name="OrderAddress" xml:space="preserve">
+    <value>联系人地址中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="OrderAgentName" xml:space="preserve">
+    <value>&lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 代理的订单</value>
+  </data>
+  <data name="OrderClientName" xml:space="preserve">
+    <value>客户名称中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="OrderContacterName" xml:space="preserve">
+    <value>收货人姓名中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="OrderDateAndTime" xml:space="preserve">
+    <value>&lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 下单的订单</value>
+  </data>
+  <data name="OrderNum" xml:space="preserve">
+    <value>订单编号中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="OrderPhone" xml:space="preserve">
+    <value>联系电话中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="OrderProductName" xml:space="preserve">
+    <value>购买商品的名称中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="OrderQQ" xml:space="preserve">
+    <value>用户的QQ为 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="OrderRemark" xml:space="preserve">
+    <value>备注/留言中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="OrderUserName" xml:space="preserve">
+    <value>用户名中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="ProducerManage" xml:space="preserve">
+    <value>{@SearchType}中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的厂商</value>
+  </data>
+  <data name="SaleList" xml:space="preserve">
+    <value>{@Field} &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的商品销售记录</value>
+  </data>
+  <data name="CardsSearch" xml:space="preserve">
+    <value>在{@CardStatus}{@CardType}中搜索{@Field}: &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt;</value>
+  </data>
+  <data name="ClientID" xml:space="preserve">
+    <value>客户ID等于 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的数据</value>
+  </data>
+  <data name="ClientName" xml:space="preserve">
+    <value>客户名称中含有 &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的数据</value>
+  </data>
+  <data name="PaymentLog" xml:space="preserve">
+    <value>{@Field} &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的在线支付记录</value>
+  </data>
+  <data name="SurveySearch" xml:space="preserve">
+    <value>{@SearchType} &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的问卷</value>
+  </data>
+  <data name="TrademarkManageSearch" xml:space="preserve">
+    <value>{@SearchType} &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的数据</value>
+  </data>
+  <data name="TransferLogSearch" xml:space="preserve">
+    <value>{@Field} &lt;span style='Color:#F00'&gt;{$Keyword}&lt;/span&gt; 的订单记录 </value>
+  </data>
+  <data name="OrderEmail" xml:space="preserve">
+    <value>收货人Email中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="OrderFunctionary" xml:space="preserve">
+    <value>跟单员中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="OrderInvoiceContent" xml:space="preserve">
+    <value>发票信息中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="OrderMemo" xml:space="preserve">
+    <value>内部记录中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="OrderMobile" xml:space="preserve">
+    <value>收货人手机中含有 &lt;span style='color:#ff0000'&gt;{$Keyword}&lt;/span&gt; 的订单</value>
+  </data>
+  <data name="AddressArea" xml:space="preserve">
+    <value>地区中含有 &lt;span style='Color:#F00'&gt;{$Key}&lt;/span&gt; 的信息</value>
+  </data>
+</root>

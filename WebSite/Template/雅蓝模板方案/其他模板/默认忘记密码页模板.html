@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="{PE.Label id="网站信息配置中的关键字" /}" name="Keywords" />
+<meta content="{PE.Label id="网站信息配置中网站描述" /}" name="Description"/>
+<title>会员中心-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.applicationpath/}Skin/Default/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.applicationpath/}Skin/Default/user.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.applicationpath/}js/common.js"></script>
+<script type="text/javascript" src="{PE.SiteConfig.applicationpath/}JS/jquery.pack.js"></script>
+<script language="javascript" type="text/javascript">
+    function redirecturl(url, tarid)
+    {
+        location=url.replace(/{\$pageid\/}/g,tarid);
+    }
+    </script>
+</head>
+<body>
+{PE.Label id="网站顶部" /}
+<div id="center_all">
+  <div id="main_bg">
+    <!-- 网站位置导航信息开始 -->
+    <div class="r_navigation">
+      <div class="r_n_pic"></div>
+      您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a> >> 忘记密码</div>
+    <!-- 网站位置导航信息结束 -->
+    <div class="u_management_Password"> {PE.Control.form1} 
+      {PE.Control.PnlStep1}
+	  <h1>请输入用户名</h1>
+      <table>
+        <tr>
+          <td class="right"> 请输入你要取回密码的用户名： </td>
+          <td class="left"> {PE.Control.TxtUserName/}{PE.Control.ValrTxtUserName/}</td>
+        </tr>
+        <tr>
+          <td colspan="2"> {PE.Control.BtnStep1/}</td>
+        </tr>
+      </table>
+      {/PE.Control.PnlStep1}
+      {PE.Control.PnlSendToEmail}
+          <h1><span class="showicon">请选择密码类型</span></h1>
+          <table>
+                <tr>
+                    <td class="right"> 请选择你要取回密码的类型： </td>
+                    <td class="left"> {PE.Control.RadPwdType/}</td>
+                <tr>
+                    <td colspan="2"> {PE.Control.btnSendEmail/}</td>
+                </tr>
+            </table>
+      {/PE.Control.PnlSendToEmail}
+      {PE.Control.PnlStep2}
+	  <h1>请输入问题答案</h1>
+      <table>
+        <tr>
+          <td class="right">问题： </td>
+          <td colspan="2" class="left">{PE.Control.LitQuestion/}</td>
+        </tr>
+        <tr>
+          <td class="right">请输入问题答案： </td>
+          <td colspan="2" class="left">{PE.Control.TxtAnswer/} </td>
+        </tr>
+        <tr>
+          <td class="right">请输入验证码： </td>
+          <td class="left">{PE.Control.TxtValidateCode/} </td>
+          <td class="left">{PE.Control.VcodeLogOn/}{PE.Control.ValrValidateCode/}</td>
+        </tr>
+        <tr>
+                     <td class="right">请选择密码类型： </td>
+                    <td class="left" colspan="2">{PE.Control.RadListPwdType/} </td>
+                  </tr>
+        <tr>
+          <td colspan="3">{PE.Control.BtnStep2/}</td>
+        </tr>
+      </table>
+      {/PE.Control.PnlStep2}
+      {PE.Control.PnlStep3}
+	  <h1>请修改登陆密码</h1>
+      <table>
+        <tr>
+          <td class="right">密　　码： </td>
+          <td colspan="2" class="left">{PE.Control.TxtPassword/} {PE.Control.RegularExpressionValidatorPassword/}</td>
+        </tr>
+        <tr>
+          <td class="right">确认密码： </td>
+          <td colspan="2" class="left">{PE.Control.TxtConfirmPassword/} {PE.Control.CompareValTxtConfirmPassword/}</td>
+        </tr>
+        <tr>
+          <td colspan="3">{PE.Control.BtnStep3/}</td>
+        </tr>
+      </table>
+      {/PE.Control.PnlStep3}
+      {PE.Control.PalChangePayPassword}
+      <h1>请修改预付款支付密码</h1>
+          <table>
+        <tr>
+          <td class="right">密　　码： </td>
+          <td colspan="2" class="left">{PE.Control.txtNewPayPassword/} {PE.Control.RegNewPayPassword/}</td>
+        </tr>
+        <tr>
+          <td class="right">确认密码： </td>
+          <td colspan="2" class="left">{PE.Control.txtConfirmNewPayPassword/} {PE.Control.CompNewPayPassword/}</td>
+        </tr>
+        <tr>
+          <td colspan="3">{PE.Control.btnChangePayPassword/}</td>
+        </tr>
+      </table>
+      {/PE.Control.PalChangePayPassword}
+      {/PE.Control.form1} </div>
+      <div class="clearbox">
+            </div>
+  </div>
+</div>
+{PE.Label id="网站底部" /}
+</body>
+</html>

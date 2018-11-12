@@ -1,0 +1,149 @@
+﻿/* ==图片节点定义== */
+
+/* 首页图片二列式循环 */
+
+.childclass_content ul
+{
+	margin: 0px;
+	padding: 0px;
+}
+.childclass_content
+{
+	height: auto !important;
+	height: 158px;
+	min-height: 158px;
+}
+
+/* ==图片大类栏目页列表形式==  */
+.s_childclass_main_box /* 二列式循环 */
+{
+	float: left;
+	width: 379px;
+	margin: 5px 0px 0px 5px;
+}
+* html .s_childclass_main_box /* 二列式循环 */
+{
+	width: 381px;
+}
+
+/* 大类栏目图片一列式 */
+.p_class_list, .p_childclass_list, .p_class_list ul, .p_childclass_list ul
+{
+	padding: 0px;
+	margin: 0px;
+}
+.p_class_list li, .p_childclass_list li
+{
+	padding: 0px;
+	margin: 5px 0px 0px;
+	list-style: none;
+	width: 25%;
+	float: left;
+	text-align: center;
+	border-bottom: 0px;
+}
+* html .p_class_list li, * html .p_childclass_list li
+{
+	width: 24.5%;
+}
+.p_class_list li img
+{
+	border: 1px solid #ccc;
+	width: 160px;
+	height: 120px;
+}
+
+/* 大类栏目图片二列式 */
+.p_class_list2, .p_class_list2 ul
+{
+	padding: 0px;
+	margin: 0px;
+}
+.p_class_list2 li
+{
+	padding: 0px;
+	margin: 5px 0px;
+	list-style: none;
+	width: 49.5%;
+	float: left;
+	text-align: center;
+	border: none;
+}
+
+
+/* 分页 */
+.s_page
+{
+	clear: left;
+	padding: 5px;
+	background: #f9f9f9;
+	border: 1px solid #9bbde6;
+	text-align: center;
+}
+.s_page ul, .s_page li
+{
+	padding: 0px;
+	margin: 0px 0px 0px 10px;
+	text-align: left;
+	list-style: none;
+}
+.s_page a
+{
+	color: blue;
+	text-decoration: underline;
+}
+/* ==小类栏目页列表形式== */
+/* 父栏目模板中无内容时使用 */
+.childclasslist_box
+{
+	margin: 5px 0px 0px 5px;
+}
+*html .childclasslist_box
+{
+	margin: 5px 0px 0px 10px;
+} 
+/* 子栏目模板中使用 */
+.c_main_one .childclasslist_box
+{
+	margin: 0px;
+}
+/* ==图片内容页== */
+.p_content_text
+{
+	text-align: center;
+	padding: 5px;
+	height: auto !important;
+	height: 400px;
+	min-height: 400px;
+}
+.p_info
+{
+	padding: 5px;
+	border: 1px solid #9bbde6;
+}
+.p_info h4
+{
+	padding: 0px;
+	margin: 0px 0px 10px;
+	font: normal normal bold 12px/150% Arial,"宋体",Helvetica,sans-serif;
+}
+#PhotoUrlList table {
+	margin: auto;
+}
+
+/* 推荐图文 */
+.p_photo_list, .p_photo_list ul
+{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+.p_photo_list li
+{
+	padding: 0px;
+	margin: 5px 0px;
+	list-style: none;
+	width: 33%;
+	float: left;
+}
+

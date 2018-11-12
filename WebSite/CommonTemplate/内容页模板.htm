@@ -1,0 +1,258 @@
+﻿{PE.DataSource id="cone" datasource="{$$$ContentLabelName$$$}" itemid="@Request_id" xslt="true" /}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="{PE.Field id="cone" fieldname="KeyWord" /}" name="Keywords" />
+<meta content="{PE.Field id="cone" fieldname="Intro" /}" name="Description"/>
+<title>{PE.Field id="cone" fieldname="Title" /}-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/article.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/commentary.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/Common.js"></script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/jsPopup.js"></script>
+</head>
+<body>
+{PE.Label id="网站顶部" /}
+<div id="center_all">
+  <div id="main_bg">
+    <div id="main_right">
+      <div id="main_right_box">
+        <!-- 网站位置导航信息开始 -->
+        <div class="r_navigation">
+          <div class="r_n_pic"></div>
+          您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a>{PE.Label id="内容位置导航" itemid="@Request_id" /} </div>
+        <!-- 网站位置导航信息结束 -->
+        {PE.Label id="右侧广告" /}
+        <div class="c_spacing"> </div>
+        <!-- 主体内容开始 -->
+        <div class="c_main_box"  {PE.Field id="cone" fieldname="ArticleProtect" /}>
+          <!-- 标题 -->
+          <div class="c_title_text"> <span>
+            <h1> <span><font style="{PE.Field id="cone" fieldname="TitleFontType" /}{PE.Field id="cone" fieldname="TitleFontColor" /}">{PE.Field id="cone" fieldname="Title" /}</font></span> </h1>
+            </span> </div>
+          <!-- 作者 -->
+          <div class="c_title_author"> 
+          <span class="font_right">
+          【字体：<a href="javascript:fontZoomA();" class="top_UserLogin">小</a> <a href="javascript:fontZoomB();" class="top_UserLogin">大</a>】
+          　【<a href="{PE.SiteConfig.ApplicationPath/}User/Contents/Favorite.aspx?Action=add&Id={PE.Field id="cone" fieldname="GeneralID" /}">收藏</a>】
+          　　【<a href="{PE.SiteConfig.applicationpath/}Print.aspx?id={PE.Field id="cone" fieldname="GeneralID" /}">打印{$$$ItemName$$$}</a>】
+          　　{PE.Label id="内容签收" ItemId="@Request_id"/}</span> 作者：{PE.Field id="cone" fieldname="Author" /}　
+          　　来源：{PE.Field id="cone" fieldname="CopyFrom" /}　发布时间：{PE.Field id="cone" fieldname="UpdateTime" /}　
+          　　点击数：{PE.Field id="cone" fieldname="Hits" /} </div>
+          <!-- 正文 -->
+          <div class="c_content_text">
+            <div class="c_content_overflow" id="fontzoom">
+            {PE.Field id="cone" fieldname="Content" htmldecode="true" charge="true"  showerr="true" /}
+</div>
+          </div>
+          <div class="c_bot_text"></div>
+        </div>
+        <!-- 主体内容结束 -->
+   {PE.Label id="内容评论PK标签" generalid="@Request_id" span="" class="" /}     
+         </div>
+    </div>
+    </div>
+</div>
+{PE.Label id="网站底部" /}
+<!-- 评论变量区 -->
+<input id="username" type="hidden" value="游客" />
+<input id="position" type="hidden" value="0" />
+<input id="private" type="hidden" value="0" />
+<input id="score" type="hidden" value="3" />
+<input id="face" type="hidden" value="Images\Comment\01.gif" />
+<input id="gid" type="hidden" value="@Request_id" />
+<input id="nid" type="hidden" value="{PE.Field id="cone" fieldname="NodeID" /}" />
+<input id="tid" type="hidden" value="1" />
+<!-- 评论变量区 -->
+<script language="javascript" type="text/javascript">
+    function redirecturl(url, tarid)
+    {
+        location=url.replace(/{\$pageid\/}/g,tarid);
+    }
+
+    function SetPosition(st)
+    {
+         for (i=-1;i<2;i++){
+              if(i == st){
+                  document.getElementById("Positon" + i).className="PK_mouseover";
+              }
+              else{
+                  document.getElementById("Positon" + i).className="PK_title";
+              }
+         }
+         $("position").value = st;
+    }
+
+    function addcomment()
+    {
+        if(!$("guest").checked)
+        {
+            if($("iusername").value == '')
+            {
+                alert("请输入用户名");
+                $("iusername").focus();
+                return false;           
+            }
+            else
+            {
+                $("username").value = $("iusername").value;
+            }
+        }
+        if($("commenttitle").value == '')
+        {
+            alert("请输入标题");
+            $("commenttitle").focus();
+            return false; 
+        }
+        if($("content").value == '')
+        {
+            alert("请输入评论内容");
+            $("content").focus();
+            return false;                
+        }
+	    var x = new AjaxRequest('XML','status');
+        x.para = ['username', 'commenttitle', 'content', 'email', 'face', 'gid', 'nid', 'tid', 'private', 'position', 'score'];
+        x.post('addcomment', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+            var xml = x.createXmlDom(s);
+            var  status = xml.getElementsByTagName("status")[0].firstChild.data;
+            document.getElementById("status").style.display = "none";
+            
+            switch (status)
+            {
+                case "ok":
+                    changepage(1,'评论列表','JS_基本风格');
+                    break;
+                case "check":
+                    alert("发表评论成功，请等待管理员审核。");  
+                    break;
+                case "err":
+                    alert("发表评论失败！");  
+                    break;
+                case "nopurview":
+                    alert("此栏目已禁止发表评论！");  
+                    break;
+                case "noTourists":
+                    alert("此栏目已禁止游客发表评论！");  
+                    break;                    
+                default:
+                    alert("发表评论失败！"); 
+                    break;
+            }
+            
+            $("content").value = '';
+        });
+    }
+
+    function addpkzone(commentid,position,content)
+    {
+        var x = new AjaxRequest('XML','status');
+        x.para = ['commentid='+ commentid, 'position=' + position, 'content=' + content];
+        x.post('addpkzone', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+            var xml = x.createXmlDom(s);
+            var  status = xml.getElementsByTagName("status")[0].firstChild.data;
+            document.getElementById("status").style.display = "none";
+            switch (status)
+            {
+                case "ok":
+                    changepage(1,'评论列表','JS_基本风格');
+                    break;                  
+                default:
+                    alert("辩论失败！"); 
+                    break;
+            }
+        });
+    }
+
+    function changepage(pagenum,sourcename,spanname)
+    {
+	    var x = new AjaxRequest('XML','pe100_' + sourcename);
+        x.labelname = sourcename;
+        x.currentpage = pagenum; 
+	    x.para = ['gid=@Request_id', 'listnum=10', 'page=true', 'pagesize=10'];
+	    x.post('updatelabel', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+            var xml = x.createXmlDom(s);
+            $("pe100_" + sourcename).innerHTML = xml.getElementsByTagName("body")[0].firstChild.data;
+            updatepage(spanname, sourcename, xml);
+	 });
+    }
+
+    function updatepage(spanname, sourcename, xml)
+    {
+	var x = new AjaxRequest('XML','pe100_page_' + sourcename);
+        x.labelname = spanname;
+        x.sourcename = sourcename;
+        x.total = xml.getElementsByTagName("total")[0].firstChild.data;
+        x.currentpage = xml.getElementsByTagName("currentpage")[0].firstChild.data;
+        x.pagesize = xml.getElementsByTagName("pagesize")[0].firstChild.data;
+	    x.post('updatepage', '{PE.SiteConfig.applicationpath/}ajax.aspx', function(s) {
+            var xml = x.createXmlDom(s);
+            if($("pe100_page_" + sourcename) != null)
+            {
+                $("pe100_page_" + sourcename).innerHTML = xml.getElementsByTagName("body")[0].firstChild.data;
+            }
+	 });
+    }
+
+    function setprivate()
+    {
+        if($("open").checked)
+        {
+            $("private").value = 0;
+        }
+        else
+        {
+            $("private").value = 1;
+        }
+    }
+
+//改变图片大小
+function resizepic(thispic)
+{
+if(thispic.width>550){thispic.height=thispic.height*550/thispic.width;thispic.width=550;} 
+}
+//无级缩放图片大小
+function bbimg(o)
+{
+  return true;
+}
+//双击鼠标滚动屏幕的代码
+var currentpos,timer;
+function initialize()
+{
+timer=setInterval ("scrollwindow ()",30);
+}
+function sc()
+{
+clearInterval(timer);
+}
+function scrollwindow()
+{
+currentpos=document.documentElement.scrollTop;
+window.scroll(0,++currentpos);
+if (currentpos !=document.documentElement.scrollTop)
+sc();
+}
+document.onmousedown=sc
+document.ondblclick=initialize
+
+//更改字体大小
+var status0='';
+var curfontsize=10;
+var curlineheight=18;
+function fontZoomA(){
+  if(curfontsize>8){
+    document.getElementById('fontzoom').style.fontSize=(--curfontsize)+'pt';
+	document.getElementById('fontzoom').style.lineHeight=(--curlineheight)+'pt';
+  }
+}
+function fontZoomB(){
+  if(curfontsize<64){
+    document.getElementById('fontzoom').style.fontSize=(++curfontsize)+'pt';
+	document.getElementById('fontzoom').style.lineHeight=(++curlineheight)+'pt';
+  }
+}
+</script>
+</body>
+</html>
+

@@ -1,0 +1,242 @@
+﻿/* 管理后台首页body样式定义 */
+#Indexbody
+{
+	background: url(Images/topbg.gif) #fff repeat-x left top;
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+
+/* 管理后台首页链接CSS定义：可定义内容为链接字体颜色、样式等。链接无下划线为none，有为underline */
+a:link, a:visited
+{
+	font: 12px "宋体";
+	color: #1835d1;
+	text-decoration: none;
+}
+a:active, a:hover
+{
+	color: #f30;
+	text-decoration: underline;
+}
+
+form, ul, li, dl, dt, dd
+{
+	padding: 0px;
+	margin: 0px;
+}
+ul
+{
+	list-style-type: none;
+}
+
+/* 顶部左侧LOGO样式定义 */
+#content
+{
+	margin: 0px;
+	text-align: left;
+	background: url(Images/logo.gif) no-repeat left top;
+	padding: 23px 0px 0px 0px;
+}
+
+#ChannelMenuItems, #ChannelMenuItems li, #ChannelMenuItems a, #ChannelMenuItems a span
+{
+	height: 30px;
+	overflow: hidden;
+}
+#ChannelMenuItems
+{
+	margin: 0px 0px 0px 220px;
+}
+#ChannelMenuItems li
+{
+	float: left;
+	margin-right: 3px;
+}
+#ChannelMenuItems a
+{
+	display: block;
+	background: url(Images/none_left.gif) #ffefbd no-repeat left top;
+	float: left;
+	line-height: 20px;
+	text-decoration: none;
+}
+#ChannelMenuItems a span
+{
+	padding: 7px 13px 0px 13px;
+	display: block;
+	background: url(Images/none_side.gif) no-repeat right top;
+	float: left;
+	cursor: pointer;
+	text-align: center;
+}
+#ChannelMenuItems li a
+{
+	background: url(Images/digital_left.gif) #2e7bcb no-repeat left top;
+}
+#ChannelMenuItems li a span
+{
+	background: url(Images/digital_side.gif) no-repeat right top;
+	font-weight: bold;
+}
+.digitaltext, #ChannelMenuItems li a
+{
+	color: #2867b1;
+}
+.segtext
+{
+	color: #fff;
+}
+
+/* 顶部横向子菜单样式定义 */
+#SubMenu
+{
+	color: #fff;
+	text-align: left;
+	height: 25px;
+	line-height: 25px;
+	margin-left: 225px;
+}
+#SubMenu li
+{
+	float: left;
+	line-height: 25px;
+	background: url(Images/chanli.gif) no-repeat left center;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+#SubMenu li a
+{
+	color: #fff;
+	display: block;
+	line-height: 25px;
+}
+
+/* 顶部下拉式菜单样式定义 */
+.SubMenuDiv
+{
+	z-index: 2;
+	visibility: hidden;
+	float: left;
+	position: absolute;
+	border: 1px solid #9fbdd7;
+	text-align: left;
+}
+.SubMenuDiv dl, .SubMenuDiv dd
+{
+	margin: 0px;
+	text-align: left;
+}
+.SubMenuDiv dd
+{
+	width: 130px;
+	padding: 0px 1px 0px 1px;
+}
+.SubMenuDiv dl
+{
+	padding: 1px 0px 1px 0px;
+	background: url(Images/SubMenuDivbg.gif) #d6e7f7 repeat-y left top;
+}
+#SubMenu dd a, #SubMenu dd a:hover
+{
+	padding-left: 20px;
+}
+#SubMenu dd a
+{
+	color: #446592;
+}
+#SubMenu dd a:hover
+{
+	color: #003685;
+	background: #e4f1fc;
+	text-decoration: underline;
+}
+.clearbox2
+{
+	border-top: 1px solid transparent !important;
+	margin-top: -1px !important;
+	border-top: 0;
+	margin-top: 0;
+	clear: both;
+	visibility: hidden;
+	width: 700px;
+	overflow: hidden;
+	font-size: 0px;
+	background: none;
+	height: 0px;
+}
+
+/* 顶部右侧链接样式定义 */
+#Announce
+{
+	position: absolute;
+	top: 23px;
+	right: 5px;
+	color: #2b6ab3;
+}
+#Announce a
+{
+	font: 12px "宋体";
+	text-decoration: none;
+}
+#Announce a:link, #Announce a:visited
+{
+	color: #2b6ab3;
+}
+#Announce a:active, #Announce a:hover
+{
+	color: #c00;
+}
+
+/* 打开、关闭左栏定义 */
+.but
+{
+	cursor: pointer;
+}
+
+/* 弹出提示样式 */
+.popupTips{
+	position:absolute;
+	display:none;
+	right: 20px;
+	bottom: 0px;
+	width:247px;
+	background: url(Images/bg_tipsAll.gif) left repeat-y;
+	z-index: 999;
+}
+.popupTips dt {
+	height: 29px;
+	line-height: 27px;
+	padding-left: 18px;
+	color: #3666aa;
+	font-weight: bolder;
+	background: url(Images/bg_tipsTop.gif) left top no-repeat;
+}
+.popupTips dt a {
+	display: block;
+	float: right;
+	width: 20px;
+	height: 27px;
+	line-height: 27px;
+	cursor: pointer;
+}
+.tips_close {
+	background: url(Images/bt_close.gif) left 10px no-repeat;
+}
+.tips_fold {
+	background: url(Images/bt_fold.gif) left 11px no-repeat;
+}
+.popupTips dd {
+	height: auto!important;
+	height: 100px;
+	min-height: 100px;
+	padding: 8px 5px 20px 25px;
+	background: url(Images/bg_tipsBottom.gif) left bottom no-repeat;
+}
+.popupTips dd a, .popupTips dd a:visited {
+	color: #3666aa;
+	line-height: 17px;
+}
+.popupTips dd a:hover {
+	color: #2e82f9;
+}

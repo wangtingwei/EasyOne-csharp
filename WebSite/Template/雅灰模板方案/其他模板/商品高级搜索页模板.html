@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta content="{PE.Label id="网站信息配置中的关键字" /}" name="Keywords" />
+<meta content="{PE.Label id="网站信息配置中网站描述" /}" name="Description"/>
+<title>高级搜索结果-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath /}Skin/Gray/default.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/Common.js"></script>
+</head>
+<body>
+{PE.label id="雅灰网站顶部" /}
+<!-- 中部网站导航 -->
+<table class="center_all" cellspacing="0">
+  <tr>
+    <td>
+      <table id="r_navigation" cellspacing="0">
+        <tr>
+          <td class="r_n_pic"></td>
+          <td class="logo_nav">您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a> >> 商品搜索</td>
+          <td id="top_link">
+            <ul>
+              <li>
+                <marquee onmouseover="this.stop()" onmouseout="this.start()" scrollamount="1" scrolldelay="4" align="left">
+                {PE.Label id="雅灰网站公告横向" /}
+                </marquee>
+              </li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<table class="center_all" cellspacing="0">
+  <tr>
+    <td>
+      <table class="main" cellspacing="0">
+        <tr>
+          <td class="main_left">
+            <table class="width_100" cellspacing="0">
+              <tr>
+                <td>
+                  <table class="r_list" cellspacing="0">
+                    <tr>
+                      <td>
+                        <table class="rlist_tit">
+                          <tr>
+                            <td><span class="showicon">高级搜索结果</span></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="c_content">{PE.Label id="商品高级搜索" parentid="@RequestInt_nodeid" title="@Request_title" productintro="@Request_productintro" productexplain="@Request_productexplain" producername="@Request_producername" trademarkname="@Request_trademarkname" lowprice="@RequestDec_lowprice" highprice="@RequestDec_highprice" begindate="@RequestDate_begindate" enddate="@RequestDate_enddate" titlelen="50" contentlen="0" span="" class="" /} </td>
+                    </tr>
+                  </table>
+                  <table class="class_page edge_top" cellspacing="0">
+                    <tr>
+                      <td>{PE.Page id="url_动易后台风格" datasource="显示商品高级搜索" unitname="个商品" /}</td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+          <td width="5"></td>
+          <td class="main_right"> {PE.Label id="雅灰网站首页右栏" /} </td>
+        </tr>
+      </table>
+      <!-- main 结束 -->
+    </td>
+  </tr>
+</table>
+<!-- center_all 结束 -->
+{PE.Label id=" 雅灰网站底部" /}
+</body>
+</html>

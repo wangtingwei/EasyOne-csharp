@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="{PE.Label id="网站信息配置中的关键字" /}" name="Keywords" />
+<meta content="{PE.Label id="网站信息配置中网站描述" /}" name="Description"/>
+<title>专题首页-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/special.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/Common.js"></script>
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/slider.js"></script>
+<script language="javascript" type="text/javascript">
+    function redirecturl(url)
+    {
+        location=url;
+    }
+    </script>
+</head>
+<body>
+{PE.Label id="网站顶部" /}
+<div id="center_all">
+  <div id="main_bg">
+    <div id="main_right">
+      <div id="main_right_box">
+        <!-- 网站位置导航信息开始 -->
+        <div class="r_navigation">
+          <div class="r_n_pic"></div>
+          您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a> >> 专题首页 </div>
+        <!-- 网站位置导航信息结束 -->
+        {PE.Label id="右侧广告" /}
+        <div class="c_spacing"> </div>
+        <!-- 专题栏目列表列表开始 -->
+        {PE.DataSource id="categorylist" datasource="专题类别循环列表" parentid="@RequestInt_id" page="true" pagesize="6" urlpage="true" pagemain="true"  xslt="true" /}
+        <div class="c_main_box">
+          <div class="class_title"> <a href="#">本站专题列表</a></div>
+          <div class="class_content"> {PE.Repeat id="categorylist" loop="0"}
+            <div class="special_class ">
+              <dl>
+                <dt><a href="{PE.Field id="categorylist" fieldname="SpecialCategoryLink" /}" target="_blank">{PE.field fieldname="SpecialCategoryName" htmldecode="true" length="20" /}</a></dt>
+                <dd> {PE.Label id="专题列表" specialcategoryid="{PE.field fieldname="SpecialCategoryID" /}" shownum="20" titlelen="20" span="" class="" /} </dd>
+              </dl>
+            </div>
+            {/PE.Repeat} </div>
+          <div class="class_bot"> </div>
+        </div>
+        <!-- 专题栏目列表列表结束 -->
+        <div class="class_page">{PE.Page id="url_动易后台风格" datasource="categorylist" unitname="个专题" /}</div>
+        <div class="c_spacing"> </div>
+        <!-- 最新图片文章开始 -->
+        <div class="c_main_one">
+          <dl>
+            <dt class="c_title">
+              <div class="more"> </div>
+              <a href="#">最新图文</a></dt>
+            <dd class="c_content">
+              <!-- 显示8张最新图片文章 -->
+              <div class="special_photo_list"> {PE.Label id="普通图片列表标签" tablename="PE_U_Article" parentid="1" /}
+                <div class="clearbox"></div>
+              </div>
+            </dd>
+          </dl>
+        </div>
+        <!-- 最新图片文章结束 -->
+        <script type="text/javascript" src="{PE.SiteConfig.ApplicationPath /}{PE.SiteConfig.includefilepath /}/SpecialSearch.js"></script>
+      </div>
+    </div>
+    {PE.Label id="网站首页左侧" /} </div>
+</div>
+{PE.Label id="网站底部" /}
+</body>
+</html>

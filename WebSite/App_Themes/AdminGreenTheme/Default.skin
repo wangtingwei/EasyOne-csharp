@@ -1,0 +1,115 @@
+﻿<%--
+默认的外观模板。以下外观仅作为示例提供。
+
+1、 命名的控件外观。SkinId 的定义应唯一，因为在同一主题中不允许一个控件类型有重复的 SkinId。
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2、 默认外观。未定义 SkinId。在同一主题中每个控件类型只允许有一个默认的控件外观。
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+
+<asp:TextBox runat="server" CssClass="inputtext" />
+<asp:FileUpload Height="20" runat="server" />
+<asp:Button runat="server" CssClass="inputbutton" />
+<pe:ExtendedButton runat="server" CssClass="inputbutton" />
+<pe:ExtendedNodeButton runat="server" CssClass="inputbutton" />
+<pe:ExtendedModelButton runat="server" CssClass="inputbutton" />
+
+<pe:AlternateButton runat="server" CssClass="inputbutton" />
+
+<%--日历--%>
+<asp:Calendar runat="server" BackColor="White" CssClass="cal_border" BorderColor="#1E860B" Font-Names="Times New Roman"
+    Font-Size="10pt" ForeColor="Black" Height="220px" NextPrevFormat="ShortMonth"
+    Width="250px" DayNameFormat="Shortest" TitleFormat="MonthYear">
+    <%--选中日期样式--%>
+    <SelectedDayStyle CssClass="selectedday" ForeColor="#ffffff" />
+    <%--当前日期样式--%>
+    <TodayDayStyle CssClass="cal_data" ForeColor="#1e860b" />
+    <%--双休日样式--%>
+    <WeekendDayStyle CssClass="cal_weekendday" ForeColor="#cc0000" />
+    <%--本月日期样式--%>
+    <DayStyle CssClass="cal_month_data" ForeColor="#000000" />
+    <%--非本月日期样式--%>
+    <OtherMonthDayStyle CssClass="cal_next_data" ForeColor="#999999" />
+    <%--选择上、下一个月样式--%>
+    <NextPrevStyle CssClass="cal_title_lr" ForeColor="#1e860b" />
+    <%--顶部标题样式--%>
+    <TitleStyle CssClass="cal_title" ForeColor="#1e860b" BackColor="#E6FBE4" />
+    <%--左侧选择列样式--%>
+    <SelectorStyle CssClass="cal_selector" ForeColor="#336666" />
+</asp:Calendar>
+
+<pe:ExtendedGridView runat="server" CellPadding="0" CellSpacing="1" border="0" CssClass="border"
+    MouseOverCssClass="tdbgmouseover" SelectedCssClass="tdbgselected" Width="100%"
+    GridLines="None" EmptyDataText="没有任何数据！" PageSize="20">
+    <HeaderStyle CssClass="gridtitle" HorizontalAlign="Center" Height="25px" />
+    <RowStyle CssClass="tdbg" HorizontalAlign="Center" />
+    <EmptyDataRowStyle CssClass="tdbg" HorizontalAlign="Center" Height="100px" />
+    <PagerStyle CssClass="tdbg" HorizontalAlign="Center" Height="28px" />
+</pe:ExtendedGridView>
+
+<pe:ExtendedSiteMapPath runat="server" Height="20px" PathSeparator=" >> " SkipLinkText=""
+    RenderCurrentNodeAsLink="True">
+    <RootNodeTemplate>
+        <asp:Image runat="server" ImageUrl="Images/localGIF.gif" ImageAlign="Absmiddle" />后台管理
+    </RootNodeTemplate>
+</pe:ExtendedSiteMapPath>
+
+<pe:DatePicker Height="15" Font-Size="9" DateImage="Images/Calendar.gif" runat="server"></pe:DatePicker>
+<pe:ColorPicker Height="15" Font-Size="9" runat="server" />
+<pe:AuthorControl Height="15" Font-Size="9" runat="server" />
+<pe:KeyWordControl Height="15" Font-Size="9" runat="server" />
+<pe:SourceControl Height="15" Font-Size="9" runat="server" />
+<pe:OperatingSystemControl Height="15" Font-Size="9" runat="server" />
+<pe:TemplateSelectControl Height="15" Font-Size="9" runat="server" />
+<pe:ProducerControl Height="15" Font-Size="9" runat="server" />
+<pe:TrademarkControl Height="15" Font-Size="9" runat="server" />
+<pe:RequiredFieldValidator runat="server" ShowRequiredText="true" RequiredText="* " RequiredTextColor="Red" />
+
+<asp:WebPartZone SkinID="" runat="server" CloseVerb-Text="关闭" MinimizeVerb-Text="最小化" DeleteVerb-Text="删除" EditVerb-Text="编辑" RestoreVerb-Text="还原" Height="100%" Width="100%" PartChromeType="TitleAndBorder"
+    DragHighlightColor="255, 255, 128">
+    <PartTitleStyle CssClass="title" />
+    <PartStyle CssClass="WebPart" CellSpacing="5" />
+    <MenuPopupStyle BackColor="#C4FAFB" BorderColor="#5072CB" ShadowColor="#284286" BorderStyle="Solid"
+        BorderWidth="1px" GridLines="Horizontal" Font-Names="Tahoma" Font-Size="9pt" />
+</asp:WebPartZone>
+
+<asp:EditorZone SkinID="" runat="server" ApplyVerb-Text="应用" CancelVerb-Text="取消" HeaderCloseVerb-Text="关闭" OKVerb-Text="确定" InstructionText="修改 Web 部件的属性，然后单击“确定”或“应用”应用更改。" HeaderText="编辑区域" Width="100%" BackColor="#EFF3FB" BorderColor="#CCCCCC"
+    BorderWidth="1px" Font-Names="Verdana" Padding="6">
+    <HeaderStyle CssClass="title" />
+    <LabelStyle Font-Size="1em" ForeColor="#333333" />
+    <HeaderVerbStyle Font-Bold="False" Font-Size="1em" Font-Underline="False" ForeColor="#333333" />
+    <PartChromeStyle BorderColor="#D1DDF1" BorderStyle="Solid" BorderWidth="1px" />
+    <PartStyle BorderColor="#EFF3FB" BorderWidth="5px" />
+    <FooterStyle BackColor="#D1DDF1" HorizontalAlign="Right" />
+    <EditUIStyle Font-Names="Verdana" Font-Size="1em" ForeColor="#333333" />
+    <InstructionTextStyle Font-Size="1em" ForeColor="#333333" />
+    <ErrorStyle Font-Size="1em" />
+    <VerbStyle Font-Names="Verdana" Font-Size="1em" ForeColor="#333333" />
+    <EmptyZoneTextStyle Font-Size="1em" ForeColor="#333333" />
+    <PartTitleStyle Font-Bold="True" Font-Size="1em" ForeColor="#333333" />
+</asp:EditorZone>
+
+<asp:CatalogZone SkinID="" AddVerb-Text="添加" CloseVerb-Text="关闭" HeaderCloseVerb-Text="关闭" HeaderText="添加模块" InstructionText="选择您要添加模块的类型。
+" SelectTargetZoneText="添加到：" HeaderStyle-CssClass="title" Width="100%" runat="server"
+    BackColor="#EFF3FB" BorderColor="#CCCCCC" BorderStyle="Dotted" BorderWidth="1px"
+    Font-Names="Verdana" Padding="6" PartChromeType="TitleAndBorder">
+    <HeaderVerbStyle Font-Bold="False" Font-Size="1em" Font-Underline="False" ForeColor="#333333" />
+    <PartTitleStyle BackColor="#507CD1" Font-Bold="True" Font-Size="1em" ForeColor="White" />
+    <PartChromeStyle BorderColor="#D1DDF1" BorderStyle="Solid" BorderWidth="1px" />
+    <InstructionTextStyle Font-Size="1em" ForeColor="#333333" />
+    <PartLinkStyle Font-Size="1em" />
+    <EmptyZoneTextStyle Font-Size="1em" ForeColor="#333333" />
+    <LabelStyle Font-Size="1em" ForeColor="#333333" />
+    <VerbStyle Font-Names="Verdana" Font-Size="1em" ForeColor="#333333" />
+    <PartStyle BorderColor="#EFF3FB" BorderWidth="5px" />
+    <SelectedPartLinkStyle Font-Size="1em" />
+    <FooterStyle BackColor="#D1DDF1" HorizontalAlign="Right" />
+    <HeaderStyle BackColor="#D1DDF1" CssClass="title" Font-Bold="True" Font-Size="1em"
+        ForeColor="#333333" />
+    <EditUIStyle Font-Names="Verdana" Font-Size="1em" ForeColor="#333333" />
+</asp:CatalogZone>

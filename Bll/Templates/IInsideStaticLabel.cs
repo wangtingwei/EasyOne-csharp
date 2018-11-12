@@ -1,0 +1,93 @@
+﻿namespace EasyOne.Templates
+{
+    using System;
+
+    public interface IInsideStaticLabel
+    {
+        string ADdir();
+        string Banner();
+        string Convert2Char(string a1, string a2);
+        int Convert2Int(string a1);
+        string Convert2JS(string a1);
+        string ConvertAbsolutePath(string path);
+        string ConvertAbsolutePath(string virtualPath, string path);
+        string ConverToWeek(string a1);
+        string ConvertSizeToShow(string fileSize);
+        string ConvertSoftSize(string fileSize);
+        string Copyright();
+        string CreateHtmlPath();
+        string CutText(string oringstr, string len, string substr);
+        string EnableComment(int id);
+        string EnableTouristsComment(int id);
+        string EncodeText(string a1, string a2);
+        string FiltInsideLink(string a1);
+        string FiltText(string a1);
+        string FormatDate(string a1, string a2);
+        string GetCustomContent(int num, string content);
+        string GetFieldList(int modelId, int generalId, string cssTable, string cssKey, string cssValue);
+        string GetGlobalResource(string classKey, string resourceKey);
+        string GetInfoPath(string nodeId, string id, string inputTime, string title);
+        string GetLinkInfoPic(string infoPicPath, string title, string upLoadDir, string infoPath, int imgwidth, int imgheight);
+        string GetModelItemName(int id);
+        string GetModelName(string tableName);
+        string GetNode(string id, string meth);
+        string GetNodeCommentNeedCheck(int id);
+        string GetNodeEnableComment(int id);
+        string GetNodeEnableProtect(int id);
+        string GetNodeFieldName(string id, string fieldName);
+        string GetNodePath(string type, string id);
+        string GetPhotoPathList(int showType, int imgWidth, int imgHeight, int cols, int maxPerPage, string originPath, string uploadfiledir, int ltype);
+        void GetRanNum();
+        string GetSlidePic(int imgwidth, int imgheight, int titlelen, int timeout, int effectid, int picposition, int piclast, string imgPath, string linkPath, string title);
+        string GetSpecial(string id, string meth);
+        string GetSpecialCategoryPath(string id);
+        string GetSpecialPath(string id);
+        string GetUserFace(string uname);
+        string GetVoteForm(int id);
+        string GetVoteNum(string ostr);
+        int HitsOfHot();
+        string InstallDir();
+        string Int2Chinese(string a1);
+        string Int2CMoney(string numstr);
+        string IsAdminLogined();
+        string IsLogined();
+        string IsShop(string tableName);
+        string IsStartWithhttp(string urlvalue);
+        string JSSlidePic();
+        string LoginedUserEmail();
+        string LoginedUserExp(string qstar);
+        string LoginedUserName();
+        string LoginedUserSet(string qstar);
+        string Logo();
+        string ManageDir();
+        string MetaDescription();
+        string MetaKeywords();
+        string ReadExif(string stext);
+        string ReadId3(string stext);
+        string ReadTxtFile(string filepath);
+        string RebudList(string name, string num);
+        string RemoveHtml(string a1);
+        string ReplaceText(string a1, string a2, string a3);
+        string RssEnable();
+        string ShowDownloadPath(string id, string originPath, string installDir);
+        string ShowDownloadPathMore(string id, string originPath, string installDir, string arrServerName);
+        string ShowHeightLineText(string inputText, string keyword, string colorvalue);
+        string ShowVoteImage(string ostr);
+        string SiteName();
+        string SitePath();
+        string SiteTitle();
+        string SlidePlay();
+        string TimeNow();
+        int TimeSpan(string a1, string a2);
+        string Txt2Img(string stext, string font, string hwsize, string fcolor, string gcolor, string showshadow, string outfile, string rtime);
+        string UpLoadDir();
+        string UrlEncode(string content);
+        string UserPurview(string pname);
+        string ViewPhoto(int imgWidth, int imgHeight, string originPath, string uploadfiledir, int ltype);
+        string WapEnable();
+        string Webmaster();
+        string WebmasterEmail();
+        string XmlEncode(string inputStr);
+    }
+}
+

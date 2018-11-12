@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="UTF-8">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="{PE.Label id="网站信息配置中的关键字" /}" name="Keywords" />
+<meta content="{PE.Label id="网站信息配置中网站描述" /}" name="Description"/>
+<title>{PE.Control.PageTitle/}-会员中心</title>
+<link href="{PE.SiteConfig.applicationpath/}Skin/Default/default.css" rel="stylesheet" type="text/css" />
+<link href="{PE.SiteConfig.applicationpath/}Skin/Default/user.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.applicationpath/}js/common.js"></script>
+<script type="text/javascript" src="{PE.SiteConfig.applicationpath/}JS/jquery.pack.js"></script>
+<script language="javascript" type="text/javascript">
+    function redirecturl(url, tarid)
+    {
+        location=url.replace(/{\$pageid\/}/g,tarid);
+    }
+    </script>
+</head>
+<body>
+{PE.Label id="网站顶部" /}
+<div id="center_all">
+  <div id="main_bg">
+    <div id="main_right">
+      <div class="u_form1"> {PE.Control.form1/} </div>
+    </div>
+    <div class="clearbox"></div>
+  </div>
+</div>
+{PE.Label id="会员中心底部信息" /}
+</body>
+</html>

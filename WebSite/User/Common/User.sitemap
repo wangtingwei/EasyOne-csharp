@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0">
+  <siteMapNode url="" title="{SiteName}" description="{SiteName}">
+    <siteMapNode url="~/User/Default.aspx" title="会员中心" description="会员中心">
+      <siteMapNode url="~/User/Contents/Signin.aspx" title="我签收的文章" description="我签收的文章" />
+      <siteMapNode url="~/User/Contents/Index.aspx" title="信息管理" description="信息管理">
+        <siteMapNode url="~/User/Info/Favorite.aspx" title="用户收藏" description="用户收藏" />
+      </siteMapNode>
+      <siteMapNode url="" title="资金管理" description="资金管理">
+        <siteMapNode url="~/User/Info/Bankroll.aspx" title="资金明细查询" description="资金明细查询">
+          <siteMapNode url="~/User/Info/Bankroll.aspx?ShowType=6" title="所有明细记录" description="所有明细记录" />
+          <siteMapNode url="~/User/Info/Bankroll.aspx?ShowType=7" title="所有收入记录" description="所有收入记录" />
+          <siteMapNode url="~/User/Info/Bankroll.aspx?ShowType=8" title="所有支出记录" description="所有支出记录" />
+        </siteMapNode>
+        <siteMapNode url="~/User/Info/PaymentLog.aspx" title="支付记录" description="支付记录" />
+      </siteMapNode>
+      <siteMapNode url="~/User/Message/MessageManager.aspx" title="短消息管理" description="短消息管理">
+        <siteMapNode url="~/User/Message/Message.aspx" title="撰写短消息" description="撰写短消息" />
+        <siteMapNode url="~/User/Message/MessageRead.aspx" title="查看短消息" description="查看短消息" />
+      </siteMapNode>
+      <siteMapNode url="~/User/UserFriend/FriendManage.aspx" title="好友管理" description="好友管理">
+        <siteMapNode url="~/User/UserFriend/Friend.aspx" title="添加好友" description="添加好友" />
+        <siteMapNode url="~/User/UserFriend/FriendGroup.aspx" title="创建新组" description="创建新组" />
+        <siteMapNode url="~/User/UserFriend/FriendGroup.aspx?Action=Modify" title="修改成员组" description="修改成员组" />
+        <siteMapNode url="~/User/UserFriend/FriendGroupManage.aspx" title="分组管理" description="分组管理" />
+      </siteMapNode>
+      <siteMapNode url="" title="充值管理" description="充值管理">
+        <siteMapNode url="~/User/Info/CardList.aspx" title="充值卡列表" description="充值卡列表" />
+        <siteMapNode url="~/User/Info/Recharge.aspx" title="充值卡充值" description="充值卡充值" />
+        <siteMapNode url="~/User/Info/ExchangePoint.aspx" title="兑换点券" description="兑换点券" />
+        <siteMapNode url="~/User/Info/ExchangeValidDate.aspx" title="兑换有效期" description="兑换有效期" />
+        <siteMapNode url="~/User/Info/DonatePoint.aspx" title="赠送点券" description="赠送点券" />
+        <siteMapNode url="~/User/Info/BuyPoint.aspx" title="购买点券" description="购买点券" />
+      </siteMapNode>
+      <siteMapNode url="" title="帐户管理" description="帐户管理">
+        <siteMapNode url="~/User/Info/ModifyInfo.aspx" title="修改信息" description="修改信息" />
+        <siteMapNode url="~/User/Info/Password.aspx" title="修改密码" description="修改密码" />
+        <siteMapNode url="~/User/Info/PayPassword.aspx" title="修改预付款支付密码" description="修改预付款支付密码" />
+        <siteMapNode url="~/User/Info/PointLog.aspx" title="用户点券日志" description="用户点券日志" />
+        <siteMapNode url="~/User/Info/PointLogDetail.aspx" title="查看点券明细记录详情" description="查看点券明细记录详情" />
+        <siteMapNode url="~/User/Info/ValidLog.aspx" title="用户有效期日志" description="用户有效期日志" />
+        <siteMapNode url="~/User/Info/ValidLogDetail.aspx" title="查看有效期明细记录详情" description="查看有效期明细记录详情" />
+        <siteMapNode url="~/User/Company/RegCompany.aspx" title="注册企业" description="注册企业" />
+        <siteMapNode url="~/User/Company/RegCompany2.aspx" title="注册企业" description="注册企业" />
+      </siteMapNode>
+      <siteMapNode url="~/User/Register.aspx" title="用户注册" description="用户注册" />
+      <siteMapNode url="~/User/RegisterCheck.aspx" title="用户注册认证" description="用户注册认证" />
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>

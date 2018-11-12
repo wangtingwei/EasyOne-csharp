@@ -1,0 +1,98 @@
+﻿{PE.DataSource id="cone" datasource="品牌详细信息" trademarkname="@Request_trademarkname" xslt="true" /}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="{PE.Label id="网站信息配置中的关键字" /}" name="Keywords" />
+<meta content="{PE.Field id="cone" fieldname="ShowIntro" /}" name="Description"/>
+<title>品牌信息-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Gray/default.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/Common.js"></script>
+</head>
+<body>
+{PE.Label id="雅灰网站顶部" /}
+<table class="center_all" cellspacing="0">
+    <tr>
+        <td><table id="r_navigation" cellspacing="0">
+                <tr>
+                    <td class="r_n_pic"></td>
+                    <td class="logo_nav">您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a> >> 品牌信息</td>
+                </tr>
+            </table></td>
+    </tr>
+</table>
+<table class="center_all" cellspacing="0">
+    <tr>
+        <td><table class="main" cellspacing="0">
+                <tr>
+                    <td class="main_left"><table class="width_100" cellspacing="0">
+                            <tr>
+                                <td><table class="c_main" cellspacing="0">
+                                        <tr>
+                                            <td><table class="cmain_tit">
+                                                    <tr>
+                                                        <td><a>品牌简介</a></td>
+                                                    </tr>
+                                                </table></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="c_content"> {PE.Field id="cone" fieldname="ShowIntro" /} </td>
+                                        </tr>
+                                    </table>
+                                    <table class="c_main" cellspacing="0">
+                                        <tr>
+                                            <td><table class="cmain_tit">
+                                                    <tr>
+                                                        <td><a>产品列表</a></td>
+                                                    </tr>
+                                                </table></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="c_content"><!-- 品牌产品列表标签 -->
+            {PE.Label id="显示品牌商品表格式列表" ShowDate="false" ShowLink="true" IntroLength="20" OrderType="1" TrademarkName="@Request_trademarkname" span="" page="true" pagesize="10" urlpage="true" class="" /} 
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="class_page" cellspacing="0">
+                                        <tr>
+                                            <td>{PE.Page id="url_动易后台风格" datasource="厂商商品表格式列表" unitname="个商品" /} </td>
+                                        </tr>
+                                    </table></td>
+                            </tr>
+                        </table></td>
+                    <td width="5"></td>
+                    <td class="main_right"><table class="r_main" cellspacing="0">
+                            <tr>
+                                <td class="r_main_title"> 品牌图片 </td>
+                            </tr>
+                            <tr>
+                                <td class="r_main_content"><ul>
+                                         <!-- 品牌图片 -->
+              <img src="{PE.SiteConfig.applicationpath/}{PE.SiteConfig.uploaddir/}/{PE.Field id='cone' fieldname='ShowPhoto' /}" alt="{PE.Field id="cone" fieldname="ShowName" align="absmiddle"/}" border="0" width="150" height="175" />
+                                    </ul></td>
+                            </tr>
+                        </table>
+                        <table class="r_main edge_bot" cellspacing="0">
+                            <tr>
+                                <td class="r_main_title"> 品牌详细信息 </td>
+                            </tr>
+                            <tr>
+                                <td class="r_main_content">
+<ul>
+<!-- 品牌详细信息 -->
+<li> 名称：{PE.Field id="cone" fieldname="ShowName" /} </li>
+<li> 分类：{PE.Field id="cone" fieldname="ShowType" /} </li>
+<li> 所属厂商：{PE.Label id="厂商名称" ProducerID='{PE.Field id="cone" fieldname="ShowProducerID" /}'/} </li>
+</ul>
+                                </td>
+                            </tr>
+                        </table></td>
+                </tr>
+            </table>
+            <!-- main 结束 -->
+        </td>
+    </tr>
+</table>
+{PE.Label id="雅灰网站底部" /}
+</body>
+</html>

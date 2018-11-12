@@ -1,0 +1,78 @@
+﻿{PE.DataSource id="cone" datasource="品牌详细信息" trademarkname="@Request_trademarkname" xslt="true" /}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content="{PE.Label id="网站信息配置中的关键字" /}" name="Keywords" />
+<meta content="{PE.Field id="cone" fieldname="ShowIntro" /}" name="Description"/>
+<title>品牌信息-{PE.SiteConfig.sitename /}</title>
+<link href="{PE.SiteConfig.ApplicationPath/}Skin/Default/default.css" rel="stylesheet" type="text/css" />
+<script language="javascript" type="text/javascript" src="{PE.SiteConfig.ApplicationPath/}JS/Common.js"></script>
+</head>
+<body>
+{PE.Label id="网站顶部" /}
+<div id="center_all">
+  <div id="main_bg">
+    <div id="main_right">
+      <div id="main_right_box">
+        <!-- 网站位置导航信息开始 -->
+        <div class="r_navigation">
+          <div class="r_n_pic"></div>
+          您现在的位置：<a href="{PE.SiteConfig.sitepath/}">{PE.SiteConfig.sitename /}</a> >>品牌信息</div>
+        {PE.Label id="右侧广告" /}
+        <!-- 网站位置导航信息结束 -->
+        <div class="r_ad"> </div>
+        <div class="c_spacing"></div>
+        <div class="c_main_box">
+          <div class="c_title"> 品牌简介</div>
+          <div class="c_content">
+            <!-- 品牌简介 -->
+            {PE.Field id="cone" fieldname="ShowIntro" /} </div>
+          <div class="c_bot"> </div>
+        </div>
+        <div class="c_main_box">
+          <div class="c_title"> {PE.Field id="cone" fieldname="ShowName" /}商品列表</div>
+          <div class="c_content">
+            <!-- 品牌产品列表标签 -->
+            {PE.Label id="显示品牌商品表格式列表" ShowDate="false" ShowLink="true" IntroLength="20" OrderType="1" TrademarkName="@Request_trademarkname" span="" page="true" pagesize="10" urlpage="true" class="" /} </div>
+          <div class="c_bot"> </div>
+        </div>
+        <div class="class_page">
+          <!-- 分页标签 -->
+          {PE.Page id="url_动易后台风格" datasource="厂商商品表格式列表" unitname="个商品" /} </div>
+      </div>
+    </div>
+    <!-- 品牌页左侧开始 -->
+    <div id="main_left">
+      <div class="user_box">
+        <dl>
+          <dt>品牌图片</dt>
+          <dd>
+            <ul>
+              <!-- 品牌图片 -->
+              <img src="{PE.SiteConfig.applicationpath/}{PE.SiteConfig.uploaddir/}/{PE.Field id='cone' fieldname='ShowPhoto' /}" alt="{PE.Field id="cone" fieldname="ShowName" align="absmiddle"/}" border="0" width="150" height="175" />
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <div class="left_box">
+        <dl>
+          <dt>品牌详细信息</dt>
+          <dd>
+            <ul>
+              <!-- 品牌详细信息 -->
+              <li> 名称：{PE.Field id="cone" fieldname="ShowName" /} </li>
+              <li> 分类：{PE.Field id="cone" fieldname="ShowType" /} </li>
+              <li> 所属厂商：{PE.Label id="厂商名称" ProducerID='{PE.Field id="cone" fieldname="ShowProducerID" /}'/} </li>
+            </ul>
+          </dd>
+        </dl>
+      </div>
+      <div class="clearbox"> </div>
+      <!-- 品牌页左侧结束 -->
+    </div>
+  </div>
+</div>
+{PE.Label id="网站底部" /}
+</body>
+</html>

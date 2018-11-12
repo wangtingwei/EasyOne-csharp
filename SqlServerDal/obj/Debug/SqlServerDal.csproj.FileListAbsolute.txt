@@ -1,0 +1,5 @@
+F:\EasyOne\WebSite\bin\EasyOne.SqlServerDal.dll
+F:\EasyOne\WebSite\bin\EasyOne.SqlServerDal.pdb
+F:\EasyOne\SqlServerDal\obj\Debug\ResolveAssemblyReference.cache
+F:\EasyOne\SqlServerDal\obj\Debug\EasyOne.SqlServerDal.dll
+F:\EasyOne\SqlServerDal\obj\Debug\EasyOne.SqlServerDal.pdb

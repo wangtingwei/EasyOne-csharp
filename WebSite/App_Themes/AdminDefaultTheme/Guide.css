@@ -1,0 +1,144 @@
+﻿/* 管理后台左侧body样式定义 */
+#Guidebody
+{
+	background: #a9c9ee;
+	padding: 5px 0px 0px 0px;
+	margin: 0px;
+}
+
+/* 管理后台左侧菜单样式定义 */
+/* ====菜单背景==== */
+#Guide_back, #Guide_back ul, #Guide_back li
+{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+#Guide_back
+{
+	background: url(Images/Guide_main.gif) #a9c9ee repeat-y left;
+}
+
+/* ====菜单顶部==== */
+#Guide_top
+{
+	height: 57px;
+	background: url(Images/Guide_top.gif) #a9c9ee no-repeat left top;
+}
+#Guide_toptext
+{
+	font-family: "宋体";
+	font-size: 14px;
+	font-weight: bold;
+	color: #28569b;
+	padding-top: 25px;
+	margin: 0px 0px 0px 60px;
+}
+
+/* ====菜单中部==== */
+#Guide_main
+{
+	margin: 0px;
+	padding: 0px;
+}
+#Guide_box
+{
+	margin: 0px 0px 0px 10px;
+	padding: 0px;
+}
+
+/* ====菜单内容项目样式==== */
+.guideexpand, .guidecollapse
+{
+	height: 25px;
+	line-height: 25px;
+	padding-left: 30px;
+	text-align: left;
+	cursor: pointer;
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #08377c;
+}
+.guideexpand
+{
+	background: url(Images/guide_expand.gif) no-repeat left center;
+}
+.guidecollapse
+{
+	background: url(Images/guide_collapse.gif) no-repeat left center;
+}
+
+.guide, .guidesearch
+{
+	background-color: #fff;
+	margin-right: 15px;
+}
+.guide ul, .guide li
+{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	background-color: #fff;
+}
+.guidesearch
+{
+	margin-top: 2px;
+	line-height: 25px;
+	text-align: center;
+}
+
+/* ====.guide li高度兼容样式==== */
+.guide li
+{
+	background-color: #fff;
+	line-height: 140%;
+}
+* html .guide li /* IE6解析 */
+{
+	height: 20px;
+}
+
+.guide a
+{
+	display: block;
+	text-align: left;
+	padding: 3px 0px 3px 8px;
+	text-decoration: none;
+}
+.guide a:link, .guide a:visited
+{
+	color: #4579b9;
+	border: 1px solid #fff;
+}
+.guide a:hover
+{
+	color: #c00;
+	border: 1px solid #e6eff8;
+	background-color: #f2f8fd;
+	text-decoration: none;
+}
+
+/* ====菜单底部==== */
+#Guide_bottom
+{
+	height: 13px;
+	background: url(Images/Guide_bottom.gif) #adcbef no-repeat left top;
+}
+
+.refresh
+{
+	position: absolute;
+	top: 29px;
+	left: 160px;
+	width: 15px;
+	height: 15px;
+	background: url(Images/refresh.gif) no-repeat center center;
+	cursor: pointer;
+}
+
+.quickLink li
+{
+	float: left;
+	white-space: nowrap;
+}

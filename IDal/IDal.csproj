@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{47D64297-0C64-4A95-B85B-4E177232A188}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EasyOne.IDal</RootNamespace>
+    <AssemblyName>EasyOne.IDal</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\WebSite\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessManage\IUserPermissions.cs" />
+    <Compile Include="Accessories\IAuthor.cs" />
+    <Compile Include="Accessories\IBank.cs" />
+    <Compile Include="Accessories\IBankrollItem.cs" />
+    <Compile Include="Accessories\ICards.cs" />
+    <Compile Include="Accessories\IChoiceset.cs" />
+    <Compile Include="Accessories\IDataBaseHandle.cs" />
+    <Compile Include="Accessories\IDownloadError.cs" />
+    <Compile Include="Accessories\IDownServer.cs" />
+    <Compile Include="Accessories\IFavorite.cs" />
+    <Compile Include="Accessories\IFiles.cs" />
+    <Compile Include="Accessories\IKeywords.cs" />
+    <Compile Include="Accessories\IMessage.cs" />
+    <Compile Include="Accessories\IPaymentLog.cs" />
+    <Compile Include="Accessories\IPayPlatform.cs" />
+    <Compile Include="Accessories\IRegion.cs" />
+    <Compile Include="Accessories\ISource.cs" />
+    <Compile Include="Accessories\IWordReplace.cs" />
+    <Compile Include="AD\IAdvertisement.cs" />
+    <Compile Include="AD\IADZone.cs" />
+    <Compile Include="Analytics\ICounter.cs" />
+    <Compile Include="Analytics\IIPStorage.cs" />
+    <Compile Include="Analytics\IOtherReport.cs" />
+    <Compile Include="Analytics\ITimeReport.cs" />
+    <Compile Include="Analytics\IUserDataReport.cs" />
+    <Compile Include="Collection\ICollectionExclosion.cs" />
+    <Compile Include="Collection\ICollectionFieldRules.cs" />
+    <Compile Include="Collection\ICollectionFilterRules.cs" />
+    <Compile Include="Collection\ICollectionHistory.cs" />
+    <Compile Include="Collection\ICollectionItem.cs" />
+    <Compile Include="Collection\ICollectionListRules.cs" />
+    <Compile Include="Collection\ICollectionPagingRules.cs" />
+    <Compile Include="CommonModel\IModel.cs" />
+    <Compile Include="CommonModel\IModelTemplate.cs" />
+    <Compile Include="Contents\IComment.cs" />
+    <Compile Include="Contents\ICommentPKZone.cs" />
+    <Compile Include="Contents\IContentCharge.cs" />
+    <Compile Include="Contents\IContentManage.cs" />
+    <Compile Include="Contents\INodes.cs" />
+    <Compile Include="Contents\IPermissionContent.cs" />
+    <Compile Include="Contents\ISignInContent.cs" />
+    <Compile Include="Contents\ISignInLog.cs" />
+    <Compile Include="Contents\ISpecial.cs" />
+    <Compile Include="Contents\IVotes.cs" />
+    <Compile Include="Crm\IAddress.cs" />
+    <Compile Include="Crm\IClient.cs" />
+    <Compile Include="Crm\IClientDelete.cs" />
+    <Compile Include="Crm\ICompany.cs" />
+    <Compile Include="Crm\IComplain.cs" />
+    <Compile Include="Crm\IContacter.cs" />
+    <Compile Include="Crm\IQuestion.cs" />
+    <Compile Include="Crm\IQuestionAllot.cs" />
+    <Compile Include="Crm\IQuestionType.cs" />
+    <Compile Include="Crm\IReply.cs" />
+    <Compile Include="Crm\IService.cs" />
+    <Compile Include="IItemCacheDependency.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Shop\IAgent.cs" />
+    <Compile Include="Shop\ICoupon.cs" />
+    <Compile Include="Shop\ICouponItem.cs" />
+    <Compile Include="Shop\ICourier.cs" />
+    <Compile Include="Shop\IDeliverCharge.cs" />
+    <Compile Include="Shop\IDeliverItem.cs" />
+    <Compile Include="Shop\IDeliverType.cs" />
+    <Compile Include="Shop\IInvoice.cs" />
+    <Compile Include="Shop\IOrder.cs" />
+    <Compile Include="Shop\IOrderFeedback.cs" />
+    <Compile Include="Shop\IOrderItem.cs" />
+    <Compile Include="Shop\IPackage.cs" />
+    <Compile Include="Shop\IPaymentType.cs" />
+    <Compile Include="Shop\IPresent.cs" />
+    <Compile Include="Shop\IPresentProject.cs" />
+    <Compile Include="Shop\IProducer.cs" />
+    <Compile Include="Shop\IProduct.cs" />
+    <Compile Include="Shop\IProductCommon.cs" />
+    <Compile Include="Shop\IProductData.cs" />
+    <Compile Include="Shop\IProductPrice.cs" />
+    <Compile Include="Shop\IRefund.cs" />
+    <Compile Include="Shop\IRemittance.cs" />
+    <Compile Include="Shop\ISaleCount.cs" />
+    <Compile Include="Shop\ISaleList.cs" />
+    <Compile Include="Shop\IShoppingCart.cs" />
+    <Compile Include="Shop\IStatistics.cs" />
+    <Compile Include="Shop\IStockItem.cs" />
+    <Compile Include="Shop\IStockManage.cs" />
+    <Compile Include="Shop\ITrademark.cs" />
+    <Compile Include="Shop\ITransferLog.cs" />
+    <Compile Include="Survey\ISurveyCreate.cs" />
+    <Compile Include="Survey\ISurveyField.cs" />
+    <Compile Include="Survey\ISurveyManager.cs" />
+    <Compile Include="Survey\ISurveyRecord.cs" />
+    <Compile Include="Survey\ISurveyVote.cs" />
+    <Compile Include="TemplateProc\ILabelManage.cs" />
+    <Compile Include="TemplateProc\ILabelProc.cs" />
+    <Compile Include="TemplateProc\ITemplateProc.cs" />
+    <Compile Include="Templates\IIncludeFile.cs" />
+    <Compile Include="UserManage\IAdministrator.cs" />
+    <Compile Include="UserManage\IAdminProfile.cs" />
+    <Compile Include="UserManage\IRoleMembers.cs" />
+    <Compile Include="UserManage\IUserDate.cs" />
+    <Compile Include="UserManage\IUserFriend.cs" />
+    <Compile Include="UserManage\IUserGroups.cs" />
+    <Compile Include="UserManage\IUserMoney.cs" />
+    <Compile Include="UserManage\IUserPoint.cs" />
+    <Compile Include="UserManage\IUserPointLog.cs" />
+    <Compile Include="UserManage\IUserRole.cs" />
+    <Compile Include="UserManage\IUsers.cs" />
+    <Compile Include="UserManage\IUserValidLog.cs" />
+    <Compile Include="WorkFlow\IFlowProcess.cs" />
+    <Compile Include="WorkFlow\IStatus.cs" />
+    <Compile Include="WorkFlow\IWorkFlows.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Enumerations\Enumerations.csproj">
+      <Project>{B42E08FB-9F11-4C31-BBAF-8EB607D9C6BA}</Project>
+      <Name>Enumerations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{A6D384AB-3258-4CEF-A462-08364D11FE94}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

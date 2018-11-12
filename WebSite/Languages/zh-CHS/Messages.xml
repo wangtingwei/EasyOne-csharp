@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <message id="1">
+    <title>无此用户</title>
+    <body>数据库中未发现用户</body>
+  </message>
+
+  <message id="2">
+    <title>密码错误</title>
+    <body>密码错误</body>
+  </message>
+
+  <message id="3">
+    <title>用户被锁定</title>
+    <body>用户被锁定</body>
+  </message>
+
+  <message id="4">
+    <title>连接错误</title>
+    <body>连接错误</body>
+  </message>
+
+  <message id="5">
+    <title>转账对象和目标卡号相同</title>
+    <body>转账对象和目标卡号相同</body>
+  </message>
+
+  <message id="6">
+    <title>余额不足</title>
+    <body>余额不足</body>
+  </message>
+
+  <message id="7">
+    <title>HttpContext为Null</title>
+    <body>HttpContext为Null</body>
+  </message>
+  <message id="8">
+    <title>越权操作</title>
+    <body>越权操作</body>
+  </message>
+  <message id="999">
+    <title>运行时错误</title>
+    <body>
+		为了防止错误提示中的敏感信息：比如网站物理路径、数据库链接等信息泄露给恶意访问者，系统将错误的详细信息进行了屏蔽。如果您想查看详细出错信息，可以使用管理员身份登录后台并在日志管理中查看该异常的详细情况，也可以通过设置web.config中的 customErrors 标记的“mode”属性设置为“Off”，注意“Off”的大小写，然后重新进行操作以获得页面中提示的详细提示信息。
+	</body>
+  </message>
+
+</root>

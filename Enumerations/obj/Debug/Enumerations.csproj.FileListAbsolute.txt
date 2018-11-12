@@ -1,0 +1,5 @@
+F:\EasyOne\WebSite\bin\EasyOne.Enumerations.dll
+F:\EasyOne\WebSite\bin\EasyOne.Enumerations.pdb
+F:\EasyOne\Enumerations\obj\Debug\ResolveAssemblyReference.cache
+F:\EasyOne\Enumerations\obj\Debug\EasyOne.Enumerations.dll
+F:\EasyOne\Enumerations\obj\Debug\EasyOne.Enumerations.pdb

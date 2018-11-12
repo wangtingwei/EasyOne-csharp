@@ -1,0 +1,73 @@
+﻿/* ==专题定义== */
+
+ /* 专题图文 */
+.special_photo_list, .special_photo_list ul, .special_class dl, .special_class dt, .special_class dd
+{
+	padding: 0px;
+	margin: 0px;
+}
+
+.special_photo_list li
+{
+	padding: 0px;
+	margin: 5px 0px;
+	list-style: none;
+	width: 188px;
+	float: left;
+	text-align: center;
+}
+.special_photo_list li img
+{
+	border: 1px solid #ccc;
+	width: 160px;
+	height: 120px;
+}
+
+ /* 专题栏目列表 */
+.special_class
+{
+	float: left;
+	margin-bottom: 10px;
+	width: 50%;
+ }
+.special_class dl
+{
+	margin: 2px;
+ }
+.special_class dt, .special_class dt a
+{
+	font: normal normal bold 13px/24px Arial,"宋体",Helvetica,sans-serif;
+ }
+.special_class dt
+{
+	border-bottom: 1px solid #9bbde6;
+	clear: both;
+ }
+.special_class dt a
+{
+	padding: 5px 20px;
+	background: url(images/icon_01.gif) #fff no-repeat left 6px;
+ }
+.special_class dd
+{
+	padding: 5px 5px 15px 5px;
+	height: auto!important;
+	height: 60px;
+	min-height: 60px;
+ }
+.special_class li
+{
+	width: 33%;
+	float: left;
+	display: block;
+	text-align: left;
+}
+.special_class li a
+{
+	padding-left: 12px;
+	background: url(images/icon_02.gif) no-repeat left 0px;
+ }
+.special_class li a:hover
+{
+	background: url(images/icon_02_hover.gif) no-repeat left 0px;
+ }
